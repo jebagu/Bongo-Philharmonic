@@ -21,6 +21,8 @@
     "foundation/src",
     "tests",
     "vite.config.ts",
-    "playwright.config.ts"
+    "playwright.config.ts",
+    "vite.public.config.ts",
+    "playwright.public.config.ts"
   ]
 }

@@ -10,7 +10,7 @@ export interface InstrumentDefinition {
   percussion: boolean;
 }
 
-const BASE = '/BongoPlanet/';
+const BASE = import.meta.env?.BASE_URL ?? '/';
 const bongo: InstrumentDefinition[] = INSTRUMENTS.map(instrument => ({
   id: instrument.id,
   name: instrument.name,

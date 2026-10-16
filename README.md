@@ -1,5 +1,7 @@
 # Bongo Philharmonic
 
+Play the public Site: **[Bongo Philharmonic](https://bongo-philharmonic.jebagu.chatgpt.site)**. The public release uses the Bongo instrument set; the native Mario pack remains local.
+
 Place a band, compose its music, and watch it perform. **Bongo Philharmonic** is a separate tool from **Bongo Planet**, the original spark game.
 
 Permanent local URL: **http://127.0.0.1:5417/BongoPlanet/composer/**. Run `npm ci` and `npm run dev` from this project's folder. This app has its own source, Git history, dependencies and local server. See [application boundaries](docs/Applications.md).

@@ -1,3 +1,4 @@
+import { PUBLIC_SITE } from './release';
 import sourceData from '../assets/library/library.json' with { type: 'json' };
 import sourceAudit from '../assets/library/library-provenance.json' with { type: 'json' };
 import simpleFavorites from '../foundation/assets/favorite-presets.json' with { type: 'json' };
@@ -216,7 +217,7 @@ export function validateLibraryInventory(): void {
   const actual = LIBRARY.filter(entry => entry.assetSetId === 'bongo').map(entry => entry.id);
   if (JSON.stringify(expected) !== JSON.stringify(actual)) throw Error('Composer source library no longer matches the current Favorites menu. Refresh its retained music inputs explicitly.');
   const native = LIBRARY.filter(entry => entry.assetSetId === 'mario').map(entry => entry.id);
-  if (JSON.stringify(native) !== JSON.stringify(['mario-demo-1', 'mario-demo-2', 'mario-demo-3'])) throw Error('Composer needs all three original Mario Paint demos.');
+  if (!PUBLIC_SITE && JSON.stringify(native) !== JSON.stringify(['mario-demo-1', 'mario-demo-2', 'mario-demo-3'])) throw Error('Composer needs all three original Mario Paint demos.');
 }
 validateLibraryInventory();
 

@@ -9,7 +9,11 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:web": "playwright test",
-    "verify": "npm run build && npm test && npm run test:web"
+    "verify": "npm run build && npm test && npm run test:web",
+    "build:public": "tsc --noEmit && vite build --mode public-site --config vite.public.config.ts && node scripts/verify-public-build.mjs",
+    "preview:public": "vite preview --config vite.public.config.ts",
+    "test:web:public": "playwright test --config playwright.public.config.ts",
+    "prepare:site": "node scripts/prepare-public-site.mjs"
   },
   "keywords": [],
   "author": "",

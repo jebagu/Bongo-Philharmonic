@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { PUBLIC_SITE } from './release';
 import { getInstrument, getInstruments } from './catalog';
 
 export type AssetSetId = 'bongo' | 'mario';
@@ -74,6 +75,7 @@ export function validateComposition(input: unknown): Composition {
     throw Error(`${issue.path.length ? `${issue.path.join('.')}: ` : ''}${issue.message}`);
   }
   const composition: Composition = result.data;
+  if (PUBLIC_SITE && composition.assetSetId !== 'bongo') throw Error('This sound set is available in the local application only.');
   const types = new Set(getInstruments(composition.assetSetId).map(instrument => instrument.id));
   const performerIds = new Set<string>();
   const junctions = new Set<number>();

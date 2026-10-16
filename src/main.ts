@@ -4,6 +4,7 @@ import '@fontsource/dm-sans/600.css';
 import '@fontsource/manrope/700.css';
 import '@fontsource/manrope/800.css';
 import './style.css';
+import { PUBLIC_SITE } from './release';
 import { addEvent, addPerformer, createComposition, History, locationLabel, movePerformer, performerLabel, removeEvents, removePerformer, renameLocation, STORAGE_KEY, updateEvent, validateComposition, type AssetSetId, type Composition, type Performer, type ScoreEvent } from './model';
 import { getInstrument, getInstruments } from './catalog';
 import { LIBRARY } from './library';
@@ -51,7 +52,7 @@ root.innerHTML=`
   <header class="app-header"><div class="brand">Bongo <span class="brand-subtitle">Philharmonic</span></div><nav class="view-nav" aria-label="Workspace"><button data-view="placement">Placement</button><button data-view="composer">Composer</button><button data-view="performance">Performance</button><button data-view="library">Library</button></nav><input id="composition-title" aria-label="Composition title" maxlength="180"><div class="header-actions"><button id="more-open" aria-label="More options">•••</button></div></header>
   <div class="performance-bar panel"><div class="brand">Bongo <span class="brand-subtitle">Philharmonic</span></div><div id="performance-transport-slot"></div></div>
   <main class="workspace">
-    <aside class="placement-panel panel"><div class="section-heading"><h1>Instruments</h1><span class="band-count">0 / 16</span></div><label class="set-field">Sound set<select id="asset-set"><option value="bongo">Bongo Planet</option><option value="mario">Mario Paint</option></select></label><div id="placement-palette" class="placement-palette"></div><div id="placement-intent" class="intent-tray" hidden></div><div id="performer-tray" class="performer-tray"></div></aside>
+    <aside class="placement-panel panel"><div class="section-heading"><h1>Instruments</h1><span class="band-count">0 / 16</span></div><label class="set-field">Sound set<select id="asset-set"><option value="bongo">Bongo Planet</option>${PUBLIC_SITE?'':'<option value="mario">Mario Paint</option>'}</select></label><div id="placement-palette" class="placement-palette"></div><div id="placement-intent" class="intent-tray" hidden></div><div id="performer-tray" class="performer-tray"></div></aside>
     <section class="sphere-stage" aria-label="Instrument Placement"><div id="sphere-host"></div><div class="sphere-controls"><button id="reset-camera">Reset view</button><button id="slow-rotate" aria-pressed="false">Slow rotate</button></div><div id="sphere-hint" class="sphere-hint"></div></section>
     <section class="composer-tools panel"><div class="composer-tool-top"><div><h1>Composer</h1><div id="current-stamp" class="current-stamp"></div></div><span class="band-count">0 / 16</span></div><div id="family-row" class="family-row" aria-label="Instrument pictures"></div><div id="family-menu" class="family-menu" hidden></div></section>
     <section class="score-section panel"><div class="score-heading"><div class="score-tools"><button id="stamp-tool" aria-pressed="true">Stamp</button><button id="erase-tool" aria-pressed="false">Erase</button><label>Grid<select id="edit-grid"><option value="1">¼ note</option><option value="2">⅛ note</option><option value="4">¹⁄₁₆ note</option><option value="8">¹⁄₃₂ note</option><option value="3">Triplets</option></select></label><div class="score-zoom" aria-label="Score zoom"><button id="zoom-out" aria-label="Zoom out score">−</button><output id="zoom-value">100%</output><button id="zoom-in" aria-label="Zoom in score">+</button></div></div><div class="score-pages"><button id="page-back" aria-label="Previous passage">←</button><span id="page-label"></span><button id="page-next" aria-label="Next passage">→</button></div><output id="pitch-feedback" aria-live="off"></output></div><div id="note-toolbar" class="note-toolbar" hidden></div><div id="score-scroll" class="score-scroll"><div id="score-host"></div></div></section>
@@ -357,9 +358,9 @@ function requestRemove(p:Performer) {
 function renderLibrary() {
   const collection=$('#library-collection');collection.replaceChildren();
   const entries=LIBRARY.filter(entry=>libraryFilter==='all'||entry.assetSetId===libraryFilter);
-  $('#library-count').textContent=`${LIBRARY.length} compositions · all Favorites and Mario Paint demos`;
+  $('#library-count').textContent=`${LIBRARY.length} compositions · ${PUBLIC_SITE?'Bongo Favorites':'all Favorites and Mario Paint demos'}`;
   const filters=$('#library-filters');filters.replaceChildren();
-  for(const [id,label] of [['all','All'],['bongo','Bongo Planet'],['mario','Mario Paint']] as const){const choice=button(label,()=>{libraryFilter=id;renderLibrary();});choice.setAttribute('aria-pressed',String(libraryFilter===id));filters.append(choice);}
+  for(const [id,label] of (PUBLIC_SITE ? [['all','All'],['bongo','Bongo Planet']] : [['all','All'],['bongo','Bongo Planet'],['mario','Mario Paint']]) as [string,string][]){const choice=button(label,()=>{libraryFilter=id as typeof libraryFilter;renderLibrary();});choice.setAttribute('aria-pressed',String(libraryFilter===id));filters.append(choice);}
   let group='',grid=el('div');
   for(const entry of entries){
     if(group!==entry.group){group=entry.group;collection.append(el('h2','library-group',group));grid=el('div','library-grid');collection.append(grid);}

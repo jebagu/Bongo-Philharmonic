@@ -1,0 +1,10 @@
+{
+  "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+  "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_65fdea959c74819196b83e7ab1da2da6",
+  "deployment_id": "appgdep_6ad23d97502c8191ac9846a9005fb9c0",
+  "source_commit": "c593d3c0bf4c2b036a62e6862c3e88a5a0fa93b6",
+  "status": "succeeded",
+  "access_mode": "public",
+  "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+  "updated_at": "2026-10-16T15:07:23.110293+00:00"
+}

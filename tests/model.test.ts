@@ -146,7 +146,7 @@ describe('Composer band and score transactions', () => {
   it('provides ten Bongo sounds and all fifteen original Mario portraits', () => {
     expect(getInstruments('bongo')).toHaveLength(10);
     expect(getInstruments('mario')).toHaveLength(15);
-    for (const instrument of getInstruments('mario')) expect(instrument.portrait).toMatch(/^\/BongoPlanet\/asset-packs\/mario-paint\/sprites\//);
+    for (const instrument of getInstruments('mario')) expect(instrument.portrait).toMatch(/\/asset-packs\/mario-paint\/sprites\//);
   });
 });
 

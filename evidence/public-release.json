@@ -1,0 +1,397 @@
+{
+  "name": "Bongo Philharmonic",
+  "profile": "public-bongo-only",
+  "files": [
+    {
+      "path": "art/geometric-toys/bongo-high-portrait.png",
+      "bytes": 14237,
+      "sha256": "a77c69eee1170a4fa46faabb5a25756c7a04f98f6c4c6b95e5d2aed1535e5438"
+    },
+    {
+      "path": "art/geometric-toys/bongo-low-portrait.png",
+      "bytes": 13659,
+      "sha256": "b3dde1729a3006543bed503a7ede7e5560c5092959eca6c978633d4cbfd1da8c"
+    },
+    {
+      "path": "art/geometric-toys/glass-portrait.png",
+      "bytes": 18879,
+      "sha256": "80793d3cfdf6d3b528e0960ddf245f312d53f618f75664165da32cd84303d92b"
+    },
+    {
+      "path": "art/geometric-toys/guitar-portrait.png",
+      "bytes": 10875,
+      "sha256": "fd0d6db125a9b1ef74b3be57b19a968a281e6dd20bf79dac542d2db37536f442"
+    },
+    {
+      "path": "art/geometric-toys/hi-hat-portrait.png",
+      "bytes": 9481,
+      "sha256": "7bea2b749f67aba395b6de0e7f9f80e972f1080b7665b86852e9b405d38ae2a3"
+    },
+    {
+      "path": "art/geometric-toys/kalimba-portrait.png",
+      "bytes": 12980,
+      "sha256": "38cd83d902f91305221e0790d9f1aecdaa92311d0eb5c7a50b09d74a505f0f29"
+    },
+    {
+      "path": "art/geometric-toys/kick-portrait.png",
+      "bytes": 19644,
+      "sha256": "c0d542de5857f3bdc694ba231810e7ccd8de6a0aa34ba3efa8d505782bf83457"
+    },
+    {
+      "path": "art/geometric-toys/marimba-portrait.png",
+      "bytes": 12350,
+      "sha256": "a18b4c815f0c996aec576945b65706f9156761e12f38b56a777a4f068b07676a"
+    },
+    {
+      "path": "art/geometric-toys/piano-portrait.png",
+      "bytes": 12100,
+      "sha256": "8ed540bfdac567894cc90673125128e22f7419526051c2f482daab63418c3ee9"
+    },
+    {
+      "path": "art/geometric-toys/snare-portrait.png",
+      "bytes": 10560,
+      "sha256": "d90f9116ede0039048c1919140304e283d48a9f41c9a9b5bd2272275a3c43fc7"
+    },
+    {
+      "path": "assets/dm-sans-latin-400-normal-BwCSEQnW.woff",
+      "bytes": 18356,
+      "sha256": "38702875fe179437d200e7ba6f7fab4d497ffe48117ef332029b2081751186ad"
+    },
+    {
+      "path": "assets/dm-sans-latin-400-normal-CW0RaeGs.woff2",
+      "bytes": 14200,
+      "sha256": "4ab51eb2cd7305d177187908d6397474d4520663f6c6e572feb0a64f4fa80006"
+    },
+    {
+      "path": "assets/dm-sans-latin-500-normal-B9HHJjqV.woff2",
+      "bytes": 14304,
+      "sha256": "19bf1984956517c35c2bd35b6cdedac12a21d6fcd3596c614ecdfb88b648909d"
+    },
+    {
+      "path": "assets/dm-sans-latin-500-normal-Dr3UlScf.woff",
+      "bytes": 18520,
+      "sha256": "7deb957e430b780ee3272d801af4f9f2211b1330ec40a312a8f25309eacb4034"
+    },
+    {
+      "path": "assets/dm-sans-latin-600-normal-Aqo67rzb.woff2",
+      "bytes": 14144,
+      "sha256": "6bb2b2645ba5eeaecf56322c543fa3a75b87b927977b9c03b1dabc4205089120"
+    },
+    {
+      "path": "assets/dm-sans-latin-600-normal-BmdmIIQ2.woff",
+      "bytes": 18320,
+      "sha256": "e7351257e49400eff05aca30a2007289194a900860d30c30770d8b8732897564"
+    },
+    {
+      "path": "assets/dm-sans-latin-ext-400-normal-BjWJ59Pq.woff",
+      "bytes": 9976,
+      "sha256": "3d63423c3204f61bb196d1ae3729b7f2871d87abd4403d198f4810923888c016"
+    },
+    {
+      "path": "assets/dm-sans-latin-ext-400-normal-BtiwyxMk.woff2",
+      "bytes": 7364,
+      "sha256": "962730c6ff7595f9499b0d963a3bccb2139d793f0fb31fbd87aed1881c020e0a"
+    },
+    {
+      "path": "assets/dm-sans-latin-ext-500-normal-BJfUCQsA.woff2",
+      "bytes": 7432,
+      "sha256": "e0a1d21584ba00798a3dbe90ef5f8a162741d454f52ab66630f9dc41da372b3d"
+    },
+    {
+      "path": "assets/dm-sans-latin-ext-500-normal-DR84L5F-.woff",
+      "bytes": 10068,
+      "sha256": "e1f67472aa96c6f60969c696ba8a9d36ed8ea26c2ff5c3e27ee29c664911575d"
+    },
+    {
+      "path": "assets/dm-sans-latin-ext-600-normal-4vooXBpG.woff2",
+      "bytes": 7420,
+      "sha256": "6406eb05e2eb50779cb95ee8745c98ad23cce7e67d752822782453da7f6b4491"
+    },
+    {
+      "path": "assets/dm-sans-latin-ext-600-normal-DRtaDpgU.woff",
+      "bytes": 10024,
+      "sha256": "f70e6bb2170e2ab7bfc23a021af0663dce4df0b502173c9c5135015d7fed457a"
+    },
+    {
+      "path": "assets/index-BHII1tYC.js",
+      "bytes": 1250352,
+      "sha256": "7b7768da339f57069ed2134aac7ff10af24d73c637b5547877d3fff9941d3b04"
+    },
+    {
+      "path": "assets/index-pafhxsXv.css",
+      "bytes": 30342,
+      "sha256": "94548a85100226dc247d77610d7f714362a2514ef18e88ee442dc4c86778d598"
+    },
+    {
+      "path": "assets/manrope-cyrillic-700-normal-7JNVKxyl.woff",
+      "bytes": 10004,
+      "sha256": "64d81d2579261c073c8e7ed0964f7b1735707ac3afc6c60a49531918e1cb128f"
+    },
+    {
+      "path": "assets/manrope-cyrillic-700-normal-Dw_fZAg2.woff2",
+      "bytes": 7852,
+      "sha256": "2ad647b9159d27d27f4999b30598f92e60449fb20d80803bc7b85afafbb446d5"
+    },
+    {
+      "path": "assets/manrope-cyrillic-800-normal-AvdZ5mAV.woff2",
+      "bytes": 7588,
+      "sha256": "e76a69e66b624abdb84cdda1e96b04417afbfb1f3cb684488a867b29bcb3870c"
+    },
+    {
+      "path": "assets/manrope-cyrillic-800-normal-BuEMjQU-.woff",
+      "bytes": 9784,
+      "sha256": "fad28539e6148e092554064a0eaa3c72d71355e0fcaeddcf6a3407233d6620b3"
+    },
+    {
+      "path": "assets/manrope-cyrillic-ext-700-normal-cq7F7ESW.woff2",
+      "bytes": 1568,
+      "sha256": "0dc9d9b75bffd07e25f727e8d67a39cc731e21c718b3b86267226bb4e2757813"
+    },
+    {
+      "path": "assets/manrope-cyrillic-ext-700-normal-ezu7N0xg.woff",
+      "bytes": 2176,
+      "sha256": "eed028eaa08fc76f336ca9e4c0a629f6f538d23530c49bf4411703df7d3fe723"
+    },
+    {
+      "path": "assets/manrope-cyrillic-ext-800-normal-By7E3MqD.woff2",
+      "bytes": 1592,
+      "sha256": "e7e345acbc4e836a3e60f6300a630bfd54461713befbc10375f9ef4120e023cd"
+    },
+    {
+      "path": "assets/manrope-cyrillic-ext-800-normal-Dlsls8yD.woff",
+      "bytes": 2184,
+      "sha256": "a17c7704a68d1f0de4028789750c77b80658b9d03c8a0d86b7bec9bddd68e5ce"
+    },
+    {
+      "path": "assets/manrope-greek-700-normal-CHUG9PD8.woff2",
+      "bytes": 5236,
+      "sha256": "b37807fe106dc58c57642635ae7ea172abe65b380fea7b8894615a5883b26ec5"
+    },
+    {
+      "path": "assets/manrope-greek-700-normal-DyfsrCpP.woff",
+      "bytes": 6744,
+      "sha256": "caefb2ca9d80515325f901a72b5f3a88a6cb23b603a7aa2ed25e07133214aeb3"
+    },
+    {
+      "path": "assets/manrope-greek-800-normal-Bw-67qu9.woff",
+      "bytes": 6628,
+      "sha256": "04f7139c9f19fe1c1520de820733db3c2a65958db1f405a1f6cb336d10852487"
+    },
+    {
+      "path": "assets/manrope-greek-800-normal-CDvU698_.woff2",
+      "bytes": 5184,
+      "sha256": "5db05b4f78d65931127f8a8d13cd1a6dfd69a17ec2122146cc324cb7fa3deadb"
+    },
+    {
+      "path": "assets/manrope-latin-700-normal-BZp_XxE4.woff2",
+      "bytes": 14212,
+      "sha256": "d2a12c85a831e4b5db341767d0347fa3d1361d22a1fcb3e361a16b6c90080f71"
+    },
+    {
+      "path": "assets/manrope-latin-700-normal-DGRFkw-m.woff",
+      "bytes": 18412,
+      "sha256": "e5d35fda4759b0d63ebcc6cca0627d98d9208254ce851c85df29e4d12aeafb61"
+    },
+    {
+      "path": "assets/manrope-latin-800-normal-BfWYOv1c.woff2",
+      "bytes": 13648,
+      "sha256": "74c161dbcbce7c3590803cc72dc1f63313c360e13367aba5075a7b7b3818ea49"
+    },
+    {
+      "path": "assets/manrope-latin-800-normal-uHUdIJgA.woff",
+      "bytes": 17912,
+      "sha256": "ce954acb78379d559111a15d29925f3390b69161b2b1365c38b0f19c76991bac"
+    },
+    {
+      "path": "assets/manrope-latin-ext-700-normal-DYOwVNan.woff2",
+      "bytes": 8276,
+      "sha256": "dc7c46d7eb269cc90650d7f70cf49aafa39a98444e6882cc84096acbc156bfcd"
+    },
+    {
+      "path": "assets/manrope-latin-ext-700-normal-eVCcYqtJ.woff",
+      "bytes": 11352,
+      "sha256": "b707ffc6454e54831a69d6c7db32d427b4a2bb914153c1f850fc4f888be7c35f"
+    },
+    {
+      "path": "assets/manrope-latin-ext-800-normal-BQAQsuQc.woff",
+      "bytes": 11108,
+      "sha256": "283da63611967513d643fdfb2d8e4ffa33cce5b8baef5ae06eb117d9327e771e"
+    },
+    {
+      "path": "assets/manrope-latin-ext-800-normal-DdFx7KEb.woff2",
+      "bytes": 8032,
+      "sha256": "262536c3018a0830a4d3d1b1a8096ac0d53dbd059f6271cca121272ba9d4f948"
+    },
+    {
+      "path": "assets/manrope-vietnamese-700-normal-CUqMx5-1.woff2",
+      "bytes": 4552,
+      "sha256": "36c3f8e0a1c59e1bc2fd2a9cabab5b478b488882beebb534e4bd1a8360bf845b"
+    },
+    {
+      "path": "assets/manrope-vietnamese-700-normal-pt65Fn2Z.woff",
+      "bytes": 6364,
+      "sha256": "19bc9ab84376bb2f88eb858d4293c75dad965c70df7755d0a7f03d10080174b2"
+    },
+    {
+      "path": "assets/manrope-vietnamese-800-normal-ClPWri-A.woff2",
+      "bytes": 4156,
+      "sha256": "00842d448a57e2d1f513265e2b51248e4e91665b4d010a9c5ba9e72d45d1943f"
+    },
+    {
+      "path": "assets/manrope-vietnamese-800-normal-bvg7iBCV.woff",
+      "bytes": 6128,
+      "sha256": "fd1d4d56aa1628213705cb4506ec8b9dfc9f68f3a9ec1fb136fdfaf651f4891e"
+    },
+    {
+      "path": "assets/score-worklet-BcFg1D7p.js",
+      "bytes": 7909,
+      "sha256": "e6e85f0c39c5b9bce3e3153f3366404f89f7dea4c14186a7fcbdb6fdf0e5c729"
+    },
+    {
+      "path": "audio/harmony-bloom/glass.wav",
+      "bytes": 617444,
+      "sha256": "16ce0816ab88f2d02303190b135f477212746eda4fc44970d3987b1fbcd1d74d"
+    },
+    {
+      "path": "audio/harmony-bloom/guitar.wav",
+      "bytes": 362196,
+      "sha256": "35f79c8f1fc0f1b31c22a1ca5ee34507b0868ba1beefea3f08e94df76df18c77"
+    },
+    {
+      "path": "audio/harmony-bloom/kalimba.wav",
+      "bytes": 705644,
+      "sha256": "a6c18e80ecad0180d1f5252a756035fd9bb555d44dacb7b1f9b76f1e52228086"
+    },
+    {
+      "path": "audio/harmony-bloom/marimba.wav",
+      "bytes": 420488,
+      "sha256": "4ade2586146eb8f85d5a7f7d8efe73bcd8f3a3a2b47b9533d01479e5c7dfcb5c"
+    },
+    {
+      "path": "audio/harmony-bloom/piano.wav",
+      "bytes": 529244,
+      "sha256": "063998e634e1d4915e161ff2ad119bfedfc4e4d3d4e64fd360b17055fe29793a"
+    },
+    {
+      "path": "audio/harmony-bloom/source-manifest.json",
+      "bytes": 3588,
+      "sha256": "6ad981169b7862fb100b63a83d14f641619ad21f0d004089e25b00045adf28f9"
+    },
+    {
+      "path": "audio/percussion/bongo-high-A.wav",
+      "bytes": 59202,
+      "sha256": "0998a2f2df33852e628f19ed49cfb1f222139640185922b2751f184643b12884"
+    },
+    {
+      "path": "audio/percussion/bongo-high-B.wav",
+      "bytes": 58084,
+      "sha256": "85a0029b378af5f6109920feb31bb1beef0daa124ef00ff2689ad0c0c2526e7b"
+    },
+    {
+      "path": "audio/percussion/bongo-low-A.wav",
+      "bytes": 58962,
+      "sha256": "55726d355d5fd1d3b2dc007ade65baacef9e6e832243d67c4a045fad6b4e1f80"
+    },
+    {
+      "path": "audio/percussion/bongo-low-B.wav",
+      "bytes": 60060,
+      "sha256": "666a694a4bb31cf0c51ca1e2b15e2cb48f2ff912873dbe1e680c3604cbc154cb"
+    },
+    {
+      "path": "audio/percussion/hat-closed-A.wav",
+      "bytes": 42774,
+      "sha256": "869c3a7c458fc48492ecd7b5e288a05debf48c05ebdf33836fae2a7b11195fa5"
+    },
+    {
+      "path": "audio/percussion/hat-closed-B.wav",
+      "bytes": 80390,
+      "sha256": "80858c4f0544878a74ed37ee0ed40d898ee94857129f42f3076d0211232eb16f"
+    },
+    {
+      "path": "audio/percussion/kick-A.wav",
+      "bytes": 167974,
+      "sha256": "7fd83df7f3e749b2d2026508fe84c50f92f1f3d32d2235f62eb1f0ee0c59d626"
+    },
+    {
+      "path": "audio/percussion/kick-B.wav",
+      "bytes": 165360,
+      "sha256": "3a3952dde1b76e1c41abaf6f24908a55405876443fbb6a7dd955693328af84d2"
+    },
+    {
+      "path": "audio/percussion/snare-A.wav",
+      "bytes": 43304,
+      "sha256": "fe130b3232953688305235123fb9d7f717fba8e26d688a88e7f669707ce602a7"
+    },
+    {
+      "path": "audio/percussion/snare-B.wav",
+      "bytes": 50456,
+      "sha256": "2c50d1fc77d900dd08a2cdde41c6c80b7fcf99934b96d2aae81c02532c91451f"
+    },
+    {
+      "path": "audio/percussion/source-manifest.json",
+      "bytes": 23051,
+      "sha256": "228cd14d9b7dc919bb7f89bba583aadaf06b8724506c37010cbc343a1ef3daed"
+    },
+    {
+      "path": "index.html",
+      "bytes": 706,
+      "sha256": "2658e1da73faae3938e961ad3a1ef646434a0ccab91d1316970e58f024032308"
+    },
+    {
+      "path": "licenses/DM-Sans-LICENSE.txt",
+      "bytes": 4502,
+      "sha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7"
+    },
+    {
+      "path": "licenses/Manrope-LICENSE.txt",
+      "bytes": 4383,
+      "sha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+    },
+    {
+      "path": "licenses/Playwright-Core-LICENSE.txt",
+      "bytes": 11601,
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+    },
+    {
+      "path": "licenses/Playwright-Core-NOTICE.txt",
+      "bytes": 254,
+      "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+    },
+    {
+      "path": "licenses/Playwright-LICENSE.txt",
+      "bytes": 11601,
+      "sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+    },
+    {
+      "path": "licenses/Playwright-NOTICE.txt",
+      "bytes": 254,
+      "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+    },
+    {
+      "path": "licenses/Three-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "licenses/VCSL-CC0-1.0.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "licenses/Virtuosity-CC0-1.0.txt",
+      "bytes": 7048,
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "licenses/Zod-LICENSE.txt",
+      "bytes": 1072,
+      "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+    },
+    {
+      "path": "licenses/ws-LICENSE.txt",
+      "bytes": 1183,
+      "sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef"
+    }
+  ],
+  "bytes": 5263142
+}
