@@ -1,0 +1,13 @@
+# Bongo Philharmonic
+
+- This repository is **Bongo Philharmonic**, the independent band-and-score composing project. **Bongo Planet** is a separate project at `/Users/jeremyguillory/Documents/ChatGPT/ripple`. Composer is a workspace inside this app.
+- This is a separate local Git repository, not a fork checkout, worktree, monorepo package or linked dependency. Own source lives in `src/`; tests in `tests/`; copied baseline helpers in `foundation/`; docs in `docs/`. Never import source/assets from the sibling project or share `node_modules`, saves, undo, controller, scheduler, transport or deployment.
+- Musical build authority: `docs/Composer-PRD.md` revision 2, amended by this separation and `docs/Applications.md`. Maximum sixteen polyphonic performers; duplicates allowed; one performer per junction. Preserve Placement, Composer and Performance and the existing visual style.
+- Local URL: **http://127.0.0.1:5417/BongoPlanet/composer/**. Use the pinned strict port documented in `vite.config.ts`. Never silently move its URL or use a bare host/port.
+- Commands from this folder: `npm ci`, `npm run dev`, `npm run build` → `dist/`, `npm test`, `npm run test:web`, `npm run preview`. Commands must work without the sibling project.
+- Instrument/asset compatibility follows `docs/Instrument-Asset-Spec.md` and `docs/templates/instrument-set/manifest.example.json`. Each project owns its copies; explicitly copy/version new assets and preserve provenance. No new shared package, directory or generic pack importer is authorized.
+- Keep saves at `bongo-planet-philharmonic-v1` and its saved/recovery/presentation suffixes. Keep validated old Composer fallback; retain originals and never overwrite existing newer saves. Branding alone does not authorize changing file schemas or storage IDs.
+- Nintendo-derived assets stay local. This Git is local only; do not publish all tracked files or deploy a local build. No remote or public website is configured. Inspect rights for sounds, meshes, icons and textures independently before any future publication.
+- Keep first original Mario voxel set; do not restore rejected upscale variants or deleted research bulk.
+- Landmark pool: original North Pole plus 02, 08, 10, 11 and 12, equal choice once per startup, independent of sound set and stable across composition/view/theme changes. Five original downloads remain pending sign-in; the prepared component stays unwired until all originals are acquired and checked. See `assets/landmarks/README.md`.
+- Historical acceptance is not new verification. See `docs/Separation-Verification.md` for this separation's checks.

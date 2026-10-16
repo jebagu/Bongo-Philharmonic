@@ -1,0 +1,101 @@
+{
+  "source": "User-supplied Mario Paint Joystick modification 1.0 ROM; read only",
+  "romSha256": "ef1b5c47d7c76de43492d9745def235fa24e01b9b6f5c636584b7ae639563ff2",
+  "reference": "https://github.com/Yoshifanatic1/Mario-Paint-Disassembly/blob/730df333bd4110da7965e0ad063c1c5dcf894a73/MPAINT/Routine_Macros_MPAINT.asm",
+  "sourceAtlas": "src/experiments/song-studio/assets/mario-paint-composer.png",
+  "sourceAtlasSha256": "341c27f8d8b5c4e8d4c4afcc7461aa2a0f36a65737f3ea8bca563f512a4789bc",
+  "sourceAtlasSize": [
+    48,
+    24
+  ],
+  "nativeFrameSize": [
+    16,
+    24
+  ],
+  "frames": [
+    {
+      "name": "walk-a",
+      "id": "0x014A",
+      "descriptor": "0x0DDBA4",
+      "atlasX": 0,
+      "file": "mario-paint-walk-a.png",
+      "sourceCrop": [
+        0,
+        0,
+        16,
+        24
+      ],
+      "sha256": "5cfde94d31a3ec155eb432390a82d26ee071a07878bb2f200666e9dc4786a1d5",
+      "rgbaSha256": "8e3cca2c7032bd24df20cba2689c673afe1bc26cf04311c0c6a39cd39fff15c7"
+    },
+    {
+      "name": "walk-b",
+      "id": "0x014B",
+      "descriptor": "0x0DDBB5",
+      "atlasX": 16,
+      "file": "mario-paint-walk-b.png",
+      "sourceCrop": [
+        16,
+        0,
+        16,
+        24
+      ],
+      "sha256": "d0c0192cbcd190a99ad30959cf85f04e3068dad0a117517c418bee16918fba96",
+      "rgbaSha256": "9ac68fe9cb8d5f69af755a4a2a170b18d76b5a56daf330966dddaa99a8d3306a"
+    },
+    {
+      "name": "jump",
+      "id": "0x014D",
+      "descriptor": "0x0DDBD7",
+      "atlasX": 32,
+      "file": "mario-paint-jump.png",
+      "sourceCrop": [
+        32,
+        0,
+        16,
+        24
+      ],
+      "sha256": "a722f873f157a3ac6b8f9e50be7bcf7016f3636d42c5d3514943b08e44792d31",
+      "rgbaSha256": "743dff71eca6f06ebbc6db6972e91f68406899978bcac01cfdb93505fc7084e2"
+    }
+  ],
+  "graphicsAddress": "0x09F000",
+  "paletteAddress": "0x02FE00",
+  "jumpTableAddress": "0x00F7B4",
+  "jumpY": [
+    40,
+    38,
+    37,
+    36,
+    34,
+    33,
+    32,
+    31,
+    30,
+    29,
+    28,
+    27,
+    26,
+    26,
+    25,
+    25,
+    24,
+    24,
+    24,
+    23,
+    23,
+    24,
+    24,
+    24,
+    25,
+    26,
+    26,
+    28,
+    29,
+    31,
+    33,
+    36
+  ],
+  "artwork": "Original Nintendo Mario Paint artwork; local experimental asset, not CC0 or covered by the disassembly code license.",
+  "adaptation": "Lossless crops of the three retained native poses; no smoothing, recoloring or invented frames. Composer uses the original 32-sample hop table, closed at the next timing line and scaled to its grid subdivision. It hops through rests as a regular timing cue; native Mario Paint walks through empty columns."
+}

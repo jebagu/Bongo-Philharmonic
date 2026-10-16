@@ -1,0 +1,42 @@
+[
+  {
+    "id": "C01",
+    "name": "Pachelbel’s Canon"
+  },
+  {
+    "id": "C02",
+    "name": "Toy Ensemble"
+  },
+  {
+    "id": "C03",
+    "name": "Airy Loops"
+  },
+  {
+    "id": "C06",
+    "name": "Tetris — Type A (Korobeiniki)"
+  },
+  {
+    "id": "C07",
+    "name": "Prelude in C Major · Bach"
+  },
+  {
+    "id": "C08",
+    "name": "Ode to Joy · Beethoven"
+  },
+  {
+    "id": "C09",
+    "name": "Eine kleine Nachtmusik · Mozart"
+  },
+  {
+    "id": "C10",
+    "name": "Swan Lake · Tchaikovsky"
+  },
+  {
+    "id": "C11",
+    "name": "Scarborough Fair · Traditional"
+  },
+  {
+    "id": "C12",
+    "name": "Avril 14th · Aphex Twin"
+  }
+]

@@ -1,0 +1,1671 @@
+{
+  "version": 2,
+  "topology": "icosa-3v-v1",
+  "settings": {
+    "bpm": 80,
+    "key": 8,
+    "scale": "major",
+    "travel": 0.75,
+    "quantization": 0.25,
+    "volume": 0.84,
+    "propagation": "gated"
+  },
+  "pieces": [
+    {
+      "label": "Generator 1",
+      "id": "C12-source-0",
+      "vertex": 44,
+      "kind": "generator",
+      "period": 32,
+      "phase": 0,
+      "reach": 180,
+      "enabled": true,
+      "travel": 64
+    },
+    {
+      "label": "Generator 2",
+      "id": "C12-source-1",
+      "vertex": 18,
+      "kind": "generator",
+      "period": 32,
+      "phase": 0.5,
+      "reach": 180,
+      "enabled": true,
+      "travel": 60
+    },
+    {
+      "label": "Piano 1",
+      "id": "C12-bass-0-0-0",
+      "vertex": 45,
+      "kind": "note",
+      "degree": 0,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.35,
+      "level": 0.15300000000000002
+    },
+    {
+      "label": "Piano 2",
+      "id": "C12-chord-0-0-1",
+      "vertex": 45,
+      "kind": "note",
+      "degree": 5,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.36875,
+      "level": 0.078
+    },
+    {
+      "label": "Guitar 1",
+      "id": "C12-chord-0-0-2",
+      "vertex": 45,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.36875,
+      "level": 0.06708
+    },
+    {
+      "label": "Piano 3",
+      "id": "C12-lead-0-0-3",
+      "vertex": 45,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.7781250000000001,
+      "level": 0.34
+    },
+    {
+      "label": "Piano 4",
+      "id": "C12-bass-0-2-0",
+      "vertex": 46,
+      "kind": "note",
+      "degree": 5,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4443750000000001,
+      "level": 0.0945
+    },
+    {
+      "label": "Piano 5",
+      "id": "C12-bass-0-4-0",
+      "vertex": 29,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4856249999999999,
+      "level": 0.117
+    },
+    {
+      "label": "Piano 6",
+      "id": "C12-lead-0-4-1",
+      "vertex": 29,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.703125,
+      "level": 0.27
+    },
+    {
+      "label": "Piano 7",
+      "id": "C12-bass-0-6-0",
+      "vertex": 42,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.403125,
+      "level": 0.1395
+    },
+    {
+      "label": "Piano 8",
+      "id": "C12-bass-0-8-0",
+      "vertex": 73,
+      "kind": "note",
+      "degree": 2,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.7125,
+      "level": 0.1305
+    },
+    {
+      "label": "Piano 9",
+      "id": "C12-chord-0-8-1",
+      "vertex": 73,
+      "kind": "note",
+      "degree": 4,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.275,
+      "level": 0.078
+    },
+    {
+      "label": "Guitar 2",
+      "id": "C12-chord-0-8-2",
+      "vertex": 73,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.275,
+      "level": 0.06708
+    },
+    {
+      "label": "Piano 10",
+      "id": "C12-lead-0-8-3",
+      "vertex": 73,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.0875,
+      "level": 0.36
+    },
+    {
+      "label": "Piano 11",
+      "id": "C12-bass-0-10-0",
+      "vertex": 69,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4856249999999999,
+      "level": 0.09000000000000001
+    },
+    {
+      "label": "Guitar 3",
+      "id": "C12-answer-0-10-1",
+      "vertex": 69,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.525,
+      "level": 0.065
+    },
+    {
+      "label": "Piano 12",
+      "id": "C12-bass-0-12-0",
+      "vertex": 75,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.403125,
+      "level": 0.1125
+    },
+    {
+      "label": "Piano 13",
+      "id": "C12-bass-0-14-0",
+      "vertex": 77,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4443750000000001,
+      "level": 0.10350000000000001
+    },
+    {
+      "label": "Piano 14",
+      "id": "C12-lead-0-14-1",
+      "vertex": 77,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.13499999999999998,
+      "level": 0.24
+    },
+    {
+      "label": "Piano 15",
+      "id": "C12-lead-0-15-0",
+      "vertex": 50,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.35,
+      "level": 0.29
+    },
+    {
+      "label": "Piano 16",
+      "id": "C12-bass-0-16-0",
+      "vertex": 53,
+      "kind": "note",
+      "degree": 3,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.35,
+      "level": 0.136
+    },
+    {
+      "label": "Piano 17",
+      "id": "C12-chord-0-16-1",
+      "vertex": 53,
+      "kind": "note",
+      "degree": 5,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.40625,
+      "level": 0.078
+    },
+    {
+      "label": "Guitar 4",
+      "id": "C12-chord-0-16-2",
+      "vertex": 53,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.40625,
+      "level": 0.06708
+    },
+    {
+      "label": "Piano 18",
+      "id": "C12-bass-0-18-0",
+      "vertex": 26,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4443750000000001,
+      "level": 0.084
+    },
+    {
+      "label": "Piano 19",
+      "id": "C12-bass-0-20-0",
+      "vertex": 22,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4856249999999999,
+      "level": 0.10400000000000001
+    },
+    {
+      "label": "Piano 20",
+      "id": "C12-bass-0-22-0",
+      "vertex": 5,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.403125,
+      "level": 0.124
+    },
+    {
+      "label": "Piano 21",
+      "id": "C12-lead-0-22-1",
+      "vertex": 5,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.38437499999999997,
+      "level": 0.26
+    },
+    {
+      "label": "Piano 22",
+      "id": "C12-bass-0-24-0",
+      "vertex": 37,
+      "kind": "note",
+      "degree": 1,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.7125,
+      "level": 0.11599999999999999
+    },
+    {
+      "label": "Piano 23",
+      "id": "C12-chord-0-24-1",
+      "vertex": 37,
+      "kind": "note",
+      "degree": 3,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.0875,
+      "level": 0.078
+    },
+    {
+      "label": "Guitar 5",
+      "id": "C12-chord-0-24-2",
+      "vertex": 37,
+      "kind": "note",
+      "degree": 5,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.0875,
+      "level": 0.06708
+    },
+    {
+      "label": "Piano 24",
+      "id": "C12-lead-0-24-3",
+      "vertex": 37,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.39375,
+      "level": 0.35
+    },
+    {
+      "label": "Piano 25",
+      "id": "C12-bass-0-26-0",
+      "vertex": 2,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4856249999999999,
+      "level": 0.08000000000000002
+    },
+    {
+      "label": "Guitar 6",
+      "id": "C12-answer-0-26-1",
+      "vertex": 2,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.4875,
+      "level": 0.055
+    },
+    {
+      "label": "Piano 26",
+      "id": "C12-lead-0-26-2",
+      "vertex": 2,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.346875,
+      "level": 0.31
+    },
+    {
+      "label": "Piano 27",
+      "id": "C12-bass-0-28-0",
+      "vertex": 0,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.403125,
+      "level": 0.1
+    },
+    {
+      "label": "Piano 28",
+      "id": "C12-lead-0-28-1",
+      "vertex": 0,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.3375,
+      "level": 0.28
+    },
+    {
+      "label": "Piano 29",
+      "id": "C12-bass-0-30-0",
+      "vertex": 10,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4443750000000001,
+      "level": 0.09200000000000001
+    },
+    {
+      "label": "Piano 30",
+      "id": "C12-lead-0-30-1",
+      "vertex": 10,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.403125,
+      "level": 0.235
+    },
+    {
+      "label": "Piano 31",
+      "id": "C12-bass-0-32-0",
+      "vertex": 14,
+      "kind": "note",
+      "degree": 0,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.35,
+      "level": 0.2006
+    },
+    {
+      "label": "Piano 32",
+      "id": "C12-chord-0-32-1",
+      "vertex": 14,
+      "kind": "note",
+      "degree": 5,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.36875,
+      "level": 0.0936
+    },
+    {
+      "label": "Guitar 7",
+      "id": "C12-chord-0-32-2",
+      "vertex": 14,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.36875,
+      "level": 0.080496
+    },
+    {
+      "label": "Piano 33",
+      "id": "C12-lead-0-32-3",
+      "vertex": 14,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.796875,
+      "level": 0.445
+    },
+    {
+      "label": "Piano 34",
+      "id": "C12-bass-0-34-0",
+      "vertex": 36,
+      "kind": "note",
+      "degree": 5,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4443750000000001,
+      "level": 0.12389999999999998
+    },
+    {
+      "label": "Glass 1",
+      "id": "C12-halo-0-34-1",
+      "vertex": 36,
+      "kind": "note",
+      "degree": 2,
+      "octave": 5,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.525,
+      "level": 0.045
+    },
+    {
+      "label": "Piano 35",
+      "id": "C12-bass-0-36-0",
+      "vertex": 66,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4856249999999999,
+      "level": 0.1534
+    },
+    {
+      "label": "Piano 36",
+      "id": "C12-lead-0-36-1",
+      "vertex": 66,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.721875,
+      "level": 0.34
+    },
+    {
+      "label": "Piano 37",
+      "id": "C12-bass-0-38-0",
+      "vertex": 64,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.403125,
+      "level": 0.18289999999999998
+    },
+    {
+      "label": "Piano 38",
+      "id": "C12-bass-0-40-0",
+      "vertex": 80,
+      "kind": "note",
+      "degree": 2,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.7125,
+      "level": 0.17109999999999997
+    },
+    {
+      "label": "Piano 39",
+      "id": "C12-chord-0-40-1",
+      "vertex": 80,
+      "kind": "note",
+      "degree": 4,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.275,
+      "level": 0.0936
+    },
+    {
+      "label": "Guitar 8",
+      "id": "C12-chord-0-40-2",
+      "vertex": 80,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.275,
+      "level": 0.080496
+    },
+    {
+      "label": "Piano 40",
+      "id": "C12-lead-0-40-3",
+      "vertex": 80,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.115625,
+      "level": 0.46
+    },
+    {
+      "label": "Piano 41",
+      "id": "C12-bass-0-42-0",
+      "vertex": 57,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4856249999999999,
+      "level": 0.118
+    },
+    {
+      "label": "Guitar 9",
+      "id": "C12-answer-0-42-1",
+      "vertex": 57,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.525,
+      "level": 0.078
+    },
+    {
+      "label": "Glass 2",
+      "id": "C12-halo-0-42-2",
+      "vertex": 57,
+      "kind": "note",
+      "degree": 0,
+      "octave": 5,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.7125,
+      "level": 0.04
+    },
+    {
+      "label": "Piano 42",
+      "id": "C12-bass-0-44-0",
+      "vertex": 59,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.403125,
+      "level": 0.1475
+    },
+    {
+      "label": "Piano 43",
+      "id": "C12-bass-0-46-0",
+      "vertex": 86,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4443750000000001,
+      "level": 0.1357
+    },
+    {
+      "label": "Piano 44",
+      "id": "C12-lead-0-46-1",
+      "vertex": 86,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.13125,
+      "level": 0.29
+    },
+    {
+      "label": "Piano 45",
+      "id": "C12-lead-0-47-0",
+      "vertex": 85,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.359375,
+      "level": 0.35
+    },
+    {
+      "label": "Piano 46",
+      "id": "C12-bass-0-48-0",
+      "vertex": 32,
+      "kind": "note",
+      "degree": 3,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.35,
+      "level": 0.14450000000000002
+    },
+    {
+      "label": "Piano 47",
+      "id": "C12-chord-0-48-1",
+      "vertex": 32,
+      "kind": "note",
+      "degree": 5,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.40625,
+      "level": 0.0936
+    },
+    {
+      "label": "Guitar 10",
+      "id": "C12-chord-0-48-2",
+      "vertex": 32,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.40625,
+      "level": 0.080496
+    },
+    {
+      "label": "Piano 48",
+      "id": "C12-bass-0-50-0",
+      "vertex": 67,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4443750000000001,
+      "level": 0.08925
+    },
+    {
+      "label": "Piano 49",
+      "id": "C12-bass-0-52-0",
+      "vertex": 35,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4856249999999999,
+      "level": 0.1105
+    },
+    {
+      "label": "Piano 50",
+      "id": "C12-bass-0-54-0",
+      "vertex": 31,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.403125,
+      "level": 0.13175
+    },
+    {
+      "label": "Piano 51",
+      "id": "C12-lead-0-54-1",
+      "vertex": 31,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.38437499999999997,
+      "level": 0.285
+    },
+    {
+      "label": "Piano 52",
+      "id": "C12-bass-0-56-0",
+      "vertex": 60,
+      "kind": "note",
+      "degree": 1,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.7125,
+      "level": 0.12324999999999998
+    },
+    {
+      "label": "Piano 53",
+      "id": "C12-chord-0-56-1",
+      "vertex": 60,
+      "kind": "note",
+      "degree": 3,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.0875,
+      "level": 0.0936
+    },
+    {
+      "label": "Guitar 11",
+      "id": "C12-chord-0-56-2",
+      "vertex": 60,
+      "kind": "note",
+      "degree": 5,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.0875,
+      "level": 0.080496
+    },
+    {
+      "label": "Piano 54",
+      "id": "C12-lead-0-56-3",
+      "vertex": 60,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.421875,
+      "level": 0.37
+    },
+    {
+      "label": "Piano 55",
+      "id": "C12-bass-0-58-0",
+      "vertex": 21,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4856249999999999,
+      "level": 0.085
+    },
+    {
+      "label": "Guitar 12",
+      "id": "C12-answer-0-58-1",
+      "vertex": 21,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.4875,
+      "level": 0.066
+    },
+    {
+      "label": "Piano 56",
+      "id": "C12-lead-0-58-2",
+      "vertex": 21,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.38437499999999997,
+      "level": 0.315
+    },
+    {
+      "label": "Piano 57",
+      "id": "C12-bass-0-60-0",
+      "vertex": 19,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.403125,
+      "level": 0.10625
+    },
+    {
+      "label": "Piano 58",
+      "id": "C12-lead-0-60-1",
+      "vertex": 19,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.35625,
+      "level": 0.27
+    },
+    {
+      "label": "Piano 59",
+      "id": "C12-bass-0-62-0",
+      "vertex": 55,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4443750000000001,
+      "level": 0.09775
+    },
+    {
+      "label": "Piano 60",
+      "id": "C12-lead-0-62-1",
+      "vertex": 55,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.590625,
+      "level": 0.22
+    },
+    {
+      "label": "Piano 61",
+      "id": "C12-bridge-bass-1-0-0",
+      "vertex": 17,
+      "kind": "note",
+      "degree": 3,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.18125,
+      "level": 0.19
+    },
+    {
+      "label": "Marimba 1",
+      "id": "C12-bridge-chord-1-0-1",
+      "vertex": 17,
+      "kind": "note",
+      "degree": 5,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "marimba",
+      "duration": 1.14375,
+      "level": 0.095
+    },
+    {
+      "label": "Guitar 13",
+      "id": "C12-bridge-chord-1-0-2",
+      "vertex": 17,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.14375,
+      "level": 0.0817
+    },
+    {
+      "label": "Piano 62",
+      "id": "C12-bridge-lead-1-0-3",
+      "vertex": 17,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.50625,
+      "level": 0.52
+    },
+    {
+      "label": "Piano 63",
+      "id": "C12-bridge-lead-1-4-0",
+      "vertex": 83,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.46875,
+      "level": 0.39
+    },
+    {
+      "label": "Piano 64",
+      "id": "C12-bridge-bass-1-8-0",
+      "vertex": 61,
+      "kind": "note",
+      "degree": 1,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.1625,
+      "level": 0.2
+    },
+    {
+      "label": "Guitar 14",
+      "id": "C12-bridge-chord-1-8-1",
+      "vertex": 61,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.125,
+      "level": 0.085
+    },
+    {
+      "label": "Marimba 2",
+      "id": "C12-bridge-chord-1-8-2",
+      "vertex": 61,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "marimba",
+      "duration": 1.125,
+      "level": 0.0731
+    },
+    {
+      "label": "Piano 65",
+      "id": "C12-bridge-lead-1-8-3",
+      "vertex": 61,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4875,
+      "level": 0.5
+    },
+    {
+      "label": "Piano 66",
+      "id": "C12-bridge-lead-1-12-0",
+      "vertex": 38,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.45,
+      "level": 0.36
+    },
+    {
+      "label": "Piano 67",
+      "id": "C12-bridge-bass-1-16-0",
+      "vertex": 28,
+      "kind": "note",
+      "degree": 4,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.2375,
+      "level": 0.22
+    },
+    {
+      "label": "Marimba 3",
+      "id": "C12-bridge-chord-1-16-1",
+      "vertex": 28,
+      "kind": "note",
+      "degree": 1,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "marimba",
+      "duration": 1.18125,
+      "level": 0.095
+    },
+    {
+      "label": "Guitar 15",
+      "id": "C12-bridge-chord-1-16-2",
+      "vertex": 28,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.18125,
+      "level": 0.0817
+    },
+    {
+      "label": "Piano 68",
+      "id": "C12-bridge-lead-1-16-3",
+      "vertex": 28,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.18125,
+      "level": 0.58
+    },
+    {
+      "label": "Piano 69",
+      "id": "C12-bridge-bass-1-24-0",
+      "vertex": 72,
+      "kind": "note",
+      "degree": 0,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.9,
+      "level": 0.18
+    },
+    {
+      "label": "Piano 70",
+      "id": "C12-bridge-lead-1-24-1",
+      "vertex": 72,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.4875,
+      "level": 0.41
+    }
+  ],
+  "wiring": [
+    {
+      "vertex": 44,
+      "exits": [
+        45
+      ]
+    },
+    {
+      "vertex": 45,
+      "exits": [
+        47
+      ]
+    },
+    {
+      "vertex": 47,
+      "exits": [
+        46
+      ]
+    },
+    {
+      "vertex": 46,
+      "exits": [
+        30
+      ]
+    },
+    {
+      "vertex": 30,
+      "exits": [
+        29
+      ]
+    },
+    {
+      "vertex": 29,
+      "exits": [
+        9
+      ]
+    },
+    {
+      "vertex": 9,
+      "exits": [
+        42
+      ]
+    },
+    {
+      "vertex": 42,
+      "exits": [
+        41
+      ]
+    },
+    {
+      "vertex": 41,
+      "exits": [
+        73
+      ]
+    },
+    {
+      "vertex": 73,
+      "exits": [
+        71
+      ]
+    },
+    {
+      "vertex": 71,
+      "exits": [
+        69
+      ]
+    },
+    {
+      "vertex": 69,
+      "exits": [
+        76
+      ]
+    },
+    {
+      "vertex": 76,
+      "exits": [
+        75
+      ]
+    },
+    {
+      "vertex": 75,
+      "exits": [
+        51
+      ]
+    },
+    {
+      "vertex": 51,
+      "exits": [
+        77
+      ]
+    },
+    {
+      "vertex": 77,
+      "exits": [
+        50
+      ]
+    },
+    {
+      "vertex": 50,
+      "exits": [
+        53
+      ]
+    },
+    {
+      "vertex": 53,
+      "exits": [
+        52
+      ]
+    },
+    {
+      "vertex": 52,
+      "exits": [
+        26
+      ]
+    },
+    {
+      "vertex": 26,
+      "exits": [
+        25
+      ]
+    },
+    {
+      "vertex": 25,
+      "exits": [
+        22
+      ]
+    },
+    {
+      "vertex": 22,
+      "exits": [
+        4
+      ]
+    },
+    {
+      "vertex": 4,
+      "exits": [
+        5
+      ]
+    },
+    {
+      "vertex": 5,
+      "exits": [
+        6
+      ]
+    },
+    {
+      "vertex": 6,
+      "exits": [
+        37
+      ]
+    },
+    {
+      "vertex": 37,
+      "exits": [
+        3
+      ]
+    },
+    {
+      "vertex": 3,
+      "exits": [
+        2
+      ]
+    },
+    {
+      "vertex": 2,
+      "exits": [
+        1
+      ]
+    },
+    {
+      "vertex": 1,
+      "exits": [
+        0
+      ]
+    },
+    {
+      "vertex": 0,
+      "exits": [
+        16
+      ]
+    },
+    {
+      "vertex": 16,
+      "exits": [
+        10
+      ]
+    },
+    {
+      "vertex": 10,
+      "exits": [
+        13
+      ]
+    },
+    {
+      "vertex": 13,
+      "exits": [
+        14
+      ]
+    },
+    {
+      "vertex": 14,
+      "exits": [
+        15
+      ]
+    },
+    {
+      "vertex": 15,
+      "exits": [
+        36
+      ]
+    },
+    {
+      "vertex": 36,
+      "exits": [
+        87
+      ]
+    },
+    {
+      "vertex": 87,
+      "exits": [
+        66
+      ]
+    },
+    {
+      "vertex": 66,
+      "exits": [
+        65
+      ]
+    },
+    {
+      "vertex": 65,
+      "exits": [
+        64
+      ]
+    },
+    {
+      "vertex": 64,
+      "exits": [
+        84
+      ]
+    },
+    {
+      "vertex": 84,
+      "exits": [
+        80
+      ]
+    },
+    {
+      "vertex": 80,
+      "exits": [
+        82
+      ]
+    },
+    {
+      "vertex": 82,
+      "exits": [
+        57
+      ]
+    },
+    {
+      "vertex": 57,
+      "exits": [
+        56
+      ]
+    },
+    {
+      "vertex": 56,
+      "exits": [
+        59
+      ]
+    },
+    {
+      "vertex": 59,
+      "exits": [
+        91
+      ]
+    },
+    {
+      "vertex": 91,
+      "exits": [
+        86
+      ]
+    },
+    {
+      "vertex": 86,
+      "exits": [
+        85
+      ]
+    },
+    {
+      "vertex": 85,
+      "exits": [
+        32
+      ]
+    },
+    {
+      "vertex": 32,
+      "exits": [
+        33
+      ]
+    },
+    {
+      "vertex": 33,
+      "exits": [
+        67
+      ]
+    },
+    {
+      "vertex": 67,
+      "exits": [
+        68
+      ]
+    },
+    {
+      "vertex": 68,
+      "exits": [
+        35
+      ]
+    },
+    {
+      "vertex": 35,
+      "exits": [
+        34
+      ]
+    },
+    {
+      "vertex": 34,
+      "exits": [
+        31
+      ]
+    },
+    {
+      "vertex": 31,
+      "exits": [
+        12
+      ]
+    },
+    {
+      "vertex": 12,
+      "exits": [
+        60
+      ]
+    },
+    {
+      "vertex": 60,
+      "exits": [
+        58
+      ]
+    },
+    {
+      "vertex": 58,
+      "exits": [
+        21
+      ]
+    },
+    {
+      "vertex": 21,
+      "exits": [
+        11
+      ]
+    },
+    {
+      "vertex": 11,
+      "exits": [
+        19
+      ]
+    },
+    {
+      "vertex": 19,
+      "exits": [
+        20
+      ]
+    },
+    {
+      "vertex": 20,
+      "exits": [
+        55
+      ]
+    },
+    {
+      "vertex": 55,
+      "exits": [
+        18
+      ]
+    },
+    {
+      "vertex": 18,
+      "exits": [
+        17
+      ]
+    },
+    {
+      "vertex": 17,
+      "exits": [
+        27
+      ]
+    },
+    {
+      "vertex": 27,
+      "exits": [
+        54
+      ]
+    },
+    {
+      "vertex": 54,
+      "exits": [
+        90
+      ]
+    },
+    {
+      "vertex": 90,
+      "exits": [
+        83
+      ]
+    },
+    {
+      "vertex": 83,
+      "exits": [
+        81
+      ]
+    },
+    {
+      "vertex": 81,
+      "exits": [
+        79
+      ]
+    },
+    {
+      "vertex": 79,
+      "exits": [
+        74
+      ]
+    },
+    {
+      "vertex": 74,
+      "exits": [
+        61
+      ]
+    },
+    {
+      "vertex": 61,
+      "exits": [
+        62
+      ]
+    },
+    {
+      "vertex": 62,
+      "exits": [
+        63
+      ]
+    },
+    {
+      "vertex": 63,
+      "exits": [
+        39
+      ]
+    },
+    {
+      "vertex": 39,
+      "exits": [
+        38
+      ]
+    },
+    {
+      "vertex": 38,
+      "exits": [
+        40
+      ]
+    },
+    {
+      "vertex": 40,
+      "exits": [
+        8
+      ]
+    },
+    {
+      "vertex": 8,
+      "exits": [
+        7
+      ]
+    },
+    {
+      "vertex": 7,
+      "exits": [
+        28
+      ]
+    },
+    {
+      "vertex": 28,
+      "exits": [
+        23
+      ]
+    },
+    {
+      "vertex": 23,
+      "exits": [
+        24
+      ]
+    },
+    {
+      "vertex": 24,
+      "exits": [
+        49
+      ]
+    },
+    {
+      "vertex": 49,
+      "exits": [
+        48
+      ]
+    },
+    {
+      "vertex": 48,
+      "exits": [
+        89
+      ]
+    },
+    {
+      "vertex": 89,
+      "exits": [
+        78
+      ]
+    },
+    {
+      "vertex": 78,
+      "exits": [
+        70
+      ]
+    },
+    {
+      "vertex": 70,
+      "exits": [
+        72
+      ]
+    },
+    {
+      "vertex": 72,
+      "exits": [
+        88
+      ]
+    },
+    {
+      "vertex": 88,
+      "exits": [
+        43
+      ]
+    },
+    {
+      "vertex": 43,
+      "exits": [
+        44
+      ]
+    }
+  ]
+}

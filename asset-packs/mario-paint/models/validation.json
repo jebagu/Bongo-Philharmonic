@@ -1,0 +1,94 @@
+{
+  "models": [
+    {
+      "id": "mario",
+      "bytes": 95704,
+      "sha256": "34739d544553d1b9cd27dfd7225a0201d67f885d2f8413d3c4d534e12c2c0acf",
+      "triangles": 1208
+    },
+    {
+      "id": "mushroom",
+      "bytes": 106324,
+      "sha256": "6f3f864186fdaa162828d7e77fe50254c5254b0f8ba6bf245f61fd964c5a6af8",
+      "triangles": 1344
+    },
+    {
+      "id": "yoshi",
+      "bytes": 96952,
+      "sha256": "b4f19044237f5fcb2aa81ac4db0d813b514cb8c076653da15a7461efd58bbc00",
+      "triangles": 1224
+    },
+    {
+      "id": "star",
+      "bytes": 96012,
+      "sha256": "93e607068b936a2c7b6aa1078bf48f710eb9cde80210a3a4b173a436e3726d34",
+      "triangles": 1212
+    },
+    {
+      "id": "flower",
+      "bytes": 120376,
+      "sha256": "566edcd38a4e848d29cc2ed853da31f490b20295a84e0b32dfade96737cf58bf",
+      "triangles": 1524
+    },
+    {
+      "id": "game-boy",
+      "bytes": 95088,
+      "sha256": "2dff26a471a24ef28453a1c37108acce39045d6ad30c99bb172af4b411ecb6da",
+      "triangles": 1200
+    },
+    {
+      "id": "dog",
+      "bytes": 90396,
+      "sha256": "2a468813c24539412f8ce6a871dc8b5f79a0c81f58e04bdfe77cbc32b2e5fac5",
+      "triangles": 1140
+    },
+    {
+      "id": "cat",
+      "bytes": 90428,
+      "sha256": "08e7df5d2eb89fce7579dfb97c0cd5c51a3125d49da8e7c028d04c6d0c02ca8e",
+      "triangles": 1140
+    },
+    {
+      "id": "pig",
+      "bytes": 111612,
+      "sha256": "714231c97a1828f79182f2de84b706bc8f729ea907f2dcffad1a1578cfc08adf",
+      "triangles": 1412
+    },
+    {
+      "id": "swan",
+      "bytes": 96360,
+      "sha256": "04e67c547001ef3b8d0c27216d3945dc4ed907b41de08c1102ded1ecb2e50f3b",
+      "triangles": 1216
+    },
+    {
+      "id": "baby",
+      "bytes": 106312,
+      "sha256": "e8f17493b91d66fa772039054403d42ddf1e4e75c84d68c3fc05a7951d4259a9",
+      "triangles": 1344
+    },
+    {
+      "id": "airplane",
+      "bytes": 72000,
+      "sha256": "579a102c068f93ca8d139fba40c913f35daae62847778113a4359fc0497f65c1",
+      "triangles": 904
+    },
+    {
+      "id": "boat",
+      "bytes": 85092,
+      "sha256": "0f25d45f6daa45e57486086e39018cd13f35167e1e398376ee4be836beaec722",
+      "triangles": 1072
+    },
+    {
+      "id": "car",
+      "bytes": 72612,
+      "sha256": "53e590b6176810da9edc65c72019d33dc017c5d991ab704a81bb920b5cfbaf66",
+      "triangles": 912
+    },
+    {
+      "id": "heart",
+      "bytes": 83848,
+      "sha256": "a183794981be1cf69c6c15bcd797fe86a8cee754a80f6cd5b468fe430f53dd0e",
+      "triangles": 1056
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "browser": "Chrome",
+  "checks": [
+    "All 15 exported GLBs load and select correctly.",
+    "All 218 WAVs decode: 195 notes and 23 sources.",
+    "All 15 instruments start a native C4 staff-note audition.",
+    "Scale playback schedules all 13 notes; Stop cancels them.",
+    "Stop during file loading prevents deferred playback.",
+    "Desktop 1440x1000 and mobile 390x844 have no horizontal overflow.",
+    "Served GLB, VOX and ZIP downloads have valid file signatures.",
+    "No page errors during complete model and audio checks."
+  ],
+  "automatedTests": {
+    "startTime": "2026-10-16T10:39:46.817Z",
+    "duration": 6640.656,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "sourceAndIntegrationTests": {
+    "passed": 29,
+    "suites": [
+      "mario-paint.test.ts",
+      "composition-file.test.ts"
+    ]
+  },
+  "typecheck": "passed",
+  "mainProductionBuild": "passed; local pack excluded as intended",
+  "visualReview": "Desktop and mobile screenshots inspected; all sprites and selected extrusion visible."
+}

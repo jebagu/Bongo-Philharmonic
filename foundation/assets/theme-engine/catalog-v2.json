@@ -1,0 +1,537 @@
+[
+  {
+    "theme": {
+      "id": "deep-space",
+      "version": 1,
+      "materials": {
+        "roughness": 0.45,
+        "clearcoat": 0.15,
+        "texture": "none"
+      },
+      "lights": {
+        "ambient": "#d4ddff",
+        "ambientPower": 1.15,
+        "key": "#fff1da",
+        "keyPower": 2.7,
+        "keyPosition": [
+          -2,
+          3,
+          4
+        ],
+        "fill": "#939cfa",
+        "fillPower": 0.75,
+        "fillPosition": [
+          3,
+          -1,
+          2
+        ]
+      },
+      "shadows": {
+        "strength": 0.75,
+        "softness": 2
+      },
+      "atmosphere": {
+        "top": "#14233e",
+        "bottom": "#030711",
+        "haze": "#55779e",
+        "decoration": "stars",
+        "fog": false,
+        "fogNear": 3.8,
+        "fogFar": 7,
+        "rim": "#9eb9ff",
+        "rimOpacity": 0.09
+      },
+      "sparks": {
+        "shape": "round",
+        "core": "#ffffff",
+        "halo": "#a5bfff",
+        "trail": "#c5d7ff",
+        "size": 0.9,
+        "haloSize": 0.65,
+        "haloOpacity": 0.35,
+        "trailOpacity": 0.5
+      },
+      "motion": {
+        "stretch": 0.2,
+        "squash": 0.12,
+        "bounce": 0.12,
+        "settle": 0.22,
+        "wobble": 0.025,
+        "glow": 0.25
+      },
+      "interface": {
+        "accent": "#647ada",
+        "ink": "#263556",
+        "panel": "#fffaf2"
+      }
+    },
+    "version": 1,
+    "style": "toys",
+    "surface": "seams",
+    "pulseEffects": "struts",
+    "planet": "#4e5b81",
+    "generator": "#ffd35b",
+    "note": "#70dec8",
+    "beat": "#ff9685",
+    "background": "#171c45",
+    "planetFinish": "workedClay",
+    "gridColor": "#bac5e4",
+    "gridOpacity": 0.32,
+    "gridWidth": 0.9,
+    "guitar": "#ffb883",
+    "glass": "#a1dff9",
+    "kalimba": "#b5dfaa",
+    "piano": "#c6b4f6",
+    "marimba": "#f7aab9",
+    "bongo-high": "#ffb883",
+    "bongo-low": "#ff9685",
+    "kick": "#ff9685",
+    "snare": "#ff9685",
+    "hi-hat": "#ffd35b",
+    "backdrop": "stars",
+    "eyes": true,
+    "bounce": true,
+    "glow": 1,
+    "size": 1.25,
+    "lighting": 1,
+    "sparkStyle": "white",
+    "switches": {
+      "style": "ink",
+      "icon": "arrow",
+      "size": 1,
+      "stroke": 1,
+      "glow": 0,
+      "onColor": "#ffd35b",
+      "offColor": "#ffffff",
+      "animation": true
+    }
+  },
+  {
+    "theme": {
+      "id": "nebula-space",
+      "version": 1,
+      "materials": {
+        "roughness": 0.6,
+        "clearcoat": 0.12,
+        "texture": "clay"
+      },
+      "lights": {
+        "ambient": "#eadcff",
+        "ambientPower": 1.15,
+        "key": "#ffe4ee",
+        "keyPower": 2.5,
+        "keyPosition": [
+          -2,
+          3,
+          4
+        ],
+        "fill": "#a8c9ff",
+        "fillPower": 0.85,
+        "fillPosition": [
+          3,
+          -1,
+          2
+        ]
+      },
+      "shadows": {
+        "strength": 0.75,
+        "softness": 2
+      },
+      "atmosphere": {
+        "top": "#111a35",
+        "bottom": "#040713",
+        "haze": "#425a7b",
+        "decoration": "nebula",
+        "fog": false,
+        "fogNear": 3.8,
+        "fogFar": 7,
+        "rim": "#e4c4ff",
+        "rimOpacity": 0.11
+      },
+      "sparks": {
+        "shape": "pearl",
+        "core": "#ffffff",
+        "halo": "#e0aeff",
+        "trail": "#efc9ff",
+        "size": 0.9,
+        "haloSize": 0.8,
+        "haloOpacity": 0.5,
+        "trailOpacity": 0.5
+      },
+      "motion": {
+        "stretch": 0.24,
+        "squash": 0.12,
+        "bounce": 0.12,
+        "settle": 0.28,
+        "wobble": 0.04,
+        "glow": 0.25
+      },
+      "interface": {
+        "accent": "#936caa",
+        "ink": "#423054",
+        "panel": "#fff8f5"
+      }
+    },
+    "version": 1,
+    "style": "toys",
+    "surface": "seams",
+    "pulseEffects": "struts",
+    "planet": "#8275a8",
+    "generator": "#ffd35b",
+    "note": "#70dec8",
+    "beat": "#ff9685",
+    "background": "#1f2145",
+    "planetFinish": "clay",
+    "gridColor": "#e0d4e9",
+    "gridOpacity": 0.34,
+    "gridWidth": 0.9,
+    "guitar": "#ffb883",
+    "glass": "#a1dff9",
+    "kalimba": "#b5dfaa",
+    "piano": "#c6b4f6",
+    "marimba": "#f7aab9",
+    "bongo-high": "#ffb883",
+    "bongo-low": "#ff9685",
+    "kick": "#ff9685",
+    "snare": "#ff9685",
+    "hi-hat": "#ffd35b",
+    "backdrop": "violet-stars",
+    "eyes": true,
+    "bounce": true,
+    "glow": 1,
+    "size": 1.25,
+    "lighting": 1,
+    "sparkStyle": "white",
+    "switches": {
+      "style": "ink",
+      "icon": "arrow",
+      "size": 1,
+      "stroke": 1,
+      "glow": 0,
+      "onColor": "#ffd35b",
+      "offColor": "#ffffff",
+      "animation": true
+    }
+  },
+  {
+    "theme": {
+      "id": "sunday-picnic",
+      "version": 1,
+      "materials": {
+        "roughness": 0.4,
+        "clearcoat": 0.3,
+        "texture": "wood"
+      },
+      "lights": {
+        "ambient": "#fff5e4",
+        "ambientPower": 1.25,
+        "key": "#ffe0ad",
+        "keyPower": 3,
+        "keyPosition": [
+          -3,
+          4,
+          3
+        ],
+        "fill": "#dbe9e3",
+        "fillPower": 0.65,
+        "fillPosition": [
+          3,
+          1,
+          2
+        ]
+      },
+      "shadows": {
+        "strength": 0.6,
+        "softness": 3
+      },
+      "atmosphere": {
+        "top": "#7c5a67",
+        "bottom": "#111a2a",
+        "haze": "#d7ac83",
+        "decoration": "clouds",
+        "fog": true,
+        "fogNear": 3.65,
+        "fogFar": 7,
+        "rim": "#fff2cf",
+        "rimOpacity": 0.06
+      },
+      "sparks": {
+        "shape": "seed",
+        "core": "#fff9df",
+        "halo": "#ffd15e",
+        "trail": "#efbf59",
+        "size": 0.85,
+        "haloSize": 0.65,
+        "haloOpacity": 0.45,
+        "trailOpacity": 0.6
+      },
+      "motion": {
+        "stretch": 0.17,
+        "squash": 0.12,
+        "bounce": 0.17,
+        "settle": 0.18,
+        "wobble": 0.035,
+        "glow": 0.2
+      },
+      "interface": {
+        "accent": "#e4855c",
+        "ink": "#44364c",
+        "panel": "#fff8e9"
+      }
+    },
+    "version": 1,
+    "style": "toys",
+    "surface": "seams",
+    "pulseEffects": "struts",
+    "planet": "#82a89a",
+    "generator": "#f4bd43",
+    "note": "#70dec8",
+    "beat": "#ff9685",
+    "background": "#ffdfae",
+    "planetFinish": "paintedWood",
+    "gridColor": "#f9ebca",
+    "gridOpacity": 0.5,
+    "gridWidth": 1,
+    "guitar": "#ed9b56",
+    "glass": "#a8d9e0",
+    "kalimba": "#a8c878",
+    "piano": "#baa1d5",
+    "marimba": "#e58d99",
+    "bongo-high": "#ebaa66",
+    "bongo-low": "#c88b56",
+    "kick": "#779cc8",
+    "snare": "#e397a5",
+    "hi-hat": "#d6b45d",
+    "backdrop": "peach",
+    "eyes": true,
+    "bounce": true,
+    "glow": 1,
+    "size": 1.1,
+    "lighting": 0.9,
+    "sparkStyle": "white",
+    "switches": {
+      "style": "ink",
+      "icon": "arrow",
+      "size": 1,
+      "stroke": 1,
+      "glow": 0,
+      "onColor": "#e9a82e",
+      "offColor": "#fff0ce",
+      "animation": true
+    }
+  },
+  {
+    "theme": {
+      "id": "cloud-pudding",
+      "version": 1,
+      "materials": {
+        "roughness": 0.93,
+        "clearcoat": 0.03,
+        "texture": "clay"
+      },
+      "lights": {
+        "ambient": "#f2ecff",
+        "ambientPower": 1.5,
+        "key": "#fff0de",
+        "keyPower": 2.3,
+        "keyPosition": [
+          -2,
+          4,
+          4
+        ],
+        "fill": "#bcd4f0",
+        "fillPower": 0.8,
+        "fillPosition": [
+          3,
+          0,
+          3
+        ]
+      },
+      "shadows": {
+        "strength": 0.4,
+        "softness": 4
+      },
+      "atmosphere": {
+        "top": "#667496",
+        "bottom": "#12182d",
+        "haze": "#b2c4de",
+        "decoration": "clouds",
+        "fog": true,
+        "fogNear": 3.35,
+        "fogFar": 6.5,
+        "rim": "#f5e8ff",
+        "rimOpacity": 0.08
+      },
+      "sparks": {
+        "shape": "pearl",
+        "core": "#ffffff",
+        "halo": "#d4fff1",
+        "trail": "#c0e8e0",
+        "size": 1.1,
+        "haloSize": 0.7,
+        "haloOpacity": 0.35,
+        "trailOpacity": 0.5
+      },
+      "motion": {
+        "stretch": 0.32,
+        "squash": 0.22,
+        "bounce": 0.24,
+        "settle": 0.42,
+        "wobble": 0.095,
+        "glow": 0.17
+      },
+      "interface": {
+        "accent": "#c47699",
+        "ink": "#4b3656",
+        "panel": "#fff9f2"
+      }
+    },
+    "version": 1,
+    "style": "toys",
+    "surface": "seams",
+    "pulseEffects": "struts",
+    "planet": "#a29bc9",
+    "generator": "#efbd70",
+    "note": "#70dec8",
+    "beat": "#ff9685",
+    "background": "#dce7f2",
+    "planetFinish": "clay",
+    "gridColor": "#ded2f0",
+    "gridOpacity": 0.45,
+    "gridWidth": 0.9,
+    "guitar": "#ebb397",
+    "glass": "#b6d7ec",
+    "kalimba": "#e7cd8b",
+    "piano": "#c5addb",
+    "marimba": "#d991ad",
+    "bongo-high": "#dfb494",
+    "bongo-low": "#c4a2c5",
+    "kick": "#a6b9d1",
+    "snare": "#ddadbd",
+    "hi-hat": "#decb9f",
+    "backdrop": "lavender",
+    "eyes": true,
+    "bounce": true,
+    "glow": 1,
+    "size": 1.12,
+    "lighting": 0.9,
+    "sparkStyle": "white",
+    "switches": {
+      "style": "ink",
+      "icon": "arrow",
+      "size": 1,
+      "stroke": 1,
+      "glow": 0,
+      "onColor": "#d58b7e",
+      "offColor": "#d9cce7",
+      "animation": true
+    }
+  },
+  {
+    "theme": {
+      "id": "firefly-garden",
+      "version": 1,
+      "materials": {
+        "roughness": 0.27,
+        "clearcoat": 0.65,
+        "texture": "enamel"
+      },
+      "lights": {
+        "ambient": "#c2daee",
+        "ambientPower": 1.05,
+        "key": "#fff0ce",
+        "keyPower": 2.5,
+        "keyPosition": [
+          -2,
+          3,
+          4
+        ],
+        "fill": "#80c7d5",
+        "fillPower": 1,
+        "fillPosition": [
+          3,
+          -1,
+          0
+        ]
+      },
+      "shadows": {
+        "strength": 0.65,
+        "softness": 2.5
+      },
+      "atmosphere": {
+        "top": "#152b46",
+        "bottom": "#071020",
+        "haze": "#486381",
+        "decoration": "fireflies",
+        "fog": true,
+        "fogNear": 3.9,
+        "fogFar": 8,
+        "rim": "#a8e2d5",
+        "rimOpacity": 0.12
+      },
+      "sparks": {
+        "shape": "firefly",
+        "core": "#ffe7a0",
+        "halo": "#ffc34b",
+        "trail": "#e8b454",
+        "size": 0.85,
+        "haloSize": 1.12,
+        "haloOpacity": 0.85,
+        "trailOpacity": 0.65
+      },
+      "motion": {
+        "stretch": 0.16,
+        "squash": 0.1,
+        "bounce": 0.1,
+        "settle": 0.3,
+        "wobble": 0.05,
+        "glow": 0.65
+      },
+      "interface": {
+        "accent": "#b79745",
+        "ink": "#273c51",
+        "panel": "#fff9e9"
+      }
+    },
+    "version": 1,
+    "style": "toys",
+    "surface": "seams",
+    "pulseEffects": "struts",
+    "planet": "#285d5e",
+    "generator": "#e8bc55",
+    "note": "#70dec8",
+    "beat": "#ff9685",
+    "background": "#1b3151",
+    "planetFinish": "velvet",
+    "gridColor": "#91b3b2",
+    "gridOpacity": 0.3,
+    "gridWidth": 0.8,
+    "guitar": "#dd9279",
+    "glass": "#a3d7e3",
+    "kalimba": "#b5c998",
+    "piano": "#adabd5",
+    "marimba": "#c48ba9",
+    "bongo-high": "#d5a06e",
+    "bongo-low": "#aa8472",
+    "kick": "#8faed0",
+    "snare": "#c18fa4",
+    "hi-hat": "#d4bc75",
+    "backdrop": "mint",
+    "eyes": true,
+    "bounce": true,
+    "glow": 1,
+    "size": 1.1,
+    "lighting": 0.85,
+    "sparkStyle": "white",
+    "switches": {
+      "style": "ink",
+      "icon": "arrow",
+      "size": 1,
+      "stroke": 1,
+      "glow": 0,
+      "onColor": "#f1ce79",
+      "offColor": "#a6c7c0",
+      "animation": true
+    }
+  }
+]

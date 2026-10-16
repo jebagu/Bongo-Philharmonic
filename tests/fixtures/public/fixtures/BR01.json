@@ -1,0 +1,1108 @@
+{
+  "version": 2,
+  "topology": "icosa-3v-v1",
+  "settings": {
+    "bpm": 120,
+    "key": 9,
+    "scale": "major",
+    "travel": 0.75,
+    "quantization": 0.25,
+    "volume": 0.8,
+    "propagation": "gated"
+  },
+  "pieces": [
+    {
+      "label": "Generator 1",
+      "id": "BR01-lead-source",
+      "vertex": 71,
+      "kind": "generator",
+      "period": 16,
+      "phase": 0,
+      "reach": 180,
+      "enabled": true,
+      "travel": 64
+    },
+    {
+      "label": "Piano 1",
+      "id": "BR01-lead-0",
+      "vertex": 70,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34125,
+      "level": 0.5375999999999999
+    },
+    {
+      "label": "Piano 2",
+      "id": "BR01-lead-3",
+      "vertex": 72,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34125,
+      "level": 0.47879999999999995
+    },
+    {
+      "label": "Piano 3",
+      "id": "BR01-lead-6",
+      "vertex": 66,
+      "kind": "note",
+      "degree": 6,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.2275,
+      "level": 0.504
+    },
+    {
+      "label": "Piano 4",
+      "id": "BR01-lead-8",
+      "vertex": 40,
+      "kind": "note",
+      "degree": 6,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34125,
+      "level": 0.47879999999999995
+    },
+    {
+      "label": "Piano 5",
+      "id": "BR01-lead-11",
+      "vertex": 42,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.11375,
+      "level": 0.47879999999999995
+    },
+    {
+      "label": "Piano 6",
+      "id": "BR01-lead-12",
+      "vertex": 8,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.365,
+      "level": 0.504
+    },
+    {
+      "label": "Piano 7",
+      "id": "BR01-lead-32",
+      "vertex": 51,
+      "kind": "note",
+      "degree": 6,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34125,
+      "level": 0.5375999999999999
+    },
+    {
+      "label": "Piano 8",
+      "id": "BR01-lead-35",
+      "vertex": 54,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.11375,
+      "level": 0.47879999999999995
+    },
+    {
+      "label": "Piano 9",
+      "id": "BR01-lead-36",
+      "vertex": 27,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.91,
+      "level": 0.504
+    },
+    {
+      "label": "Piano 10",
+      "id": "BR01-lead-48",
+      "vertex": 59,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34125,
+      "level": 0.5375999999999999
+    },
+    {
+      "label": "Piano 11",
+      "id": "BR01-lead-51",
+      "vertex": 12,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.11375,
+      "level": 0.47879999999999995
+    },
+    {
+      "label": "Piano 12",
+      "id": "BR01-lead-52",
+      "vertex": 21,
+      "kind": "note",
+      "degree": 6,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.455,
+      "level": 0.47879999999999995
+    },
+    {
+      "label": "Piano 13",
+      "id": "BR01-lead-56",
+      "vertex": 82,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.455,
+      "level": 0.47879999999999995
+    },
+    {
+      "label": "Piano 14",
+      "id": "BR01-lead-60",
+      "vertex": 33,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.455,
+      "level": 0.504
+    },
+    {
+      "label": "Guitar 1",
+      "id": "BR01-chord-0-0-0",
+      "vertex": 70,
+      "kind": "note",
+      "degree": 4,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.336
+    },
+    {
+      "label": "Guitar 2",
+      "id": "BR01-chord-0-1-0",
+      "vertex": 70,
+      "kind": "note",
+      "degree": 6,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.1848
+    },
+    {
+      "label": "Guitar 3",
+      "id": "BR01-chord-0-2-0",
+      "vertex": 70,
+      "kind": "note",
+      "degree": 1,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.1848
+    },
+    {
+      "label": "Glass 1",
+      "id": "BR01-answer-0-0-11",
+      "vertex": 42,
+      "kind": "note",
+      "degree": 6,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.3,
+      "level": 0.126
+    },
+    {
+      "label": "Glass 2",
+      "id": "BR01-answer-0-1-11",
+      "vertex": 42,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.3,
+      "level": 0.126
+    },
+    {
+      "label": "Guitar 4",
+      "id": "BR01-chord-1-0-8",
+      "vertex": 40,
+      "kind": "note",
+      "degree": 0,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.75,
+      "level": 0.336
+    },
+    {
+      "label": "Guitar 5",
+      "id": "BR01-chord-1-1-8",
+      "vertex": 40,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.75,
+      "level": 0.1848
+    },
+    {
+      "label": "Guitar 6",
+      "id": "BR01-chord-1-2-8",
+      "vertex": 40,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.75,
+      "level": 0.1848
+    },
+    {
+      "label": "Guitar 7",
+      "id": "BR01-chord-2-0-24",
+      "vertex": 61,
+      "kind": "note",
+      "degree": 0,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.336
+    },
+    {
+      "label": "Guitar 8",
+      "id": "BR01-chord-2-1-24",
+      "vertex": 61,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.1848
+    },
+    {
+      "label": "Guitar 9",
+      "id": "BR01-chord-2-2-24",
+      "vertex": 61,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.1848
+    },
+    {
+      "label": "Guitar 10",
+      "id": "BR01-chord-3-0-33",
+      "vertex": 53,
+      "kind": "note",
+      "degree": 3,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.75,
+      "level": 0.336
+    },
+    {
+      "label": "Guitar 11",
+      "id": "BR01-chord-3-1-33",
+      "vertex": 53,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.75,
+      "level": 0.1848
+    },
+    {
+      "label": "Guitar 12",
+      "id": "BR01-chord-3-2-33",
+      "vertex": 53,
+      "kind": "note",
+      "degree": 1,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.75,
+      "level": 0.1848
+    },
+    {
+      "label": "Guitar 13",
+      "id": "BR01-chord-3-3-33",
+      "vertex": 53,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.75,
+      "level": 0.1848
+    },
+    {
+      "label": "Guitar 14",
+      "id": "BR01-chord-4-0-48",
+      "vertex": 59,
+      "kind": "note",
+      "degree": 0,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.336
+    },
+    {
+      "label": "Guitar 15",
+      "id": "BR01-chord-4-1-48",
+      "vertex": 59,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.1848
+    },
+    {
+      "label": "Guitar 16",
+      "id": "BR01-chord-4-2-48",
+      "vertex": 59,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.1848
+    },
+    {
+      "label": "Glass 3",
+      "id": "BR01-answer-4-0-59",
+      "vertex": 85,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.3,
+      "level": 0.126
+    },
+    {
+      "label": "Glass 4",
+      "id": "BR01-answer-4-1-59",
+      "vertex": 85,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.3,
+      "level": 0.126
+    },
+    {
+      "label": "Guitar 17",
+      "id": "BR01-chord-5-0-56",
+      "vertex": 82,
+      "kind": "note",
+      "degree": 3,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.336
+    },
+    {
+      "label": "Guitar 18",
+      "id": "BR01-chord-5-1-56",
+      "vertex": 82,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.1848
+    },
+    {
+      "label": "Guitar 19",
+      "id": "BR01-chord-5-2-56",
+      "vertex": 82,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.875,
+      "level": 0.1848
+    },
+    {
+      "label": "Generator 2",
+      "id": "BR01-feedback-source",
+      "vertex": 0,
+      "kind": "generator",
+      "period": 32,
+      "phase": 0.25,
+      "reach": 180,
+      "enabled": true,
+      "travel": 51
+    },
+    {
+      "label": "Guitar 20",
+      "id": "BR01-39",
+      "vertex": 10,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.24,
+      "level": 0.105
+    },
+    {
+      "label": "Hi-hat 1",
+      "id": "BR01-40",
+      "vertex": 10,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "hi-hat",
+      "duration": 0.1,
+      "level": 0.055
+    },
+    {
+      "label": "Kalimba 1",
+      "id": "BR01-41",
+      "vertex": 26,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 0.22,
+      "level": 0.09
+    },
+    {
+      "label": "High bongo 1",
+      "id": "BR01-42",
+      "vertex": 48,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.1,
+      "level": 0.065
+    },
+    {
+      "label": "Piano 15",
+      "id": "BR01-43",
+      "vertex": 13,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.26,
+      "level": 0.11
+    },
+    {
+      "label": "Kick 1",
+      "id": "BR01-44",
+      "vertex": 13,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "kick",
+      "duration": 0.1,
+      "level": 0.075
+    },
+    {
+      "label": "Glass 5",
+      "id": "BR01-45",
+      "vertex": 37,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.32,
+      "level": 0.085
+    },
+    {
+      "label": "Snare 1",
+      "id": "BR01-46",
+      "vertex": 5,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "snare",
+      "duration": 0.1,
+      "level": 0.065
+    }
+  ],
+  "wiring": [
+    {
+      "vertex": 0,
+      "exits": [
+        1,
+        10
+      ]
+    },
+    {
+      "vertex": 1,
+      "exits": [
+        13
+      ]
+    },
+    {
+      "vertex": 2,
+      "exits": [
+        5
+      ]
+    },
+    {
+      "vertex": 3,
+      "exits": [
+        2
+      ]
+    },
+    {
+      "vertex": 4,
+      "exits": [
+        0
+      ]
+    },
+    {
+      "vertex": 5,
+      "exits": [
+        7
+      ]
+    },
+    {
+      "vertex": 7,
+      "exits": [
+        4
+      ]
+    },
+    {
+      "vertex": 8,
+      "exits": [
+        9
+      ]
+    },
+    {
+      "vertex": 9,
+      "exits": [
+        29
+      ]
+    },
+    {
+      "vertex": 10,
+      "exits": [
+        16
+      ]
+    },
+    {
+      "vertex": 11,
+      "exits": [
+        14
+      ]
+    },
+    {
+      "vertex": 12,
+      "exits": [
+        21
+      ]
+    },
+    {
+      "vertex": 13,
+      "exits": [
+        15
+      ]
+    },
+    {
+      "vertex": 14,
+      "exits": [
+        34
+      ]
+    },
+    {
+      "vertex": 15,
+      "exits": [
+        36
+      ]
+    },
+    {
+      "vertex": 16,
+      "exits": [
+        25
+      ]
+    },
+    {
+      "vertex": 17,
+      "exits": [
+        18
+      ]
+    },
+    {
+      "vertex": 18,
+      "exits": [
+        55
+      ]
+    },
+    {
+      "vertex": 19,
+      "exits": [
+        11
+      ]
+    },
+    {
+      "vertex": 20,
+      "exits": [
+        19
+      ]
+    },
+    {
+      "vertex": 21,
+      "exits": [
+        58
+      ]
+    },
+    {
+      "vertex": 22,
+      "exits": [
+        0
+      ]
+    },
+    {
+      "vertex": 23,
+      "exits": [
+        22
+      ]
+    },
+    {
+      "vertex": 24,
+      "exits": [
+        23
+      ]
+    },
+    {
+      "vertex": 25,
+      "exits": [
+        26
+      ]
+    },
+    {
+      "vertex": 26,
+      "exits": [
+        52
+      ]
+    },
+    {
+      "vertex": 27,
+      "exits": [
+        17
+      ]
+    },
+    {
+      "vertex": 29,
+      "exits": [
+        43
+      ]
+    },
+    {
+      "vertex": 30,
+      "exits": [
+        24
+      ]
+    },
+    {
+      "vertex": 31,
+      "exits": [
+        12
+      ]
+    },
+    {
+      "vertex": 32,
+      "exits": [
+        91
+      ]
+    },
+    {
+      "vertex": 33,
+      "exits": [
+        67
+      ]
+    },
+    {
+      "vertex": 34,
+      "exits": [
+        32
+      ]
+    },
+    {
+      "vertex": 36,
+      "exits": [
+        87
+      ]
+    },
+    {
+      "vertex": 37,
+      "exits": [
+        3
+      ]
+    },
+    {
+      "vertex": 38,
+      "exits": [
+        40
+      ]
+    },
+    {
+      "vertex": 39,
+      "exits": [
+        66
+      ]
+    },
+    {
+      "vertex": 40,
+      "exits": [
+        41
+      ]
+    },
+    {
+      "vertex": 41,
+      "exits": [
+        88
+      ]
+    },
+    {
+      "vertex": 42,
+      "exits": [
+        8
+      ]
+    },
+    {
+      "vertex": 43,
+      "exits": [
+        44
+      ]
+    },
+    {
+      "vertex": 44,
+      "exits": [
+        47
+      ]
+    },
+    {
+      "vertex": 45,
+      "exits": [
+        72
+      ]
+    },
+    {
+      "vertex": 47,
+      "exits": [
+        89
+      ]
+    },
+    {
+      "vertex": 48,
+      "exits": [
+        30
+      ]
+    },
+    {
+      "vertex": 49,
+      "exits": [
+        48
+      ]
+    },
+    {
+      "vertex": 50,
+      "exits": [
+        49
+      ]
+    },
+    {
+      "vertex": 51,
+      "exits": [
+        53
+      ]
+    },
+    {
+      "vertex": 52,
+      "exits": [
+        50
+      ]
+    },
+    {
+      "vertex": 53,
+      "exits": [
+        90
+      ]
+    },
+    {
+      "vertex": 54,
+      "exits": [
+        27
+      ]
+    },
+    {
+      "vertex": 55,
+      "exits": [
+        20
+      ]
+    },
+    {
+      "vertex": 56,
+      "exits": [
+        57
+      ]
+    },
+    {
+      "vertex": 57,
+      "exits": [
+        82
+      ]
+    },
+    {
+      "vertex": 58,
+      "exits": [
+        56
+      ]
+    },
+    {
+      "vertex": 59,
+      "exits": [
+        60
+      ]
+    },
+    {
+      "vertex": 60,
+      "exits": [
+        31
+      ]
+    },
+    {
+      "vertex": 61,
+      "exits": [
+        62
+      ]
+    },
+    {
+      "vertex": 62,
+      "exits": [
+        63
+      ]
+    },
+    {
+      "vertex": 63,
+      "exits": [
+        65
+      ]
+    },
+    {
+      "vertex": 64,
+      "exits": [
+        79
+      ]
+    },
+    {
+      "vertex": 65,
+      "exits": [
+        64
+      ]
+    },
+    {
+      "vertex": 66,
+      "exits": [
+        38
+      ]
+    },
+    {
+      "vertex": 67,
+      "exits": [
+        68
+      ]
+    },
+    {
+      "vertex": 68,
+      "exits": [
+        35
+      ]
+    },
+    {
+      "vertex": 69,
+      "exits": [
+        74
+      ]
+    },
+    {
+      "vertex": 70,
+      "exits": [
+        78
+      ]
+    },
+    {
+      "vertex": 71,
+      "exits": [
+        70
+      ]
+    },
+    {
+      "vertex": 72,
+      "exits": [
+        73
+      ]
+    },
+    {
+      "vertex": 73,
+      "exits": [
+        39
+      ]
+    },
+    {
+      "vertex": 74,
+      "exits": [
+        61
+      ]
+    },
+    {
+      "vertex": 75,
+      "exits": [
+        76
+      ]
+    },
+    {
+      "vertex": 76,
+      "exits": [
+        69
+      ]
+    },
+    {
+      "vertex": 77,
+      "exits": [
+        75
+      ]
+    },
+    {
+      "vertex": 78,
+      "exits": [
+        45
+      ]
+    },
+    {
+      "vertex": 79,
+      "exits": [
+        81
+      ]
+    },
+    {
+      "vertex": 80,
+      "exits": [
+        84
+      ]
+    },
+    {
+      "vertex": 81,
+      "exits": [
+        83
+      ]
+    },
+    {
+      "vertex": 82,
+      "exits": [
+        80
+      ]
+    },
+    {
+      "vertex": 83,
+      "exits": [
+        51
+      ]
+    },
+    {
+      "vertex": 84,
+      "exits": [
+        85
+      ]
+    },
+    {
+      "vertex": 85,
+      "exits": [
+        33
+      ]
+    },
+    {
+      "vertex": 86,
+      "exits": [
+        59
+      ]
+    },
+    {
+      "vertex": 87,
+      "exits": [
+        37
+      ]
+    },
+    {
+      "vertex": 88,
+      "exits": [
+        42
+      ]
+    },
+    {
+      "vertex": 89,
+      "exits": [
+        77
+      ]
+    },
+    {
+      "vertex": 90,
+      "exits": [
+        54
+      ]
+    },
+    {
+      "vertex": 91,
+      "exits": [
+        86
+      ]
+    }
+  ]
+}

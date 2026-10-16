@@ -1,0 +1,1052 @@
+{
+  "version": 2,
+  "topology": "icosa-3v-v1",
+  "settings": {
+    "bpm": 64,
+    "key": 9,
+    "scale": "minor",
+    "travel": 0.75,
+    "quantization": 0.25,
+    "volume": 0.78,
+    "propagation": "gated"
+  },
+  "pieces": [
+    {
+      "label": "Generator 1",
+      "id": "C10-source-0",
+      "vertex": 88,
+      "kind": "generator",
+      "period": 16,
+      "phase": 0,
+      "reach": 180,
+      "enabled": true,
+      "travel": 64
+    },
+    {
+      "label": "Guitar 1",
+      "id": "C10-bass-0-0-0",
+      "vertex": 42,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.828125,
+      "level": 0.24
+    },
+    {
+      "label": "Piano 1",
+      "id": "C10-chord-0-0-1",
+      "vertex": 42,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.828125,
+      "level": 0.2064
+    },
+    {
+      "label": "Kalimba 1",
+      "id": "C10-chord-0-0-2",
+      "vertex": 42,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 1.828125,
+      "level": 0.177504
+    },
+    {
+      "label": "Glass 1",
+      "id": "C10-lead-0-0-3",
+      "vertex": 42,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 1.9125,
+      "level": 0.36540000000000006
+    },
+    {
+      "label": "Piano 2",
+      "id": "C10-answer-0-5-0",
+      "vertex": 2,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.1015625,
+      "level": 0.14
+    },
+    {
+      "label": "Guitar 2",
+      "id": "C10-bass-0-8-0",
+      "vertex": 87,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.828125,
+      "level": 0.24
+    },
+    {
+      "label": "Piano 3",
+      "id": "C10-chord-0-8-1",
+      "vertex": 87,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.828125,
+      "level": 0.2064
+    },
+    {
+      "label": "Kalimba 2",
+      "id": "C10-chord-0-8-2",
+      "vertex": 87,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 1.828125,
+      "level": 0.177504
+    },
+    {
+      "label": "Glass 2",
+      "id": "C10-lead-0-8-3",
+      "vertex": 87,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.95625,
+      "level": 0.3795315198625977
+    },
+    {
+      "label": "Glass 3",
+      "id": "C10-lead-0-12-0",
+      "vertex": 73,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.95625,
+      "level": 0.374
+    },
+    {
+      "label": "Piano 4",
+      "id": "C10-answer-0-13-0",
+      "vertex": 72,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.1015625,
+      "level": 0.14
+    },
+    {
+      "label": "Guitar 3",
+      "id": "C10-bass-0-16-0",
+      "vertex": 77,
+      "kind": "note",
+      "degree": 6,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.828125,
+      "level": 0.24
+    },
+    {
+      "label": "Piano 5",
+      "id": "C10-chord-0-16-1",
+      "vertex": 77,
+      "kind": "note",
+      "degree": 1,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.828125,
+      "level": 0.2064
+    },
+    {
+      "label": "Kalimba 3",
+      "id": "C10-chord-0-16-2",
+      "vertex": 77,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 1.828125,
+      "level": 0.177504
+    },
+    {
+      "label": "Glass 4",
+      "id": "C10-lead-0-16-3",
+      "vertex": 77,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.95625,
+      "level": 0.40400803025278553
+    },
+    {
+      "label": "Glass 5",
+      "id": "C10-lead-0-20-0",
+      "vertex": 49,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.95625,
+      "level": 0.39303332099679084
+    },
+    {
+      "label": "Piano 6",
+      "id": "C10-answer-0-21-0",
+      "vertex": 48,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.1015625,
+      "level": 0.14
+    },
+    {
+      "label": "Guitar 4",
+      "id": "C10-bass-0-24-0",
+      "vertex": 9,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.828125,
+      "level": 0.24
+    },
+    {
+      "label": "Piano 7",
+      "id": "C10-chord-0-24-1",
+      "vertex": 9,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.828125,
+      "level": 0.2064
+    },
+    {
+      "label": "Kalimba 4",
+      "id": "C10-chord-0-24-2",
+      "vertex": 9,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 1.828125,
+      "level": 0.177504
+    },
+    {
+      "label": "Glass 6",
+      "id": "C10-lead-0-24-3",
+      "vertex": 9,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 1.9125,
+      "level": 0.4181395501153832
+    },
+    {
+      "label": "Piano 8",
+      "id": "C10-answer-0-29-0",
+      "vertex": 24,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.1015625,
+      "level": 0.14
+    },
+    {
+      "label": "Low bongo 1",
+      "id": "C10-rhythm-0-31-0",
+      "vertex": 52,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-low",
+      "duration": 0.234375,
+      "level": 0.055
+    },
+    {
+      "label": "Guitar 5",
+      "id": "C10-bass-0-32-0",
+      "vertex": 54,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.828125,
+      "level": 0.24
+    },
+    {
+      "label": "Piano 9",
+      "id": "C10-chord-0-32-1",
+      "vertex": 54,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.828125,
+      "level": 0.2064
+    },
+    {
+      "label": "Kalimba 5",
+      "id": "C10-chord-0-32-2",
+      "vertex": 54,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 1.828125,
+      "level": 0.177504
+    },
+    {
+      "label": "Glass 7",
+      "id": "C10-lead-0-32-3",
+      "vertex": 54,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.95625,
+      "level": 0.42000000000000004
+    },
+    {
+      "label": "Glass 8",
+      "id": "C10-lead-0-36-0",
+      "vertex": 22,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.95625,
+      "level": 0.3982281429670316
+    },
+    {
+      "label": "Piano 10",
+      "id": "C10-answer-0-37-0",
+      "vertex": 0,
+      "kind": "note",
+      "degree": 5,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.1015625,
+      "level": 0.14
+    },
+    {
+      "label": "Guitar 6",
+      "id": "C10-bass-0-40-0",
+      "vertex": 14,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.828125,
+      "level": 0.24
+    },
+    {
+      "label": "Piano 11",
+      "id": "C10-chord-0-40-1",
+      "vertex": 14,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.828125,
+      "level": 0.2064
+    },
+    {
+      "label": "Kalimba 6",
+      "id": "C10-chord-0-40-2",
+      "vertex": 14,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 1.828125,
+      "level": 0.177504
+    },
+    {
+      "label": "Glass 9",
+      "id": "C10-lead-0-40-3",
+      "vertex": 14,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.95625,
+      "level": 0.41268498704663037
+    },
+    {
+      "label": "Glass 10",
+      "id": "C10-lead-0-44-0",
+      "vertex": 33,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.95625,
+      "level": 0.38476955262170054
+    },
+    {
+      "label": "Piano 12",
+      "id": "C10-answer-0-45-0",
+      "vertex": 67,
+      "kind": "note",
+      "degree": 5,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.1015625,
+      "level": 0.14
+    },
+    {
+      "label": "Piano 13",
+      "id": "C10-chord-0-48-0",
+      "vertex": 59,
+      "kind": "note",
+      "degree": 1,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.828125,
+      "level": 0.2064
+    },
+    {
+      "label": "Kalimba 7",
+      "id": "C10-chord-0-48-1",
+      "vertex": 59,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 1.828125,
+      "level": 0.177504
+    },
+    {
+      "label": "Guitar 7",
+      "id": "C10-bass-0-48-2",
+      "vertex": 59,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.828125,
+      "level": 0.24
+    },
+    {
+      "label": "Glass 11",
+      "id": "C10-lead-0-48-3",
+      "vertex": 59,
+      "kind": "note",
+      "degree": 0,
+      "octave": 5,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 1.9125,
+      "level": 0.3927
+    },
+    {
+      "label": "Piano 14",
+      "id": "C10-answer-0-53-0",
+      "vertex": 20,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.1015625,
+      "level": 0.14
+    },
+    {
+      "label": "Guitar 8",
+      "id": "C10-bass-0-56-0",
+      "vertex": 82,
+      "kind": "note",
+      "degree": 0,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 1.828125,
+      "level": 0.24
+    },
+    {
+      "label": "Piano 15",
+      "id": "C10-chord-0-56-1",
+      "vertex": 82,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.828125,
+      "level": 0.2064
+    },
+    {
+      "label": "Kalimba 8",
+      "id": "C10-chord-0-56-2",
+      "vertex": 82,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 1.828125,
+      "level": 0.177504
+    },
+    {
+      "label": "Glass 12",
+      "id": "C10-lead-0-56-3",
+      "vertex": 82,
+      "kind": "note",
+      "degree": 5,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.95625,
+      "level": 0.3795315198625977
+    },
+    {
+      "label": "Glass 13",
+      "id": "C10-lead-0-60-0",
+      "vertex": 74,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.95625,
+      "level": 0.34800000000000003
+    },
+    {
+      "label": "Piano 16",
+      "id": "C10-answer-0-61-0",
+      "vertex": 61,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.1015625,
+      "level": 0.14
+    },
+    {
+      "label": "Low bongo 2",
+      "id": "C10-rhythm-0-63-0",
+      "vertex": 63,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-low",
+      "duration": 0.234375,
+      "level": 0.055
+    },
+    {
+      "label": "Kalimba 9",
+      "id": "C10-wrap-answer-0",
+      "vertex": 3,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 0.4921875,
+      "level": 0.06
+    },
+    {
+      "label": "Guitar 9",
+      "id": "C10-wrap-answer-1",
+      "vertex": 45,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.4921875,
+      "level": 0.06
+    },
+    {
+      "label": "Kalimba 10",
+      "id": "C10-wrap-answer-2",
+      "vertex": 26,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 0.4921875,
+      "level": 0.06
+    },
+    {
+      "label": "Guitar 10",
+      "id": "C10-wrap-answer-3",
+      "vertex": 10,
+      "kind": "note",
+      "degree": 5,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.4921875,
+      "level": 0.06
+    },
+    {
+      "label": "Kalimba 11",
+      "id": "C10-wrap-answer-4",
+      "vertex": 84,
+      "kind": "note",
+      "degree": 3,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "kalimba",
+      "duration": 0.4921875,
+      "level": 0.06
+    },
+    {
+      "label": "Guitar 11",
+      "id": "C10-wrap-answer-5",
+      "vertex": 62,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.4921875,
+      "level": 0.06
+    }
+  ],
+  "wiring": [
+    {
+      "vertex": 0,
+      "exits": [
+        10
+      ]
+    },
+    {
+      "vertex": 2,
+      "exits": [
+        3
+      ]
+    },
+    {
+      "vertex": 3,
+      "exits": [
+        37
+      ]
+    },
+    {
+      "vertex": 5,
+      "exits": [
+        2
+      ]
+    },
+    {
+      "vertex": 6,
+      "exits": [
+        5
+      ]
+    },
+    {
+      "vertex": 7,
+      "exits": [
+        29
+      ]
+    },
+    {
+      "vertex": 8,
+      "exits": [
+        6
+      ]
+    },
+    {
+      "vertex": 9,
+      "exits": [
+        7
+      ]
+    },
+    {
+      "vertex": 10,
+      "exits": [
+        13
+      ]
+    },
+    {
+      "vertex": 12,
+      "exits": [
+        21
+      ]
+    },
+    {
+      "vertex": 13,
+      "exits": [
+        14
+      ]
+    },
+    {
+      "vertex": 14,
+      "exits": [
+        34
+      ]
+    },
+    {
+      "vertex": 17,
+      "exits": [
+        25
+      ]
+    },
+    {
+      "vertex": 18,
+      "exits": [
+        17
+      ]
+    },
+    {
+      "vertex": 20,
+      "exits": [
+        55
+      ]
+    },
+    {
+      "vertex": 21,
+      "exits": [
+        20
+      ]
+    },
+    {
+      "vertex": 22,
+      "exits": [
+        0
+      ]
+    },
+    {
+      "vertex": 24,
+      "exits": [
+        26
+      ]
+    },
+    {
+      "vertex": 25,
+      "exits": [
+        22
+      ]
+    },
+    {
+      "vertex": 26,
+      "exits": [
+        52
+      ]
+    },
+    {
+      "vertex": 28,
+      "exits": [
+        30
+      ]
+    },
+    {
+      "vertex": 29,
+      "exits": [
+        28
+      ]
+    },
+    {
+      "vertex": 30,
+      "exits": [
+        24
+      ]
+    },
+    {
+      "vertex": 31,
+      "exits": [
+        12
+      ]
+    },
+    {
+      "vertex": 32,
+      "exits": [
+        33
+      ]
+    },
+    {
+      "vertex": 33,
+      "exits": [
+        67
+      ]
+    },
+    {
+      "vertex": 34,
+      "exits": [
+        35
+      ]
+    },
+    {
+      "vertex": 35,
+      "exits": [
+        32
+      ]
+    },
+    {
+      "vertex": 37,
+      "exits": [
+        87
+      ]
+    },
+    {
+      "vertex": 38,
+      "exits": [
+        66
+      ]
+    },
+    {
+      "vertex": 39,
+      "exits": [
+        73
+      ]
+    },
+    {
+      "vertex": 40,
+      "exits": [
+        8
+      ]
+    },
+    {
+      "vertex": 42,
+      "exits": [
+        40
+      ]
+    },
+    {
+      "vertex": 43,
+      "exits": [
+        9
+      ]
+    },
+    {
+      "vertex": 45,
+      "exits": [
+        78
+      ]
+    },
+    {
+      "vertex": 46,
+      "exits": [
+        43
+      ]
+    },
+    {
+      "vertex": 48,
+      "exits": [
+        46
+      ]
+    },
+    {
+      "vertex": 49,
+      "exits": [
+        48
+      ]
+    },
+    {
+      "vertex": 50,
+      "exits": [
+        49
+      ]
+    },
+    {
+      "vertex": 51,
+      "exits": [
+        50
+      ]
+    },
+    {
+      "vertex": 52,
+      "exits": [
+        54
+      ]
+    },
+    {
+      "vertex": 54,
+      "exits": [
+        18
+      ]
+    },
+    {
+      "vertex": 55,
+      "exits": [
+        90
+      ]
+    },
+    {
+      "vertex": 57,
+      "exits": [
+        80
+      ]
+    },
+    {
+      "vertex": 59,
+      "exits": [
+        91
+      ]
+    },
+    {
+      "vertex": 61,
+      "exits": [
+        62
+      ]
+    },
+    {
+      "vertex": 62,
+      "exits": [
+        63
+      ]
+    },
+    {
+      "vertex": 63,
+      "exits": []
+    },
+    {
+      "vertex": 66,
+      "exits": [
+        39
+      ]
+    },
+    {
+      "vertex": 67,
+      "exits": [
+        84
+      ]
+    },
+    {
+      "vertex": 72,
+      "exits": [
+        45
+      ]
+    },
+    {
+      "vertex": 73,
+      "exits": [
+        72
+      ]
+    },
+    {
+      "vertex": 74,
+      "exits": [
+        61
+      ]
+    },
+    {
+      "vertex": 75,
+      "exits": [
+        51
+      ]
+    },
+    {
+      "vertex": 77,
+      "exits": [
+        75
+      ]
+    },
+    {
+      "vertex": 78,
+      "exits": [
+        77
+      ]
+    },
+    {
+      "vertex": 80,
+      "exits": [
+        81
+      ]
+    },
+    {
+      "vertex": 81,
+      "exits": [
+        74
+      ]
+    },
+    {
+      "vertex": 82,
+      "exits": [
+        57
+      ]
+    },
+    {
+      "vertex": 84,
+      "exits": [
+        86
+      ]
+    },
+    {
+      "vertex": 86,
+      "exits": [
+        59
+      ]
+    },
+    {
+      "vertex": 87,
+      "exits": [
+        38
+      ]
+    },
+    {
+      "vertex": 88,
+      "exits": [
+        42
+      ]
+    },
+    {
+      "vertex": 90,
+      "exits": [
+        82
+      ]
+    },
+    {
+      "vertex": 91,
+      "exits": [
+        31
+      ]
+    }
+  ]
+}

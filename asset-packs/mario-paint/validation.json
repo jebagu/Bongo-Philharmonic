@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "counts": {
+    "models": 15,
+    "voxelFiles": 15,
+    "sprites": 15,
+    "noteWavs": 195,
+    "sourceWavs": 23,
+    "composerSources": 16,
+    "auxiliarySources": 7
+  },
+  "spriteFrontPixelsExact": true,
+  "allNativeNotesNonSilentUnclippedAndUntruncated": true,
+  "boatSampleSwitch": {
+    "positions1to6": 0,
+    "positions7to13": 16
+  },
+  "limitations": [
+    "Isolated fast-DSP rendering, not full-console capture.",
+    "No human listening, Safari, venue or production timing qualification implied."
+  ]
+}

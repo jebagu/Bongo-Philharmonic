@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "comparison": "Byte-identical to the retained Git extraction of 11 October 2026; no deleted asset tree restored.",
+  "counts": {
+    "spritesMatchingEarlierExtraction": 15,
+    "notesMatchingEarlierExtraction": 195,
+    "sourceSamplesMatchingEarlierExtraction": 23
+  }
+}

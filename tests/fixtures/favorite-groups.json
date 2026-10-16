@@ -1,0 +1,105 @@
+[
+  {
+    "name": "Favorites - Simple",
+    "examples": [
+      {
+        "id": "S13",
+        "name": "Pachelbel’s Canon"
+      },
+      {
+        "id": "F10",
+        "name": "Toy Ensemble"
+      },
+      {
+        "id": "A01",
+        "name": "Airy Loops"
+      },
+      {
+        "id": "R-S44",
+        "name": "Final Fantasy — Prelude · Reworked"
+      },
+      {
+        "id": "N02",
+        "name": "North Pole Loop"
+      },
+      {
+        "id": "S43",
+        "name": "Tetris — Type A (Korobeiniki)"
+      },
+      {
+        "id": "BR02-FAV",
+        "name": "Take On Me — Spark Build"
+      }
+    ]
+  },
+  {
+    "name": "Favorites - Chords",
+    "examples": [
+      {
+        "id": "C01",
+        "name": "Pachelbel’s Canon"
+      },
+      {
+        "id": "C02",
+        "name": "Toy Ensemble"
+      },
+      {
+        "id": "C03",
+        "name": "Airy Loops"
+      },
+      {
+        "id": "C06",
+        "name": "Tetris — Type A (Korobeiniki)"
+      },
+      {
+        "id": "C07",
+        "name": "Prelude in C Major · Bach"
+      },
+      {
+        "id": "C08",
+        "name": "Ode to Joy · Beethoven"
+      },
+      {
+        "id": "C09",
+        "name": "Eine kleine Nachtmusik · Mozart"
+      },
+      {
+        "id": "C10",
+        "name": "Swan Lake · Tchaikovsky"
+      },
+      {
+        "id": "C11",
+        "name": "Scarborough Fair · Traditional"
+      },
+      {
+        "id": "C12",
+        "name": "Avril 14th · Aphex Twin"
+      },
+      {
+        "id": "P04",
+        "name": "Dancing Queen — ABBA"
+      },
+      {
+        "id": "P05",
+        "name": "Take On Me — a-ha"
+      }
+    ]
+  },
+  {
+    "name": "favorites - with loops",
+    "examples": [
+      {
+        "id": "BR01",
+        "name": "Dancing Queen — Spark Build"
+      },
+      {
+        "id": "BR02",
+        "name": "Take On Me — Spark Build"
+      },
+      {
+        "id": "BR03",
+        "name": "Kite Weather — Squall"
+      }
+    ]
+  }
+]

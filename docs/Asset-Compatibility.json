@@ -1,0 +1,15 @@
+{
+  "specVersion": 1,
+  "deliveryFormat": "bongo-planet-asset-set-delivery",
+  "adoption": "Independent copies; manual versioned transfer only",
+  "files": [
+    {
+      "path": "docs/Instrument-Asset-Spec.md",
+      "sha256": "9a574cfb44884a04847642f6695b344456f38f5442abede6caad5d933cf19723"
+    },
+    {
+      "path": "docs/templates/instrument-set/manifest.example.json",
+      "sha256": "2b28a6640411dc4f02e48f6181cb07a086dab10e9a2ad9989e40866ef3d6bce0"
+    }
+  ]
+}

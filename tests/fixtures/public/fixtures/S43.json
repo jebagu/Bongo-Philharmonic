@@ -1,0 +1,1578 @@
+{
+  "version": 2,
+  "topology": "icosa-3v-v1",
+  "settings": {
+    "bpm": 75,
+    "key": 9,
+    "scale": "minor",
+    "travel": 0.75,
+    "quantization": 0.25,
+    "volume": 0.64,
+    "propagation": "gated"
+  },
+  "pieces": [
+    {
+      "id": "S43-hook-source",
+      "vertex": 44,
+      "kind": "generator",
+      "period": 24,
+      "phase": 0,
+      "reach": 180,
+      "enabled": true,
+      "travel": 91
+    },
+    {
+      "id": "S43-hook-0",
+      "vertex": 45,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6688000000000001
+    },
+    {
+      "id": "S43-backing-1",
+      "vertex": 47,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "hi-hat",
+      "duration": 0.2,
+      "level": 0.065
+    },
+    {
+      "id": "S43-hook-2",
+      "vertex": 46,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.5941080639578702
+    },
+    {
+      "id": "S43-hook-3",
+      "vertex": 43,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.598601943878706
+    },
+    {
+      "id": "S43-hook-4",
+      "vertex": 88,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6030675003537008
+    },
+    {
+      "id": "S43-backing-5",
+      "vertex": 72,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-6",
+      "vertex": 70,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6074906830900877
+    },
+    {
+      "id": "S43-hook-7",
+      "vertex": 78,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6118575751185579
+    },
+    {
+      "id": "S43-hook-8",
+      "vertex": 89,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6989214504503113
+    },
+    {
+      "id": "S43-backing-9",
+      "vertex": 48,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "hi-hat",
+      "duration": 0.2,
+      "level": 0.065
+    },
+    {
+      "id": "S43-hook-10",
+      "vertex": 30,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6203677479621532
+    },
+    {
+      "id": "S43-hook-11",
+      "vertex": 29,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6244842526250517
+    },
+    {
+      "id": "S43-hook-12",
+      "vertex": 9,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6284909985232613
+    },
+    {
+      "id": "S43-backing-13",
+      "vertex": 42,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-14",
+      "vertex": 41,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.632375378951833
+    },
+    {
+      "id": "S43-hook-15",
+      "vertex": 73,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6361251722128565
+    },
+    {
+      "id": "S43-hook-16",
+      "vertex": 71,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.51,
+      "level": 0.7256622699295165
+    },
+    {
+      "id": "S43-backing-17",
+      "vertex": 69,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "hi-hat",
+      "duration": 0.2,
+      "level": 0.065
+    },
+    {
+      "id": "S43-backing-18",
+      "vertex": 76,
+      "kind": "note",
+      "degree": 0,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.3,
+      "level": 0.35
+    },
+    {
+      "id": "S43-hook-19",
+      "vertex": 77,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6431742648673412
+    },
+    {
+      "id": "S43-hook-20",
+      "vertex": 50,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6464513852073985
+    },
+    {
+      "id": "S43-backing-21",
+      "vertex": 49,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-22",
+      "vertex": 24,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6495496300566066
+    },
+    {
+      "id": "S43-backing-23",
+      "vertex": 23,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "marimba",
+      "duration": 0.25,
+      "level": 0.17
+    },
+    {
+      "id": "S43-hook-24",
+      "vertex": 28,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.7401030312010843
+    },
+    {
+      "id": "S43-backing-25",
+      "vertex": 7,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "hi-hat",
+      "duration": 0.2,
+      "level": 0.065
+    },
+    {
+      "id": "S43-hook-26",
+      "vertex": 8,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6551710938643245
+    },
+    {
+      "id": "S43-backing-27",
+      "vertex": 40,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-low",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-28",
+      "vertex": 38,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.7759999999999999,
+      "level": 0.6576766256179541
+    },
+    {
+      "id": "S43-backing-29",
+      "vertex": 39,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-backing-30",
+      "vertex": 63,
+      "kind": "note",
+      "degree": 4,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.3,
+      "level": 0.35
+    },
+    {
+      "id": "S43-backing-31",
+      "vertex": 62,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "marimba",
+      "duration": 0.25,
+      "level": 0.17
+    },
+    {
+      "id": "S43-hook-32",
+      "vertex": 61,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.51,
+      "level": 0.7486203760780783
+    },
+    {
+      "id": "S43-backing-33",
+      "vertex": 74,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "hi-hat",
+      "duration": 0.2,
+      "level": 0.065
+    },
+    {
+      "id": "S43-backing-34",
+      "vertex": 75,
+      "kind": "note",
+      "degree": 3,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.3,
+      "level": 0.35
+    },
+    {
+      "id": "S43-hook-35",
+      "vertex": 51,
+      "kind": "note",
+      "degree": 5,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6620378969793546
+    },
+    {
+      "id": "S43-hook-36",
+      "vertex": 53,
+      "kind": "note",
+      "degree": 0,
+      "octave": 5,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6638799144139075
+    },
+    {
+      "id": "S43-backing-37",
+      "vertex": 52,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-38",
+      "vertex": 26,
+      "kind": "note",
+      "degree": 6,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6654882197567928
+    },
+    {
+      "id": "S43-hook-39",
+      "vertex": 25,
+      "kind": "note",
+      "degree": 5,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6668577526843861
+    },
+    {
+      "id": "S43-hook-40",
+      "vertex": 22,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.51,
+      "level": 0.7577134255909823
+    },
+    {
+      "id": "S43-backing-41",
+      "vertex": 4,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "hi-hat",
+      "duration": 0.2,
+      "level": 0.065
+    },
+    {
+      "id": "S43-backing-42",
+      "vertex": 5,
+      "kind": "note",
+      "degree": 0,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.3,
+      "level": 0.35
+    },
+    {
+      "id": "S43-hook-43",
+      "vertex": 6,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6688640298888663
+    },
+    {
+      "id": "S43-hook-44",
+      "vertex": 37,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6694944616754168
+    },
+    {
+      "id": "S43-backing-45",
+      "vertex": 3,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-46",
+      "vertex": 2,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6698735159274325
+    },
+    {
+      "id": "S43-hook-47",
+      "vertex": 1,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.67
+    },
+    {
+      "id": "S43-hook-48",
+      "vertex": 0,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.7598565255296249
+    },
+    {
+      "id": "S43-backing-49",
+      "vertex": 16,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "hi-hat",
+      "duration": 0.2,
+      "level": 0.065
+    },
+    {
+      "id": "S43-hook-50",
+      "vertex": 10,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6694944616754168
+    },
+    {
+      "id": "S43-hook-51",
+      "vertex": 13,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6688640298888663
+    },
+    {
+      "id": "S43-hook-52",
+      "vertex": 15,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6679842041394186
+    },
+    {
+      "id": "S43-backing-53",
+      "vertex": 36,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-54",
+      "vertex": 87,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6668577526843861
+    },
+    {
+      "id": "S43-backing-55",
+      "vertex": 66,
+      "kind": "note",
+      "degree": 6,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "marimba",
+      "duration": 0.25,
+      "level": 0.17
+    },
+    {
+      "id": "S43-hook-56",
+      "vertex": 65,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.7548821597241231
+    },
+    {
+      "id": "S43-backing-57",
+      "vertex": 64,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "hi-hat",
+      "duration": 0.2,
+      "level": 0.065
+    },
+    {
+      "id": "S43-hook-58",
+      "vertex": 79,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6638799144139075
+    },
+    {
+      "id": "S43-backing-59",
+      "vertex": 81,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-low",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-60",
+      "vertex": 83,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.7759999999999999,
+      "level": 0.6620378969793546
+    },
+    {
+      "id": "S43-backing-61",
+      "vertex": 90,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-backing-62",
+      "vertex": 54,
+      "kind": "note",
+      "degree": 4,
+      "octave": 2,
+      "timbre": "sine",
+      "instrument": "guitar",
+      "duration": 0.3,
+      "level": 0.35
+    },
+    {
+      "id": "S43-backing-63",
+      "vertex": 27,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "marimba",
+      "duration": 0.25,
+      "level": 0.17
+    },
+    {
+      "id": "S43-hook-64",
+      "vertex": 17,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.7486203760780783
+    },
+    {
+      "id": "S43-hook-65",
+      "vertex": 18,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6576766256179541
+    },
+    {
+      "id": "S43-hook-66",
+      "vertex": 55,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6551710938643246
+    },
+    {
+      "id": "S43-hook-67",
+      "vertex": 20,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6524592511904297
+    },
+    {
+      "id": "S43-hook-68",
+      "vertex": 19,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6495496300566066
+    },
+    {
+      "id": "S43-hook-69",
+      "vertex": 11,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6464513852073985
+    },
+    {
+      "id": "S43-hook-70",
+      "vertex": 14,
+      "kind": "note",
+      "degree": 4,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6431742648673412
+    },
+    {
+      "id": "S43-hook-71",
+      "vertex": 34,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6397285800694422
+    },
+    {
+      "id": "S43-hook-72",
+      "vertex": 35,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.7215748222115983
+    },
+    {
+      "id": "S43-backing-73",
+      "vertex": 68,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "hi-hat",
+      "duration": 0.2,
+      "level": 0.065
+    },
+    {
+      "id": "S43-hook-74",
+      "vertex": 67,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.632375378951833
+    },
+    {
+      "id": "S43-backing-75",
+      "vertex": 33,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-low",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-76",
+      "vertex": 32,
+      "kind": "note",
+      "degree": 3,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6284909985232613
+    },
+    {
+      "id": "S43-backing-77",
+      "vertex": 85,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-78",
+      "vertex": 84,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6244842526250517
+    },
+    {
+      "id": "S43-backing-79",
+      "vertex": 80,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "marimba",
+      "duration": 0.25,
+      "level": 0.17
+    },
+    {
+      "id": "S43-hook-80",
+      "vertex": 82,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.7037007290316961
+    },
+    {
+      "id": "S43-hook-81",
+      "vertex": 57,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6161544365811955
+    },
+    {
+      "id": "S43-hook-82",
+      "vertex": 56,
+      "kind": "note",
+      "degree": 0,
+      "octave": 5,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6118575751185579
+    },
+    {
+      "id": "S43-backing-83",
+      "vertex": 58,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-low",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-84",
+      "vertex": 21,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6074906830900877
+    },
+    {
+      "id": "S43-backing-85",
+      "vertex": 12,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "bongo-high",
+      "duration": 0.2,
+      "level": 0.14
+    },
+    {
+      "id": "S43-hook-86",
+      "vertex": 31,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.34,
+      "level": 0.6030675003537008
+    },
+    {
+      "id": "S43-backing-87",
+      "vertex": 60,
+      "kind": "note",
+      "degree": 2,
+      "octave": 3,
+      "timbre": "sine",
+      "instrument": "marimba",
+      "duration": 0.25,
+      "level": 0.17
+    },
+    {
+      "id": "S43-hook-88",
+      "vertex": 91,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.6790111602206217
+    },
+    {
+      "id": "S43-hook-89",
+      "vertex": 86,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.17,
+      "level": 0.5941080639578702
+    },
+    {
+      "id": "S43-hook-90",
+      "vertex": 59,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.1640000000000001,
+      "level": 0.5896
+    }
+  ],
+  "wiring": [
+    {
+      "vertex": 44,
+      "exits": [
+        45
+      ]
+    },
+    {
+      "vertex": 45,
+      "exits": [
+        47
+      ]
+    },
+    {
+      "vertex": 47,
+      "exits": [
+        46
+      ]
+    },
+    {
+      "vertex": 46,
+      "exits": [
+        43
+      ]
+    },
+    {
+      "vertex": 43,
+      "exits": [
+        88
+      ]
+    },
+    {
+      "vertex": 88,
+      "exits": [
+        72
+      ]
+    },
+    {
+      "vertex": 72,
+      "exits": [
+        70
+      ]
+    },
+    {
+      "vertex": 70,
+      "exits": [
+        78
+      ]
+    },
+    {
+      "vertex": 78,
+      "exits": [
+        89
+      ]
+    },
+    {
+      "vertex": 89,
+      "exits": [
+        48
+      ]
+    },
+    {
+      "vertex": 48,
+      "exits": [
+        30
+      ]
+    },
+    {
+      "vertex": 30,
+      "exits": [
+        29
+      ]
+    },
+    {
+      "vertex": 29,
+      "exits": [
+        9
+      ]
+    },
+    {
+      "vertex": 9,
+      "exits": [
+        42
+      ]
+    },
+    {
+      "vertex": 42,
+      "exits": [
+        41
+      ]
+    },
+    {
+      "vertex": 41,
+      "exits": [
+        73
+      ]
+    },
+    {
+      "vertex": 73,
+      "exits": [
+        71
+      ]
+    },
+    {
+      "vertex": 71,
+      "exits": [
+        69
+      ]
+    },
+    {
+      "vertex": 69,
+      "exits": [
+        76
+      ]
+    },
+    {
+      "vertex": 76,
+      "exits": [
+        77
+      ]
+    },
+    {
+      "vertex": 77,
+      "exits": [
+        50
+      ]
+    },
+    {
+      "vertex": 50,
+      "exits": [
+        49
+      ]
+    },
+    {
+      "vertex": 49,
+      "exits": [
+        24
+      ]
+    },
+    {
+      "vertex": 24,
+      "exits": [
+        23
+      ]
+    },
+    {
+      "vertex": 23,
+      "exits": [
+        28
+      ]
+    },
+    {
+      "vertex": 28,
+      "exits": [
+        7
+      ]
+    },
+    {
+      "vertex": 7,
+      "exits": [
+        8
+      ]
+    },
+    {
+      "vertex": 8,
+      "exits": [
+        40
+      ]
+    },
+    {
+      "vertex": 40,
+      "exits": [
+        38
+      ]
+    },
+    {
+      "vertex": 38,
+      "exits": [
+        39
+      ]
+    },
+    {
+      "vertex": 39,
+      "exits": [
+        63
+      ]
+    },
+    {
+      "vertex": 63,
+      "exits": [
+        62
+      ]
+    },
+    {
+      "vertex": 62,
+      "exits": [
+        61
+      ]
+    },
+    {
+      "vertex": 61,
+      "exits": [
+        74
+      ]
+    },
+    {
+      "vertex": 74,
+      "exits": [
+        75
+      ]
+    },
+    {
+      "vertex": 75,
+      "exits": [
+        51
+      ]
+    },
+    {
+      "vertex": 51,
+      "exits": [
+        53
+      ]
+    },
+    {
+      "vertex": 53,
+      "exits": [
+        52
+      ]
+    },
+    {
+      "vertex": 52,
+      "exits": [
+        26
+      ]
+    },
+    {
+      "vertex": 26,
+      "exits": [
+        25
+      ]
+    },
+    {
+      "vertex": 25,
+      "exits": [
+        22
+      ]
+    },
+    {
+      "vertex": 22,
+      "exits": [
+        4
+      ]
+    },
+    {
+      "vertex": 4,
+      "exits": [
+        5
+      ]
+    },
+    {
+      "vertex": 5,
+      "exits": [
+        6
+      ]
+    },
+    {
+      "vertex": 6,
+      "exits": [
+        37
+      ]
+    },
+    {
+      "vertex": 37,
+      "exits": [
+        3
+      ]
+    },
+    {
+      "vertex": 3,
+      "exits": [
+        2
+      ]
+    },
+    {
+      "vertex": 2,
+      "exits": [
+        1
+      ]
+    },
+    {
+      "vertex": 1,
+      "exits": [
+        0
+      ]
+    },
+    {
+      "vertex": 0,
+      "exits": [
+        16
+      ]
+    },
+    {
+      "vertex": 16,
+      "exits": [
+        10
+      ]
+    },
+    {
+      "vertex": 10,
+      "exits": [
+        13
+      ]
+    },
+    {
+      "vertex": 13,
+      "exits": [
+        15
+      ]
+    },
+    {
+      "vertex": 15,
+      "exits": [
+        36
+      ]
+    },
+    {
+      "vertex": 36,
+      "exits": [
+        87
+      ]
+    },
+    {
+      "vertex": 87,
+      "exits": [
+        66
+      ]
+    },
+    {
+      "vertex": 66,
+      "exits": [
+        65
+      ]
+    },
+    {
+      "vertex": 65,
+      "exits": [
+        64
+      ]
+    },
+    {
+      "vertex": 64,
+      "exits": [
+        79
+      ]
+    },
+    {
+      "vertex": 79,
+      "exits": [
+        81
+      ]
+    },
+    {
+      "vertex": 81,
+      "exits": [
+        83
+      ]
+    },
+    {
+      "vertex": 83,
+      "exits": [
+        90
+      ]
+    },
+    {
+      "vertex": 90,
+      "exits": [
+        54
+      ]
+    },
+    {
+      "vertex": 54,
+      "exits": [
+        27
+      ]
+    },
+    {
+      "vertex": 27,
+      "exits": [
+        17
+      ]
+    },
+    {
+      "vertex": 17,
+      "exits": [
+        18
+      ]
+    },
+    {
+      "vertex": 18,
+      "exits": [
+        55
+      ]
+    },
+    {
+      "vertex": 55,
+      "exits": [
+        20
+      ]
+    },
+    {
+      "vertex": 20,
+      "exits": [
+        19
+      ]
+    },
+    {
+      "vertex": 19,
+      "exits": [
+        11
+      ]
+    },
+    {
+      "vertex": 11,
+      "exits": [
+        14
+      ]
+    },
+    {
+      "vertex": 14,
+      "exits": [
+        34
+      ]
+    },
+    {
+      "vertex": 34,
+      "exits": [
+        35
+      ]
+    },
+    {
+      "vertex": 35,
+      "exits": [
+        68
+      ]
+    },
+    {
+      "vertex": 68,
+      "exits": [
+        67
+      ]
+    },
+    {
+      "vertex": 67,
+      "exits": [
+        33
+      ]
+    },
+    {
+      "vertex": 33,
+      "exits": [
+        32
+      ]
+    },
+    {
+      "vertex": 32,
+      "exits": [
+        85
+      ]
+    },
+    {
+      "vertex": 85,
+      "exits": [
+        84
+      ]
+    },
+    {
+      "vertex": 84,
+      "exits": [
+        80
+      ]
+    },
+    {
+      "vertex": 80,
+      "exits": [
+        82
+      ]
+    },
+    {
+      "vertex": 82,
+      "exits": [
+        57
+      ]
+    },
+    {
+      "vertex": 57,
+      "exits": [
+        56
+      ]
+    },
+    {
+      "vertex": 56,
+      "exits": [
+        58
+      ]
+    },
+    {
+      "vertex": 58,
+      "exits": [
+        21
+      ]
+    },
+    {
+      "vertex": 21,
+      "exits": [
+        12
+      ]
+    },
+    {
+      "vertex": 12,
+      "exits": [
+        31
+      ]
+    },
+    {
+      "vertex": 31,
+      "exits": [
+        60
+      ]
+    },
+    {
+      "vertex": 60,
+      "exits": [
+        91
+      ]
+    },
+    {
+      "vertex": 91,
+      "exits": [
+        86
+      ]
+    },
+    {
+      "vertex": 86,
+      "exits": [
+        59
+      ]
+    },
+    {
+      "vertex": 59,
+      "exits": []
+    }
+  ]
+}

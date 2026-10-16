@@ -1,0 +1,2624 @@
+{
+  "date": "2026-10-16",
+  "name": "Bongo Philharmonic",
+  "originalProject": "/Users/jeremyguillory/Documents/ChatGPT/ripple",
+  "originalCommit": "77eede6cf801ecfa5153cfe7a30088b2005f0f5c",
+  "includesWorkingTreeChanges": true,
+  "relationship": "Independent source snapshot; every copied file is owned here. No shared Git, symlinks, workspaces, submodules, or runtime source/asset dependency.",
+  "instrumentContract": {
+    "file": "docs/Instrument-Asset-Spec.md",
+    "version": 1
+  },
+  "copiedFiles": [
+    {
+      "source": "philharmonic/src/audio-score.ts",
+      "destination": "src/audio-score.ts",
+      "bytes": 18798,
+      "sourceSha256": "c66e3008f735c3a7304780964f0d019d46a73a5001da77d5c95f4b71de23037f"
+    },
+    {
+      "source": "philharmonic/src/model.ts",
+      "destination": "src/model.ts",
+      "bytes": 12416,
+      "sourceSha256": "4123ced03e7c08122b3799de30130b7a8700e73e689bce7523e6178af27ce9e4"
+    },
+    {
+      "source": "philharmonic/src/catalog.ts",
+      "destination": "src/catalog.ts",
+      "bytes": 1470,
+      "sourceSha256": "ec1c4332ce3a358f2d071ec1f32d3d55bcc481842d68fb5e9344b5f490d03463"
+    },
+    {
+      "source": "src/core/instruments.ts",
+      "destination": "foundation/src/core/instruments.ts",
+      "bytes": 3664,
+      "sourceSha256": "d35c3cfd097fcd81d3f1ebf7106772d5ac297dcf3e50d5c8f7028d2af74c7208"
+    },
+    {
+      "source": "src/core/contracts.ts",
+      "destination": "foundation/src/core/contracts.ts",
+      "bytes": 10043,
+      "sourceSha256": "207d22431bdfced243fc4f300cdf716a0cd39ad020bbec42a6755ab8c15644b8"
+    },
+    {
+      "source": "src/core/geometry.ts",
+      "destination": "foundation/src/core/geometry.ts",
+      "bytes": 2550,
+      "sourceSha256": "b6b788d732a900a102d108623033055bc221099a5d91f8e648af16d2905b69bf"
+    },
+    {
+      "source": "asset-packs/mario-paint/manifest.json",
+      "destination": "asset-packs/mario-paint/manifest.json",
+      "bytes": 99082,
+      "sourceSha256": "4d814cb03c29d0c59d060acd498282989c2996f976657fc27cd3c303715738d3"
+    },
+    {
+      "source": "src/audio/samples.ts",
+      "destination": "foundation/src/audio/samples.ts",
+      "bytes": 1292,
+      "sourceSha256": "62569100ec2198d40230d559b1f58ab36b48208364e11b78e9255f3eeb9a3bb9"
+    },
+    {
+      "source": "philharmonic/src/audio.ts",
+      "destination": "src/audio.ts",
+      "bytes": 11647,
+      "sourceSha256": "0a763f5470b9dffbd0fba62a9213add489d499d5311714fda285f14c998a80eb"
+    },
+    {
+      "source": "philharmonic/src/score-worklet.ts",
+      "destination": "src/score-worklet.ts",
+      "bytes": 6176,
+      "sourceSha256": "f9da0ad7da71cc9bdba81f5bcf605a559d219044b0a15d2b427da9e6fd715c69"
+    },
+    {
+      "source": "src/asset-packs/mario-paint/audio.ts",
+      "destination": "foundation/src/asset-packs/mario-paint/audio.ts",
+      "bytes": 4694,
+      "sourceSha256": "fac1dfa5ed4cdc21fcb766466e99333224938ee5065ec74d2971f24f0f78e7b9"
+    },
+    {
+      "source": "src/asset-packs/mario-paint/types.ts",
+      "destination": "foundation/src/asset-packs/mario-paint/types.ts",
+      "bytes": 3807,
+      "sourceSha256": "354492556aacc95ee2d53f438a6684ab88e1ad3c5976b7ee626c13f509d91a4f"
+    },
+    {
+      "source": "philharmonic/src/landmark.ts",
+      "destination": "src/landmark.ts",
+      "bytes": 5560,
+      "sourceSha256": "9ce8d32cee1c117ecb1eed5fad11251f2cf30ec154f28edf2d1cfd5c8fcc7c16"
+    },
+    {
+      "source": "src/view/art/northPole.ts",
+      "destination": "foundation/src/view/art/northPole.ts",
+      "bytes": 2057,
+      "sourceSha256": "becd7f5a1dca3a2f671b95c458dbd3e341760ca6bc7e056cf04ebca37db2b829"
+    },
+    {
+      "source": "src/view/art/SceneryMask.ts",
+      "destination": "foundation/src/view/art/SceneryMask.ts",
+      "bytes": 4193,
+      "sourceSha256": "048c5afe1848b292039110ac9d8c15ed3776c41a4682a17c2dfacabdf5b8c69b"
+    },
+    {
+      "source": "philharmonic/src/library.ts",
+      "destination": "src/library.ts",
+      "bytes": 13848,
+      "sourceSha256": "ab478c68b01eecde691396c0fad85ad0575cf1ea0c1c5afc02d0317fee643fe6"
+    },
+    {
+      "source": "song-studio/library.json",
+      "destination": "assets/library/library.json",
+      "bytes": 669568,
+      "sourceSha256": "bf7e019c995047ac84715f0aaf7facf8fdac61f666802021ebd533eea443d048"
+    },
+    {
+      "source": "song-studio/library-provenance.json",
+      "destination": "assets/library/library-provenance.json",
+      "bytes": 11081,
+      "sourceSha256": "5b9d530f35d86067bbb03d7df4697178cdac0e37f1f8ab4dce330c376eae6bea"
+    },
+    {
+      "source": "assets/favorite-presets.json",
+      "destination": "foundation/assets/favorite-presets.json",
+      "bytes": 447,
+      "sourceSha256": "454ec0f6eb4c44ab2c16e2701d13ee5e82a7f80d50a682bd4b307f537750f373"
+    },
+    {
+      "source": "assets/chord-favorites.json",
+      "destination": "foundation/assets/chord-favorites.json",
+      "bytes": 645,
+      "sourceSha256": "865c9fabba5e6473daa208ca9b26dc2b63212e5bc75878a251d70ae42cc07d57"
+    },
+    {
+      "source": "assets/pop-presets.json",
+      "destination": "foundation/assets/pop-presets.json",
+      "bytes": 126,
+      "sourceSha256": "2574bf9fda3b543901dafbeed7e3c19712f45e548c0d56f4b6adc4e4e3b8c6e6"
+    },
+    {
+      "source": "assets/loop-favorites.json",
+      "destination": "foundation/assets/loop-favorites.json",
+      "bytes": 207,
+      "sourceSha256": "2901b81ce0d506289db645a1c4ccb2330aa1be3775c66bf56fbbcde08afb84d2"
+    },
+    {
+      "source": "philharmonic/src/main.ts",
+      "destination": "src/main.ts",
+      "bytes": 44918,
+      "sourceSha256": "4ef0dc3170aebd871f8203d4f506a796599762208e5ca374b008960441752fec"
+    },
+    {
+      "source": "philharmonic/src/style.css",
+      "destination": "src/style.css",
+      "bytes": 24639,
+      "sourceSha256": "e02bc3f89585715ea0de49b3fba69c5d2d5f1c7dc83dc6c94c5ddb2f0e283a5e"
+    },
+    {
+      "source": "philharmonic/src/sphere.ts",
+      "destination": "src/sphere.ts",
+      "bytes": 36570,
+      "sourceSha256": "60ad5ca47534a4cc797718e0e863b55fa3fa7ec4e1f86a53016a93c7bfd3c11f"
+    },
+    {
+      "source": "src/view/math.ts",
+      "destination": "foundation/src/view/math.ts",
+      "bytes": 1169,
+      "sourceSha256": "9e16d927105cccc96de98da15623acc47003a48194a0a3ab373f7b0f9950ad35"
+    },
+    {
+      "source": "src/view/art/toys.ts",
+      "destination": "foundation/src/view/art/toys.ts",
+      "bytes": 11119,
+      "sourceSha256": "8d15ab025dcea7b2b32aeff91585738ee432b2f640af488e0da1444abee359cc"
+    },
+    {
+      "source": "src/view/art/appearance.ts",
+      "destination": "foundation/src/view/art/appearance.ts",
+      "bytes": 7963,
+      "sourceSha256": "6eb284a6735e03193baa2f7417f7decc555ac3edd4386ffcc3f8f6bb962b1a80"
+    },
+    {
+      "source": "src/view/art/swatches.ts",
+      "destination": "foundation/src/view/art/swatches.ts",
+      "bytes": 2258,
+      "sourceSha256": "4bc7bcadabdffee2a9e29f4fabda88d43f723d40ec2def204b65cfa76f5527c4"
+    },
+    {
+      "source": "assets/geometric-toys/theme.json",
+      "destination": "foundation/assets/geometric-toys/theme.json",
+      "bytes": 752,
+      "sourceSha256": "ca1f2799e6703fb6a7f25b30188a317f272ebc7e7ac3e6a71625d923d6f80ee7"
+    },
+    {
+      "source": "src/view/art/planetMaterials.ts",
+      "destination": "foundation/src/view/art/planetMaterials.ts",
+      "bytes": 4364,
+      "sourceSha256": "9e9d1fab39aea11f9e1db068fa46ee089011f70e31f1aa012f5ea1c1e15a5bfc"
+    },
+    {
+      "source": "src/view/art/themePresentation.ts",
+      "destination": "foundation/src/view/art/themePresentation.ts",
+      "bytes": 2259,
+      "sourceSha256": "09d1057212ea4ba009a38d4f7c9a3360ff8c8e9473cd1ef8fdd5f448e2b1dc20"
+    },
+    {
+      "source": "src/view/art/completeThemes.ts",
+      "destination": "foundation/src/view/art/completeThemes.ts",
+      "bytes": 9197,
+      "sourceSha256": "03c4b0c337e9e284dfd279ce8aeba6bf5ebe419958fed405aa365ec89d765720"
+    },
+    {
+      "source": "src/view/art/themes.ts",
+      "destination": "foundation/src/view/art/themes.ts",
+      "bytes": 1369,
+      "sourceSha256": "7558ad4f5d91c81963224d7f4d8792596916ff84ace53b5d929abcd701eae11f"
+    },
+    {
+      "source": "assets/theme-engine/catalog-v1.json",
+      "destination": "foundation/assets/theme-engine/catalog-v1.json",
+      "bytes": 11591,
+      "sourceSha256": "e2984458b88b61575725b62e18a3ffb5b3c656f90f55a4cfb668d1dd621eda2d"
+    },
+    {
+      "source": "assets/theme-engine/catalog-v2.json",
+      "destination": "foundation/assets/theme-engine/catalog-v2.json",
+      "bytes": 11592,
+      "sourceSha256": "34b7c6955989d95e89957ebfe88d504ee320d144f343e0fd5b683f2cc8fb4ed4"
+    },
+    {
+      "source": "assets/theme-engine/catalog-v3.json",
+      "destination": "foundation/assets/theme-engine/catalog-v3.json",
+      "bytes": 11593,
+      "sourceSha256": "17d938da328d5f6ed9c1f675c634d30ed6436c6d00cfe3a7f90d8e6f7a046b22"
+    },
+    {
+      "source": "assets/theme-engine/catalog-v4.json",
+      "destination": "foundation/assets/theme-engine/catalog-v4.json",
+      "bytes": 4642,
+      "sourceSha256": "10ab3f6b930fd8fee82b9027527d3a90a5b031568e120d0c324ce2bca74dcb83"
+    },
+    {
+      "source": "src/view/art/ThemeAtmosphere.ts",
+      "destination": "foundation/src/view/art/ThemeAtmosphere.ts",
+      "bytes": 2364,
+      "sourceSha256": "f3e60bfeecf07ceef01b85aa5dbf1bf7997602860a74e051db6f2e08eda095ab"
+    },
+    {
+      "source": "src/view/art/ThemeScenery.ts",
+      "destination": "foundation/src/view/art/ThemeScenery.ts",
+      "bytes": 13734,
+      "sourceSha256": "27e69cfc22248e9f10e7a8ffe8e6b51328cef6fec5eb9be67bce1b9d0bde4dfc"
+    },
+    {
+      "source": "src/view/art/SceneryFocus.ts",
+      "destination": "foundation/src/view/art/SceneryFocus.ts",
+      "bytes": 3549,
+      "sourceSha256": "41ef08265d01822128264a18952d98917b02d804ee3f22cebb711f708fe5bcf6"
+    },
+    {
+      "source": "philharmonic/src/score.ts",
+      "destination": "src/score.ts",
+      "bytes": 24452,
+      "sourceSha256": "b24c3e0bc17878cf1d7665f0d82e9131d7201ebbea965edc7e5c8ab068f1e8df"
+    },
+    {
+      "source": "philharmonic/src/marioPlayhead.ts",
+      "destination": "src/marioPlayhead.ts",
+      "bytes": 2213,
+      "sourceSha256": "dfa0241bf9e5702c9301e5558997253dcdc8b2d451a72a3627f9e84f61284bad"
+    },
+    {
+      "source": "philharmonic/src/assets/mario-paint-playhead.json",
+      "destination": "src/assets/mario-paint-playhead.json",
+      "bytes": 2618,
+      "sourceSha256": "ddd430e738c53159c929b866810aad746a3dbc49b1086ac2a6e7c9f047a7b38f"
+    },
+    {
+      "source": "philharmonic/src/storage.ts",
+      "destination": "src/storage.ts",
+      "bytes": 1435,
+      "sourceSha256": "54e9f899ddf65bbfd59e6bd35b9dd0fa427e916796dde0d35edf6ba8a49c2012"
+    },
+    {
+      "source": "philharmonic/src/assets/mario-paint-jump.png",
+      "destination": "src/assets/mario-paint-jump.png",
+      "bytes": 355,
+      "sourceSha256": "a722f873f157a3ac6b8f9e50be7bcf7016f3636d42c5d3514943b08e44792d31"
+    },
+    {
+      "source": "philharmonic/src/assets/mario-paint-playhead.json",
+      "destination": "src/assets/mario-paint-playhead.json",
+      "bytes": 2618,
+      "sourceSha256": "ddd430e738c53159c929b866810aad746a3dbc49b1086ac2a6e7c9f047a7b38f"
+    },
+    {
+      "source": "philharmonic/src/assets/mario-paint-walk-a.png",
+      "destination": "src/assets/mario-paint-walk-a.png",
+      "bytes": 343,
+      "sourceSha256": "5cfde94d31a3ec155eb432390a82d26ee071a07878bb2f200666e9dc4786a1d5"
+    },
+    {
+      "source": "philharmonic/src/assets/mario-paint-walk-b.png",
+      "destination": "src/assets/mario-paint-walk-b.png",
+      "bytes": 353,
+      "sourceSha256": "d0c0192cbcd190a99ad30959cf85f04e3068dad0a117517c418bee16918fba96"
+    },
+    {
+      "source": "philharmonic/src/style.css",
+      "destination": "src/style.css",
+      "bytes": 24639,
+      "sourceSha256": "e02bc3f89585715ea0de49b3fba69c5d2d5f1c7dc83dc6c94c5ddb2f0e283a5e"
+    },
+    {
+      "source": "philharmonic/tests/audio.test.ts",
+      "destination": "tests/audio.test.ts",
+      "bytes": 20953,
+      "sourceSha256": "0d3ed3f8d0c4d71515a9b4cd0e1f60afca6d47b102a6bd944d8b472bf8acfa67"
+    },
+    {
+      "source": "philharmonic/tests/boundaries.test.ts",
+      "destination": "tests/boundaries.test.ts",
+      "bytes": 1896,
+      "sourceSha256": "8d048e4e0493621eca51132ca44f474d272a493b190950dbd7b7fb0f1b9dd6b4"
+    },
+    {
+      "source": "philharmonic/tests/browser.spec.ts",
+      "destination": "tests/browser.spec.ts",
+      "bytes": 27486,
+      "sourceSha256": "9c17d3dcbd000bf1312100039f34982d3887f4c9ab3eda15ed5a35725cb87ed3"
+    },
+    {
+      "source": "philharmonic/tests/landmark.test.ts",
+      "destination": "tests/landmark.test.ts",
+      "bytes": 5445,
+      "sourceSha256": "6450c375d438b4404e530ad5f6b811bf6be17988ae50bf3e31f87f0c65bbf552"
+    },
+    {
+      "source": "philharmonic/tests/library.test.ts",
+      "destination": "tests/library.test.ts",
+      "bytes": 9521,
+      "sourceSha256": "2acc834d04884827e3654217a2012508aae6a7f1f076af8b21988097c85e90ee"
+    },
+    {
+      "source": "philharmonic/tests/mario.test.ts",
+      "destination": "tests/mario.test.ts",
+      "bytes": 2903,
+      "sourceSha256": "659933e57f87447b3a48775a564187cb929dc7e9b513c9c00569ecfca846a032"
+    },
+    {
+      "source": "philharmonic/tests/model.test.ts",
+      "destination": "tests/model.test.ts",
+      "bytes": 11153,
+      "sourceSha256": "3eeab14472b7233fb5f6b564b3133b2925d2e42b59f2e65a0dcbaa67c944df31"
+    },
+    {
+      "source": "philharmonic/tests/storage.test.ts",
+      "destination": "tests/storage.test.ts",
+      "bytes": 3950,
+      "sourceSha256": "5e5eb67aec9afcbf21926617e279351a4caf801d6e466e28d120ceaef0b50b0a"
+    },
+    {
+      "source": "philharmonic/assets/landmarks/README.md",
+      "destination": "assets/landmarks/README.md",
+      "bytes": 2459,
+      "sourceSha256": "5d43d50f0659ad1b722672dcba3cbc93b0d6084bd90a32150c19fa72d32d85e2"
+    },
+    {
+      "source": "asset-packs/mario-paint/AGENTS.md",
+      "destination": "asset-packs/mario-paint/AGENTS.md",
+      "bytes": 1861,
+      "sourceSha256": "59be6f2f52c8b76a63d8bc3ce764b61d5186f4e386dfd0f3abca2d6595acc3ec"
+    },
+    {
+      "source": "asset-packs/mario-paint/README.md",
+      "destination": "asset-packs/mario-paint/README.md",
+      "bytes": 7844,
+      "sourceSha256": "1614a4a8fdf1bffcb2fd6042cd5229c61143583603ad9121dce6dd4303cadaa2"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/auxiliary/sample-0b.wav",
+      "destination": "asset-packs/mario-paint/audio/auxiliary/sample-0b.wav",
+      "bytes": 140,
+      "sourceSha256": "725556c62bd3302bbb9df292149583d59df010865320f8d7447fb41924daa436"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/auxiliary/sample-11.wav",
+      "destination": "asset-packs/mario-paint/audio/auxiliary/sample-11.wav",
+      "bytes": 140,
+      "sourceSha256": "725556c62bd3302bbb9df292149583d59df010865320f8d7447fb41924daa436"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/auxiliary/sample-12.wav",
+      "destination": "asset-packs/mario-paint/audio/auxiliary/sample-12.wav",
+      "bytes": 1740,
+      "sourceSha256": "1bb73e2389eaaaebc77cd983983bb0afc233bb4cc1b3a7812eec9305c68dd54d"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/auxiliary/sample-13.wav",
+      "destination": "asset-packs/mario-paint/audio/auxiliary/sample-13.wav",
+      "bytes": 5292,
+      "sourceSha256": "b9d3629ab149fa4d8fa394eca3dae00d10ad09aa739db2fb188f408076f1d3bc"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/auxiliary/sample-14.wav",
+      "destination": "asset-packs/mario-paint/audio/auxiliary/sample-14.wav",
+      "bytes": 140,
+      "sourceSha256": "725556c62bd3302bbb9df292149583d59df010865320f8d7447fb41924daa436"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/auxiliary/sample-15.wav",
+      "destination": "asset-packs/mario-paint/audio/auxiliary/sample-15.wav",
+      "bytes": 140,
+      "sourceSha256": "725556c62bd3302bbb9df292149583d59df010865320f8d7447fb41924daa436"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/auxiliary/sample-16.wav",
+      "destination": "asset-packs/mario-paint/audio/auxiliary/sample-16.wav",
+      "bytes": 5292,
+      "sourceSha256": "6b1d75aa3155315ac446dd2ae20f611d2b95b4a408a64e8bf5d03103b2d703eb"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/01-B3.wav",
+      "bytes": 13008,
+      "sourceSha256": "1a02bcb687a4dbc1f17d6ad8d308faef0ee6f7af79dcc3e045fa1233b2c73973"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/02-C4.wav",
+      "bytes": 13012,
+      "sourceSha256": "970fbac46a368cbb296c279da3cc14fa75edc7b1d5643bfc5239d677921f39a4"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/03-D4.wav",
+      "bytes": 13020,
+      "sourceSha256": "250f77907d0c908153aa5859a0a5e93e31d4a45fc8f36ef161132603b96a7b0c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/04-E4.wav",
+      "bytes": 13024,
+      "sourceSha256": "05576fdab185103a7caa4c80923cbbf8c75b7b4f907d29317c3ceffa8809f38e"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/05-F4.wav",
+      "bytes": 13030,
+      "sourceSha256": "cd9074101eb389154c900987a35fa7d85f29c28a5a31af984c1f490db8cf1d16"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/06-G4.wav",
+      "bytes": 13036,
+      "sourceSha256": "ba67a4e95dfd0aab5acfb638abb5e3809a9ad1b9421d6e3f5b29b33bba55cb1e"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/07-A4.wav",
+      "bytes": 13040,
+      "sourceSha256": "4767f025dccc3aa8d4bc320577b3cd7330dd1bee50c80611da43f7fd4206a5f3"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/08-B4.wav",
+      "bytes": 13046,
+      "sourceSha256": "fa689aa9fe4cd3b65b716d9b5e22434875bc302a2fc1a41078c131baf2a18745"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/09-C5.wav",
+      "bytes": 13048,
+      "sourceSha256": "ed6535b83fccfae47a52d039738bc3c41670fa5590f63ffa1d7fd10909849d8f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/10-D5.wav",
+      "bytes": 13052,
+      "sourceSha256": "b3fb1f8166dbe5df65fb141a0cfb3ce09bf601ef412b5785b00ae60b170d60fd"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/11-E5.wav",
+      "bytes": 13054,
+      "sourceSha256": "5ceed714362cd92d0f270104c08832d04324d2453e88045e9b368d5d8b9b1181"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/12-F5.wav",
+      "bytes": 13056,
+      "sourceSha256": "0761150d40e5bf7cc1238c8c6985f2d90299f19a0dcf4c39773444e78babb689"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/00-mario/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/00-mario/13-G5.wav",
+      "bytes": 13060,
+      "sourceSha256": "b73f25fe58105379e3b0179681732c53b25a90acae0abaaed55c1fd9350bfa4a"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/01-B3.wav",
+      "bytes": 36390,
+      "sourceSha256": "9039cd1ab5883eee7d3d959017d9172e3cc75c3e49f950e304edaa71d2761e9a"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/02-C4.wav",
+      "bytes": 34490,
+      "sourceSha256": "202ee008cda015f63de394517ad4dbedde5b3b181a60d800c4158a335c310cd8"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/03-D4.wav",
+      "bytes": 30678,
+      "sourceSha256": "cadf2d1e2b202beaab288567d29e62022c02113a33ada033ce6c7364ef86ad79"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/04-E4.wav",
+      "bytes": 27450,
+      "sourceSha256": "7f5bae281976eeb13715d9ee03c53c9b82474b2e4b69f1807bd9dcd75f14d049"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/05-F4.wav",
+      "bytes": 23172,
+      "sourceSha256": "a930d4fa60539cdd99aef9d6113b43e46438846a8522ab91a16ca8923ab3559c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/06-G4.wav",
+      "bytes": 18544,
+      "sourceSha256": "74294382e61a995376b6358b2ce716651d0b256c4d6ff3147285ae4352ff4118"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/07-A4.wav",
+      "bytes": 15690,
+      "sourceSha256": "c523f95494e59a8c9abdd3cce645a18f821409ce6290439478693f3aebe98177"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/08-B4.wav",
+      "bytes": 13298,
+      "sourceSha256": "68ac25097f11b8fdcf834e5130789002a3a74f9bad7257b3513db05207473ee7"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/09-C5.wav",
+      "bytes": 10698,
+      "sourceSha256": "c20280e58d51d6a503e9cb6d8ccc84d645042a9f7cb6ed0ae0a73147fefba91b"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/10-D5.wav",
+      "bytes": 8974,
+      "sourceSha256": "d7d8f829444d318a564090b2418f0c9b5fe7663fe17dbc110d7268de43e7f9f5"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/11-E5.wav",
+      "bytes": 6226,
+      "sourceSha256": "e4f8491f3d8707fdc8dc5fdddce5754ba39bc6e529857044951ba89e49b03b60"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/12-F5.wav",
+      "bytes": 4910,
+      "sourceSha256": "54454ab96c686fcb88264861804ef8d473e147be2eb2c7bf31619f607cbca166"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/01-mushroom/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/01-mushroom/13-G5.wav",
+      "bytes": 2812,
+      "sourceSha256": "aabbcea982d6d54c0a97b2fce1816dd3c07b5c2c59e51dc1ac30662fcd9c2159"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/01-B3.wav",
+      "bytes": 41056,
+      "sourceSha256": "b9a2c4c52d1a433c0cb6c0a335da03220547d338a512b82ac0a382b3bc2f7e20"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/02-C4.wav",
+      "bytes": 38908,
+      "sourceSha256": "ad56d96d87d7053bec86132d45fa5af6d5988ca28810e7c00361ca2a817549b5"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/03-D4.wav",
+      "bytes": 34600,
+      "sourceSha256": "e46e029a02590d0a8fdb69946ac362eee3a208b19481e921f8d09f3e51840d93"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/04-E4.wav",
+      "bytes": 30950,
+      "sourceSha256": "efdc9b158b1f58db8cd68b67bee10aeb777f6c1ac7099a4ed3a624a784b61fda"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/05-F4.wav",
+      "bytes": 29256,
+      "sourceSha256": "4d292032a1a6b8188416cc937e16b9d0dcd1db0b96c0b1f7aa16ade135b7aeb9"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/06-G4.wav",
+      "bytes": 26112,
+      "sourceSha256": "45c6cb16aaf3420b38ecc78a0428a3fce8b5e4dc6d60c27e2e9aceeef5949236"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/07-A4.wav",
+      "bytes": 23298,
+      "sourceSha256": "b28292094f24adb2525c5c2be3e5c2f2e05794b3b1b5b3dce1cfbae015ed2008"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/08-B4.wav",
+      "bytes": 20878,
+      "sourceSha256": "416f2f996a5848e474af2d84ce89dd087a52d34514940b8ed441d19a83de24dc"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/09-C5.wav",
+      "bytes": 19748,
+      "sourceSha256": "f5ecad5d3921381e0e2ea66e1ef1efd72f9257a25687b2e20b7ecd43e00c24f4"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/10-D5.wav",
+      "bytes": 17652,
+      "sourceSha256": "b79d6b69fb4cc16cb4134c20e56d532756fd9246938dddd694d4f9290e791eaa"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/11-E5.wav",
+      "bytes": 15794,
+      "sourceSha256": "52ebda0983f62dd2606323ffe11bdca62fe4eb6744618b2fe2a3ebfe5edeecbc"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/12-F5.wav",
+      "bytes": 14946,
+      "sourceSha256": "7f198ade41629c43d38d33f4a4724fbfc429b36b6492e3699ed47ebf31d8f670"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/02-yoshi/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/02-yoshi/13-G5.wav",
+      "bytes": 13388,
+      "sourceSha256": "f5ad8d0251689863e83e9c321fc733857e97297fb577c007dd88c32a7f656e27"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/01-B3.wav",
+      "bytes": 28388,
+      "sourceSha256": "84c55d6cc9c761b6f52babece88b0c73e4c9dc672121e3e35a633ac6c8a1b4ab"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/02-C4.wav",
+      "bytes": 28394,
+      "sourceSha256": "bf22414ad117b6326e72a927ace527dee6aed5f74e64323ad799eb132c2108fc"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/03-D4.wav",
+      "bytes": 28406,
+      "sourceSha256": "0d889fa5c6c902c954f64259e28124680743de4bbedbbb4fdb032b72465d8a4c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/04-E4.wav",
+      "bytes": 28416,
+      "sourceSha256": "5074cbc4bdcfd012ad47c5857486f29be491adb5dae7a6908b7516840cc2ed63"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/05-F4.wav",
+      "bytes": 28422,
+      "sourceSha256": "28a76504068cf89dfabb790d60c34ed09413f295d5e609680e38239ae061944a"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/06-G4.wav",
+      "bytes": 28430,
+      "sourceSha256": "d5ce14dea63ffeda373f4a5e980f2d155a0014a53a2d9e0381f79cd53ccc7e66"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/07-A4.wav",
+      "bytes": 28438,
+      "sourceSha256": "6e18b289398f3516f6c1beb34e77d911d7d49aa2a05a6e756da3dd9b9a57cd74"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/08-B4.wav",
+      "bytes": 28440,
+      "sourceSha256": "0837d2248256eab3d1d5c9f4e7bf1515242853941a5313305f33bf943db83617"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/09-C5.wav",
+      "bytes": 28448,
+      "sourceSha256": "c62c3c66bff8155f2cfd38e65170cbaa1280e7594ce7a47d969819202d9f5112"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/10-D5.wav",
+      "bytes": 28454,
+      "sourceSha256": "fd256f12b88d4a4c9c7f2891e5ffeca97454cf37349686bc51a497722defa98c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/11-E5.wav",
+      "bytes": 28454,
+      "sourceSha256": "8b155f2c4e171005374888394c7b18b7329f9227ac898ae0eef4fbabeb162137"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/12-F5.wav",
+      "bytes": 28462,
+      "sourceSha256": "a0e81ebd646ea15c9c56fc350999b82b2294ee7394781c5a7c108340212be3f5"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/03-star/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/03-star/13-G5.wav",
+      "bytes": 28466,
+      "sourceSha256": "319b57535bb3dc891beb22706e25cb9521a62bd0b3f123f0311c9a227d13e06f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/01-B3.wav",
+      "bytes": 12952,
+      "sourceSha256": "562f534e7cc56de21c984630ab5d48efaa539372a22c2912d031ce268895fe5b"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/02-C4.wav",
+      "bytes": 12958,
+      "sourceSha256": "8ad6bb4ecdaf8ed31d579b5cf87f5f513181b58de9701ebe8783381a9f6c23f2"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/03-D4.wav",
+      "bytes": 12968,
+      "sourceSha256": "901d3a28a635dceb4a529861c679980fdbcd094646f096550f6d0af059c6e487"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/04-E4.wav",
+      "bytes": 12976,
+      "sourceSha256": "07d34d395cab04fdbaface2c4d85987df843f226682e53baf8a820a3bcb2d98a"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/05-F4.wav",
+      "bytes": 12978,
+      "sourceSha256": "793a1c775efed18a8f42d729862419748f5a60868865459a0c8f2e5764e46c8d"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/06-G4.wav",
+      "bytes": 12986,
+      "sourceSha256": "b2a049b10c07e4e6685746f474d917ccabe37d94c6f1584f418da2d4dc8f33cc"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/07-A4.wav",
+      "bytes": 12994,
+      "sourceSha256": "d36a9c898ed7abc50be934e9e6ecb1912322c90b6e59b0723f3c75c67049b6d7"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/08-B4.wav",
+      "bytes": 12998,
+      "sourceSha256": "30a590378240a6b4b0892ac9f1610ebbae9454d0d9f2fe54f9894eff4c179ac1"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/09-C5.wav",
+      "bytes": 13002,
+      "sourceSha256": "845ada0fd91e2d6003d92286fa5b50e557950b22c2d4452fd2bf1d8646e2cde6"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/10-D5.wav",
+      "bytes": 13006,
+      "sourceSha256": "6e7227faf09fd221984054ee6cdae0c3fc9350d163416afb55cac5c3e7824e40"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/11-E5.wav",
+      "bytes": 13010,
+      "sourceSha256": "39312004c2fa53d2fff35a423308690121b7b391a775851ac7e933e588e60a81"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/12-F5.wav",
+      "bytes": 13012,
+      "sourceSha256": "3e144af5f08a551a312d4f7ffaa4df6e2547b71fceac92c320a7ef3fb30e604f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/04-flower/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/04-flower/13-G5.wav",
+      "bytes": 13016,
+      "sourceSha256": "264457568605ff448a64278196db33c15564e6cc6523b316d4629e991b8a1ce1"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/01-B3.wav",
+      "bytes": 9268,
+      "sourceSha256": "b1f4f9d64ae552966f26df72587f3d427ee2835a8c69d330e34756f716cd4527"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/02-C4.wav",
+      "bytes": 9270,
+      "sourceSha256": "601755affb1dbd101fbdb3118a20c24128bf1a0823c2a044d759d2b30d714ae3"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/03-D4.wav",
+      "bytes": 9274,
+      "sourceSha256": "080ee310b8d3ca2e912454dd6aad805eee844e3a671e6d7fe99266d7b643521a"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/04-E4.wav",
+      "bytes": 9278,
+      "sourceSha256": "934e0d8af3bb6007475946ea0405f63d7ae1f8cace3a05d30e521225f51ad9dd"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/05-F4.wav",
+      "bytes": 9280,
+      "sourceSha256": "210d4ca8e95a6d4435485edb516b2a55b45ff3c6078dc6165a4f34b6ac9b82e1"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/06-G4.wav",
+      "bytes": 9284,
+      "sourceSha256": "68f6a0bb154e21e8ea368fec21e040f9234b650bfd72a9ec9dd96bd3e375d36f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/07-A4.wav",
+      "bytes": 9286,
+      "sourceSha256": "ba00b1a62c5f9f95fdaf53990573c6ab366a2e016a61ad80639bf7fe920ffc04"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/08-B4.wav",
+      "bytes": 9290,
+      "sourceSha256": "c43450a7579863b1f1c3ba9a3b7538746ea23d6fde0baaa122b322dc2f6a8d8b"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/09-C5.wav",
+      "bytes": 9290,
+      "sourceSha256": "9bbd0d825b49c724d1f4c037c0929e1704461197400d13177c0e9c59df5008b9"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/10-D5.wav",
+      "bytes": 9292,
+      "sourceSha256": "26518c3c980d9353313ee5e040618de467d388e3b3a821c379759b5f366599ac"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/11-E5.wav",
+      "bytes": 9294,
+      "sourceSha256": "9164e7e74567c757945851abe4079fb3c83de9d6d5f62a918c246854a17b52ba"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/12-F5.wav",
+      "bytes": 9296,
+      "sourceSha256": "de71fc81011431c9fad55b1bd9897550f28711fe58878038d9d4f6211ed2304d"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/05-game-boy/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/05-game-boy/13-G5.wav",
+      "bytes": 9298,
+      "sourceSha256": "246900362086f38088a852b146359d499a1037952b9ec4c01a68d531bf6e586c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/01-B3.wav",
+      "bytes": 18446,
+      "sourceSha256": "84a8ebd1c7f41830ac58ec7e75f88ddff1de11ab62674b3cc91f2005cfa81121"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/02-C4.wav",
+      "bytes": 17446,
+      "sourceSha256": "b19ff6ee74b66911cd89ea6c2ddc21d1707944838200716f26cd2f8922bf7c25"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/03-D4.wav",
+      "bytes": 15608,
+      "sourceSha256": "cd1058fd7359a84cd84b8af53b894e683bde9dbfa5f55b8f6092b28076be27b6"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/04-E4.wav",
+      "bytes": 13966,
+      "sourceSha256": "3ad97e0152e11af09d440328ec8ec771c8f4b3dce55e1aa34fd8a9693e60766f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/05-F4.wav",
+      "bytes": 13230,
+      "sourceSha256": "22b0226493a15589425d7b1e541cf17162fba6533bb62119f3c9f6f02dbb359e"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/06-G4.wav",
+      "bytes": 11852,
+      "sourceSha256": "b87265b7325c041d08c5a686239056b651c609b1b9b9265eb79dca4570b3c51f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/07-A4.wav",
+      "bytes": 10642,
+      "sourceSha256": "7ac3525e3ec8dcdaef72f05ef68cb059ff88fd39cb888cd6f1c3f3d4e5ee1174"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/08-B4.wav",
+      "bytes": 9560,
+      "sourceSha256": "8ca496c92b41c9cef785994276affd6291c0cc29f23c32891def58c0bcd1d095"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/09-C5.wav",
+      "bytes": 9068,
+      "sourceSha256": "4eead067a14eae8881e710bdd46f667f1d0ec3732fd974c8be73f943332fe842"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/10-D5.wav",
+      "bytes": 8148,
+      "sourceSha256": "da0e9a34cba1022739fe777b39b7ed7c2b92e01e1d2be8b016826733366d3f7c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/11-E5.wav",
+      "bytes": 7334,
+      "sourceSha256": "d6393f5da6fff7d6f2c8377eaff09fc15714e91a91f4c8e35bb4c4d1905d6d87"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/12-F5.wav",
+      "bytes": 6964,
+      "sourceSha256": "16dbcd3911ebbb44eb1a00f77de953a71bab528f527b7097a4146772424cdd26"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/06-dog/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/06-dog/13-G5.wav",
+      "bytes": 6286,
+      "sourceSha256": "178d818769ce3c565cf9c0860a527dcd38e7d79587e4a5594393db2d484655be"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/01-B3.wav",
+      "bytes": 23314,
+      "sourceSha256": "dff9e12ff6fee8c1ae311730eeca6bab48f62a092954184a66c847a16b8404c8"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/02-C4.wav",
+      "bytes": 22034,
+      "sourceSha256": "22d59adba043b3e5c82772c070245f2b0f70f2f0b9fbdc9990daf3082957b328"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/03-D4.wav",
+      "bytes": 19724,
+      "sourceSha256": "1ecbf8ccc5885f9e989e66588648455fbef25f5e11ce189575f5675b763a6d08"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/04-E4.wav",
+      "bytes": 17638,
+      "sourceSha256": "d0598eaf55ec07d70ee9772ab3bebda9abfb002cc98e3257d6f83b3a1c99f90b"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/05-F4.wav",
+      "bytes": 16680,
+      "sourceSha256": "6224a3d5212c74c3114286ba5a5979ec511f7b53f6d2802c35d62ae2eaacc0c9"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/06-G4.wav",
+      "bytes": 14942,
+      "sourceSha256": "c7d8dec70c01a55b1a351d55ea668731d328cd9cac717c57477eaee9160c2e0b"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/07-A4.wav",
+      "bytes": 13398,
+      "sourceSha256": "7e7a5953ac59ceb0488e099b9ecdee4b87e86b9a6cbaa2ff0f01be744bb61745"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/08-B4.wav",
+      "bytes": 12004,
+      "sourceSha256": "06b4ae723c21aceb63887976160b3030d5e4c9cd29e8e04836a8dffce7c4851f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/09-C5.wav",
+      "bytes": 11376,
+      "sourceSha256": "02eb8cdab2527cfec161bfa8cf071891bb1495476254955a4965a8d7c93348c2"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/10-D5.wav",
+      "bytes": 10214,
+      "sourceSha256": "076ff74b989563f27884f9f0cdfc56140f79f35fcfde82982ff07592ad1a935b"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/11-E5.wav",
+      "bytes": 9178,
+      "sourceSha256": "0cea123b441773eb594d564ff4aa0f975720248a169e844adb8fcb218db929fe"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/12-F5.wav",
+      "bytes": 8700,
+      "sourceSha256": "d4c4c1711a142e693fba2f4e787729c70d717087da2156d9f0dea675c73daf5a"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/07-cat/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/07-cat/13-G5.wav",
+      "bytes": 7830,
+      "sourceSha256": "742dc66d6fa8b51d3d9cf949b42c17c5668807c1d796b5f58eba1df7030fa6b4"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/01-B3.wav",
+      "bytes": 11924,
+      "sourceSha256": "aec0f04b33474076f8693caf6bdf02d8a2e829e785687df6295519da15df77fd"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/02-C4.wav",
+      "bytes": 11294,
+      "sourceSha256": "59ab36abe62c6664fdcdea674e8b71ca0157f89ab0352bf21a609644fdd63446"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/03-D4.wav",
+      "bytes": 10130,
+      "sourceSha256": "416886df3e0eacd247fa3bf7bd5f505f5114d4d1a04adf490c1f0802407af4a3"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/04-E4.wav",
+      "bytes": 9098,
+      "sourceSha256": "90baa108b8c05f3a8faee62b960d38997e85e394041851dc099cc8c129cfea75"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/05-F4.wav",
+      "bytes": 8626,
+      "sourceSha256": "a3621de12ef880ec76ce59ecff0459f8ca20911b7beb2f170ec14e1729177790"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/06-G4.wav",
+      "bytes": 7762,
+      "sourceSha256": "ee0eea21699f5b76c411b739183bd9a86425410171a96106bc7ffcb2f9edb88c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/07-A4.wav",
+      "bytes": 6992,
+      "sourceSha256": "dbd317fcc8eb11bd7236230a8859e9e4320821ac516b36b0f2f8e6038fc1a038"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/08-B4.wav",
+      "bytes": 6310,
+      "sourceSha256": "dd1ca287fc354c3cafa0fb8c65ad364b254dbb22b05d744d763ad25b62f2923d"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/09-C5.wav",
+      "bytes": 5994,
+      "sourceSha256": "31644a8a8ade005e244d06924e741477d2d252f8daf333ebf8e4bdb0690f307b"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/10-D5.wav",
+      "bytes": 5416,
+      "sourceSha256": "0ef3e11f40ff1d8b88c5d2389a42a1377e4f5416d7799cd444f6c5e296a0380c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/11-E5.wav",
+      "bytes": 4902,
+      "sourceSha256": "fec20de0d41c0ca27973b183ed9a0bd1e8879c32dd0f48354f175cdfe0b65d6e"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/12-F5.wav",
+      "bytes": 4668,
+      "sourceSha256": "2dbfd574c008ab34955b0c6e930cf38e4730fbdd041d507afdc1ca8b078afc5d"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/08-pig/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/08-pig/13-G5.wav",
+      "bytes": 4240,
+      "sourceSha256": "90d25bc96daa57f34f81e9819baebfe460d63f767df6cb4b3534254465e0e8d7"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/01-B3.wav",
+      "bytes": 17574,
+      "sourceSha256": "b3fd655afa4bf372906df344e66617a73186ef799932cb2abf8c6e70cd77cfb2"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/02-C4.wav",
+      "bytes": 16628,
+      "sourceSha256": "8c4eebfcfc334263869050ff76904deb404617e600a9c06fedc1bdfa9ac9a0b5"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/03-D4.wav",
+      "bytes": 14884,
+      "sourceSha256": "310ae342efe9481c367a8e0d8cbcb02b31671e8cd363377a5be7d73bc203feb1"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/04-E4.wav",
+      "bytes": 13340,
+      "sourceSha256": "3ac563a858da47e37c32d69d1e5c378af0b00406527572578c2c3283d6211e25"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/05-F4.wav",
+      "bytes": 12626,
+      "sourceSha256": "7c8d04cdd7924625f936a83f01baaa2a9189271feee6c05d68e59ab116c495e9"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/06-G4.wav",
+      "bytes": 11332,
+      "sourceSha256": "80106457989b992bf4ac52c67b29dc04b51d7d3d92470e99c018ab16313ae679"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/07-A4.wav",
+      "bytes": 10174,
+      "sourceSha256": "2701ec9dc0d96b27726c4567fcd7747b1a36e1d4e838b0a2cb748ba05d1bde85"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/08-B4.wav",
+      "bytes": 9146,
+      "sourceSha256": "7512404f4d73b7995c19398ecf6aefbf9ee77b1072e197b970411e1da0ec3b67"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/09-C5.wav",
+      "bytes": 8672,
+      "sourceSha256": "df2aef214255cc4389fabc1b3fcb3ffd7a87936b4175ae177ef01a87ced3e03a"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/10-D5.wav",
+      "bytes": 7806,
+      "sourceSha256": "cfa60b670ac953f87d04bcb81f430fa6aa0b36171196c8b748e0d52b40cc6396"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/11-E5.wav",
+      "bytes": 7028,
+      "sourceSha256": "42aa961d339b977265aade4b325521a223bffbfc4b8c237a4ec90230bae534c8"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/12-F5.wav",
+      "bytes": 6676,
+      "sourceSha256": "5cb169b7b28d5e2706f75033b99b58cdf7578405be79cea20f4164b17fded144"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/09-swan/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/09-swan/13-G5.wav",
+      "bytes": 6020,
+      "sourceSha256": "5b46c09d17c1b6e8295347db1d6b1826b64d92bda863b5d82db14dc1050d82b9"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/01-B3.wav",
+      "bytes": 37658,
+      "sourceSha256": "c7e535a164eca01a864ab9ff27febe0cc39839145f1fd532eba58842260ee221"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/02-C4.wav",
+      "bytes": 35562,
+      "sourceSha256": "fbe4ad26cdb44968983d70dd0f95be2881c70ff14e0ceff828389e11f5d7ab7f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/03-D4.wav",
+      "bytes": 31790,
+      "sourceSha256": "17f6fb5378084e32346a49d70c307eef392c31af088d4e69c9448d2a28fc4386"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/04-E4.wav",
+      "bytes": 28352,
+      "sourceSha256": "b3a65958fdb43a7faaced4998e37333a6094a5f43a74b18ceea59ad9dc24fcc8"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/05-F4.wav",
+      "bytes": 26812,
+      "sourceSha256": "16ab4a70c166e857e7c592d0462d02153aa6144a49e786355ec31fdf9ad707ff"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/06-G4.wav",
+      "bytes": 23972,
+      "sourceSha256": "f52efed1856e691ea6ba7694c4f397e49675db3e67037ee99ea5d2c2826d22f9"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/07-A4.wav",
+      "bytes": 21428,
+      "sourceSha256": "553888ac6426f5c02857b2349772d1c1ac57602078b87a3d36c7bf6433c69369"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/08-B4.wav",
+      "bytes": 19154,
+      "sourceSha256": "31f65b3e9651a9ce1023210e937ce9c13630a7fd9175874ae05bbdfe7c51b68b"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/09-C5.wav",
+      "bytes": 18112,
+      "sourceSha256": "e43130721b8b64fcd1dacfb984d22e7a1e004726a6d0d9f9ab55b9d9c40ef00f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/10-D5.wav",
+      "bytes": 16230,
+      "sourceSha256": "282d0f09a79e40548be82e4bb56436f0588d4600829309b741c1569521d6d58f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/11-E5.wav",
+      "bytes": 14532,
+      "sourceSha256": "e25f5c9ff3b8115a0b36444b623b2bb965ed9786be94ee134f7ac232c2c21925"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/12-F5.wav",
+      "bytes": 13750,
+      "sourceSha256": "f8dc148c12f75528a8464813f8a2051478046922b68f0d495c64538bce00e7a4"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/10-baby/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/10-baby/13-G5.wav",
+      "bytes": 12330,
+      "sourceSha256": "262ab03a49b655e11d45b08bca2be430fc059192f24cbeb86ef7eb850cfc672b"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/01-B3.wav",
+      "bytes": 45654,
+      "sourceSha256": "b53b997e6e890e013bd845ee7ebf1841fa19caee4a9f6b7bab097f3d16b86814"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/02-C4.wav",
+      "bytes": 45658,
+      "sourceSha256": "8c99c2e278cf0f247b50b0f787d409e71150a2a5df2098922e883bc06ec01955"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/03-D4.wav",
+      "bytes": 45666,
+      "sourceSha256": "2e6e8a52901a77873da540ebc407970c5cd11ae0e1d5231b80e6a6c458e59a27"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/04-E4.wav",
+      "bytes": 45670,
+      "sourceSha256": "62d07314d60907b93bd30da838bc6d3fcae8f0dd57f747cf6f8fc909f6310ee9"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/05-F4.wav",
+      "bytes": 45678,
+      "sourceSha256": "eb23d639f1cbec65dce1e4c1dcfe33d10a8cbe469769182bd53ebdab822f7d10"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/06-G4.wav",
+      "bytes": 45682,
+      "sourceSha256": "3b1ed9d013271ee52370aa6d466e978aad6d4030ba0e85a6a654bbc5c3f48ff2"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/07-A4.wav",
+      "bytes": 45690,
+      "sourceSha256": "e0d8550afab822b553cc0b487348ebe2d0b1f7fa10f7979987faf2ecbe13ae64"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/08-B4.wav",
+      "bytes": 45696,
+      "sourceSha256": "8b0e875ba2e2f64de75cb869707d3af7ed8577d6b3614ecd4a38c64e6adb60d9"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/09-C5.wav",
+      "bytes": 45698,
+      "sourceSha256": "139c6fd5f5ba4141b7812bcc754ef8880374416b3530d35d7cadf4b6456b35fb"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/10-D5.wav",
+      "bytes": 45700,
+      "sourceSha256": "8a5137c7ec228539e4068f57ddb34485a417b3550fa2b57ec7f47866ba5bddbf"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/11-E5.wav",
+      "bytes": 45706,
+      "sourceSha256": "2239e82959b3f4c16985ef4474d540e32be8bffac6d10934e1601d357ab5ee43"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/12-F5.wav",
+      "bytes": 45708,
+      "sourceSha256": "4e595eb2bbcaf7ee3a454bcc9a9a31dbe00389f81429673e3f3519916ce93211"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/11-airplane/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/11-airplane/13-G5.wav",
+      "bytes": 45708,
+      "sourceSha256": "4ce7acf1b7c90f66d31b6aa00c87d84383ef43476b5d61b0a70f4a174697c6c2"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/01-B3.wav",
+      "bytes": 5818,
+      "sourceSha256": "0f23c3bd2f006758eea8b27a98e077a6df495e2d5c77e93ae73d032e9a2da9bf"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/02-C4.wav",
+      "bytes": 5006,
+      "sourceSha256": "5a9d18ff8f66ddc454823159a2926a491822f71f0af4c38f68500b3b331ba6d4"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/03-D4.wav",
+      "bytes": 4538,
+      "sourceSha256": "e2b455448225a68933e5c854474fcdb1b4ced255e628f10ba7bed079902351c9"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/04-E4.wav",
+      "bytes": 4118,
+      "sourceSha256": "369cd2f96bcd8c188affbdbf296996967b086faacd2c7a6db1e7da7c0ce2a0b7"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/05-F4.wav",
+      "bytes": 3930,
+      "sourceSha256": "39f4c85012295c2c82eb3b0fe9bcbab5b7bf67aa05d289f4fd89c117e06e4d5a"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/06-G4.wav",
+      "bytes": 3580,
+      "sourceSha256": "b34ed586f85e86ad688f0fcc056502d26a48fbc72a1223f08aa379f53f3d7d89"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/07-A4.wav",
+      "bytes": 32702,
+      "sourceSha256": "286857467dd9377da6677f9a28fc6b4bdeae3c56f3ec76e6fc6f2e05752c967a"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/08-B4.wav",
+      "bytes": 25814,
+      "sourceSha256": "0c6e404082880671a3e813731f98a14d7b10f06bebc74fbfa9dce5cdf259b45c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/09-C5.wav",
+      "bytes": 17414,
+      "sourceSha256": "bf94b5cd8eebc971f3336f469ec3fa0625c284e831ee7007ee31581bc5f67df5"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/10-D5.wav",
+      "bytes": 13234,
+      "sourceSha256": "3321b45ef99769261608aacc45f60ad9d02401a1c5db9149344ac17e914358c1"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/11-E5.wav",
+      "bytes": 10636,
+      "sourceSha256": "baf385dd8df28bf02e9441923e55716ab89d8fd6a787322e432018b2affa63ce"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/12-F5.wav",
+      "bytes": 9066,
+      "sourceSha256": "5fae5cee246cf396bf529739d15dd0c20702879e7ca5fcacdc47868db97a1a0f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/12-boat/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/12-boat/13-G5.wav",
+      "bytes": 6968,
+      "sourceSha256": "04bff3af057d4e2e767d97229e186c0ff020fa09484aba0210db502953bdce47"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/01-B3.wav",
+      "bytes": 37956,
+      "sourceSha256": "3375264f138a9ddb5017471c3db9973ce8b4e98a8d1f1816225dbdbb1178182c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/02-C4.wav",
+      "bytes": 37958,
+      "sourceSha256": "45eb0e6c401743757fb3dc7dd7229e46c68bb4696b73358723b27c77cd14b12c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/03-D4.wav",
+      "bytes": 37962,
+      "sourceSha256": "c552b889567c5a2419cdfeff4109855dc875e1a4de2e9d815047802d06453198"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/04-E4.wav",
+      "bytes": 37966,
+      "sourceSha256": "8c98739e2838b3f75dedcac081ecdd3124460f797ae603ffeb08627efa98b576"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/05-F4.wav",
+      "bytes": 37968,
+      "sourceSha256": "97226b156b917650cb89203a0880226f717261d61aa647e3a8b16aa1965d4786"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/06-G4.wav",
+      "bytes": 37972,
+      "sourceSha256": "6230a75af868cdc09a7c31a2fab75fb19b753172ba53fa177a76a7069b51e8ca"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/07-A4.wav",
+      "bytes": 37974,
+      "sourceSha256": "edb32712dbf7aff2500c8a0a63dbfc1ccfd885a0935d80ea9d62474a41be489a"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/08-B4.wav",
+      "bytes": 37978,
+      "sourceSha256": "962d2fc9277a49a01830c96a6bebee923ca080370e06f07735620db05dadfc23"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/09-C5.wav",
+      "bytes": 37978,
+      "sourceSha256": "5cf25a93f9adcdf442486d0503084363c0cd5d1acacd53c6d6f21f13b8934b17"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/10-D5.wav",
+      "bytes": 37980,
+      "sourceSha256": "2d5007acb2059072ce34462cbdc8d581dc415805ba69d5cea1c4c9760acbd7cb"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/11-E5.wav",
+      "bytes": 37982,
+      "sourceSha256": "a408f0f25966bf40afee6d2cc79417eb16286bd1220c79632b8cbdfb89c401bb"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/12-F5.wav",
+      "bytes": 37984,
+      "sourceSha256": "50d8d977e48a0d92f325ae1636140c1737f1542eef5e4badabe700a3c4f6a1d8"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/13-car/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/13-car/13-G5.wav",
+      "bytes": 37986,
+      "sourceSha256": "c14e1798279e76b2ad328bf240cb0de802e790d4a82953677ecb06038ad85fc8"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/01-B3.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/01-B3.wav",
+      "bytes": 32458,
+      "sourceSha256": "bc13565e8c201e21b1b2cd8df3e331d13edca15e97d9e4ba741bf304269afc14"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/02-C4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/02-C4.wav",
+      "bytes": 32460,
+      "sourceSha256": "9322d4365ba6c47164c65dd15c50b7fcb171ef7c7d1245c0bffc079235965424"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/03-D4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/03-D4.wav",
+      "bytes": 32462,
+      "sourceSha256": "43b43d28a8b57412944da00976926d7dc15a8841b039369c96d61927520e6db6"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/04-E4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/04-E4.wav",
+      "bytes": 32466,
+      "sourceSha256": "2602da5f71a4611f170aaa174f34c268b823a6f5f279862c8cf01e5be09aaa11"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/05-F4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/05-F4.wav",
+      "bytes": 32466,
+      "sourceSha256": "85b9e0d8dba1be738fe4a1c728f94085b8069caf0e95057338d8f1a6072cbc2f"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/06-G4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/06-G4.wav",
+      "bytes": 32470,
+      "sourceSha256": "5c047c5ae18687d47876ecd1a1d02eca85d2f95ec2ce9efc3ec0ef632dc271af"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/07-A4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/07-A4.wav",
+      "bytes": 32472,
+      "sourceSha256": "28e1768692d026e3cc98c82c334e7b6aa0c460dfad12259297961ddb09fc4cca"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/08-B4.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/08-B4.wav",
+      "bytes": 32474,
+      "sourceSha256": "303c275eb641ea0c1a20fecb4e8690f080fa560dbf8d11ef292755af0f145c1b"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/09-C5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/09-C5.wav",
+      "bytes": 32474,
+      "sourceSha256": "68678bedaf25c99b8ee37103a38f9e4ab09e8f4be1e2a4c99d4d6097d86775c7"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/10-D5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/10-D5.wav",
+      "bytes": 32476,
+      "sourceSha256": "60f1c214b1d3701ca2c37ea9d5fd200605ee8ef0c7d53a6cd164a3f3638d5618"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/11-E5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/11-E5.wav",
+      "bytes": 32476,
+      "sourceSha256": "ce6b9ac978ecdab9cde3762e5d358265f1f12317a2f140164e17b7a91c76ed1e"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/12-F5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/12-F5.wav",
+      "bytes": 32476,
+      "sourceSha256": "0d44f24cfd69d5b8230b0e57f8b4203df816924fedc2fbdd4bd380bf02ef40a7"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/notes/14-heart/13-G5.wav",
+      "destination": "asset-packs/mario-paint/audio/notes/14-heart/13-G5.wav",
+      "bytes": 32476,
+      "sourceSha256": "6c1fa242ad744597e2f282a313d4e2a2b70be0bc30b3273ba1610d373322c16c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-00.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-00.wav",
+      "bytes": 4396,
+      "sourceSha256": "9c4f969bda0b4384527833c9d12d3856e07b015b7e9e8406424308be9c86f2a7"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-01.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-01.wav",
+      "bytes": 9036,
+      "sourceSha256": "66a399a3706f38f6c61686ca175d8c29acd760fe17cdaa095e8c4c8e6c6bcb86"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-02.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-02.wav",
+      "bytes": 19052,
+      "sourceSha256": "da56ee079f7082c822d012849fecf1af375709a4a3f3c7a177e0ef20136131a1"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-03.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-03.wav",
+      "bytes": 3532,
+      "sourceSha256": "6fa0fa809ff03c8cbe18b626b4d64972b0206236efce9cca03dc959621ca716e"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-04.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-04.wav",
+      "bytes": 4236,
+      "sourceSha256": "ece886c2fad222bdb27ffd4b0b160bdad425f07c3b1c43f6aff416ab6665eb57"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-05.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-05.wav",
+      "bytes": 684,
+      "sourceSha256": "9f6f38871ae831baa0b995e3aaa12f6b4e40cae035d2c1415c667a06fba1331c"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-06.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-06.wav",
+      "bytes": 6828,
+      "sourceSha256": "0469d273da7738281f20f6b1bfd93cac891be8051844008c395ee8253b587169"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-07.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-07.wav",
+      "bytes": 2796,
+      "sourceSha256": "1083c5444033c2678831a22b6b0f79d6fc76c17c9345aecc27d68f8364c32060"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-08.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-08.wav",
+      "bytes": 684,
+      "sourceSha256": "4ce837b8d7269edcb16f8d1ebcf3d20a383ed28f160e859d1d00d94e042ea14d"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-09.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-09.wav",
+      "bytes": 16044,
+      "sourceSha256": "f1cf22106030830347b154d8437b64dce5dff0725b173026b591b5e2c1c37656"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-0a.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-0a.wav",
+      "bytes": 8972,
+      "sourceSha256": "7f0cb9e205a638704955d3624c288095bd083086b8a1be1fae562537b1431642"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-0c.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-0c.wav",
+      "bytes": 4812,
+      "sourceSha256": "076b251e961561bd18b91350c89721550d85a6a99ce4776e06908ff76670db67"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-0d.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-0d.wav",
+      "bytes": 2252,
+      "sourceSha256": "3a14b8b35daf293ba6d4e449826d67f950250ff094ab1e9c1f2d403367d580bd"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-0e.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-0e.wav",
+      "bytes": 20588,
+      "sourceSha256": "e5c31e55f9dab7d803bdcb94fe96b72279083cf6551e49662669024f58aa8086"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-0f.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-0f.wav",
+      "bytes": 9580,
+      "sourceSha256": "cc15e9a267077b0a73ec806dd8b0d5ed10fabc030865ef66ed2d3cca50286405"
+    },
+    {
+      "source": "asset-packs/mario-paint/audio/sources/sample-10.wav",
+      "destination": "asset-packs/mario-paint/audio/sources/sample-10.wav",
+      "bytes": 5132,
+      "sourceSha256": "92167b878e6fd887d5373119444e1ed914db7892f6d645adde5228f157be8cd3"
+    },
+    {
+      "source": "asset-packs/mario-paint/browser-validation.json",
+      "destination": "asset-packs/mario-paint/browser-validation.json",
+      "bytes": 1076,
+      "sourceSha256": "cd6ecb9981d5db43b6c876f99d1ad9e5f04f75213ad60ae4c092a624cf6b7c44"
+    },
+    {
+      "source": "asset-packs/mario-paint/checksums.json",
+      "destination": "asset-packs/mario-paint/checksums.json",
+      "bytes": 50228,
+      "sourceSha256": "e46b7419cae20b288dc90a3e163268161f334767848e1dddc02c873cf0a36e1f"
+    },
+    {
+      "source": "asset-packs/mario-paint/index.html",
+      "destination": "asset-packs/mario-paint/index.html",
+      "bytes": 4458,
+      "sourceSha256": "1e530b81f18765a6a0df4434f10b4c18e56e93d08dd584bad10bac5d8144d59c"
+    },
+    {
+      "source": "asset-packs/mario-paint/manifest.json",
+      "destination": "asset-packs/mario-paint/manifest.json",
+      "bytes": 99082,
+      "sourceSha256": "4d814cb03c29d0c59d060acd498282989c2996f976657fc27cd3c303715738d3"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/00-mario.glb",
+      "destination": "asset-packs/mario-paint/models/00-mario.glb",
+      "bytes": 95704,
+      "sourceSha256": "34739d544553d1b9cd27dfd7225a0201d67f885d2f8413d3c4d534e12c2c0acf"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/01-mushroom.glb",
+      "destination": "asset-packs/mario-paint/models/01-mushroom.glb",
+      "bytes": 106324,
+      "sourceSha256": "6f3f864186fdaa162828d7e77fe50254c5254b0f8ba6bf245f61fd964c5a6af8"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/02-yoshi.glb",
+      "destination": "asset-packs/mario-paint/models/02-yoshi.glb",
+      "bytes": 96952,
+      "sourceSha256": "b4f19044237f5fcb2aa81ac4db0d813b514cb8c076653da15a7461efd58bbc00"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/03-star.glb",
+      "destination": "asset-packs/mario-paint/models/03-star.glb",
+      "bytes": 96012,
+      "sourceSha256": "93e607068b936a2c7b6aa1078bf48f710eb9cde80210a3a4b173a436e3726d34"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/04-flower.glb",
+      "destination": "asset-packs/mario-paint/models/04-flower.glb",
+      "bytes": 120376,
+      "sourceSha256": "566edcd38a4e848d29cc2ed853da31f490b20295a84e0b32dfade96737cf58bf"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/05-game-boy.glb",
+      "destination": "asset-packs/mario-paint/models/05-game-boy.glb",
+      "bytes": 95088,
+      "sourceSha256": "2dff26a471a24ef28453a1c37108acce39045d6ad30c99bb172af4b411ecb6da"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/06-dog.glb",
+      "destination": "asset-packs/mario-paint/models/06-dog.glb",
+      "bytes": 90396,
+      "sourceSha256": "2a468813c24539412f8ce6a871dc8b5f79a0c81f58e04bdfe77cbc32b2e5fac5"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/07-cat.glb",
+      "destination": "asset-packs/mario-paint/models/07-cat.glb",
+      "bytes": 90428,
+      "sourceSha256": "08e7df5d2eb89fce7579dfb97c0cd5c51a3125d49da8e7c028d04c6d0c02ca8e"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/08-pig.glb",
+      "destination": "asset-packs/mario-paint/models/08-pig.glb",
+      "bytes": 111612,
+      "sourceSha256": "714231c97a1828f79182f2de84b706bc8f729ea907f2dcffad1a1578cfc08adf"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/09-swan.glb",
+      "destination": "asset-packs/mario-paint/models/09-swan.glb",
+      "bytes": 96360,
+      "sourceSha256": "04e67c547001ef3b8d0c27216d3945dc4ed907b41de08c1102ded1ecb2e50f3b"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/10-baby.glb",
+      "destination": "asset-packs/mario-paint/models/10-baby.glb",
+      "bytes": 106312,
+      "sourceSha256": "e8f17493b91d66fa772039054403d42ddf1e4e75c84d68c3fc05a7951d4259a9"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/11-airplane.glb",
+      "destination": "asset-packs/mario-paint/models/11-airplane.glb",
+      "bytes": 72000,
+      "sourceSha256": "579a102c068f93ca8d139fba40c913f35daae62847778113a4359fc0497f65c1"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/12-boat.glb",
+      "destination": "asset-packs/mario-paint/models/12-boat.glb",
+      "bytes": 85092,
+      "sourceSha256": "0f25d45f6daa45e57486086e39018cd13f35167e1e398376ee4be836beaec722"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/13-car.glb",
+      "destination": "asset-packs/mario-paint/models/13-car.glb",
+      "bytes": 72612,
+      "sourceSha256": "53e590b6176810da9edc65c72019d33dc017c5d991ab704a81bb920b5cfbaf66"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/14-heart.glb",
+      "destination": "asset-packs/mario-paint/models/14-heart.glb",
+      "bytes": 83848,
+      "sourceSha256": "a183794981be1cf69c6c15bcd797fe86a8cee754a80f6cd5b468fe430f53dd0e"
+    },
+    {
+      "source": "asset-packs/mario-paint/models/validation.json",
+      "destination": "asset-packs/mario-paint/models/validation.json",
+      "bytes": 2481,
+      "sourceSha256": "0be1ed8a4ad9129862303c1e41d69eee05b0f6d0f3ae20998b84ccfcd4d540d7"
+    },
+    {
+      "source": "asset-packs/mario-paint/preview-desktop.png",
+      "destination": "asset-packs/mario-paint/preview-desktop.png",
+      "bytes": 167611,
+      "sourceSha256": "383e462eca13052f53faaea1217abd3ae3e065e95398cf2008ad385e199937bd"
+    },
+    {
+      "source": "asset-packs/mario-paint/preview-mobile.png",
+      "destination": "asset-packs/mario-paint/preview-mobile.png",
+      "bytes": 122775,
+      "sourceSha256": "831851446ed3a9a0c1f5b8efe67971710cef1d619ae794cea29177d220019203"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-00.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-00.brr",
+      "bytes": 1224,
+      "sourceSha256": "fe013ca825d58ca1dda5c922203872c591cb05953644328ff40a70ff57811ca3"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-01.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-01.brr",
+      "bytes": 2529,
+      "sourceSha256": "655aa60e43d35f6bef47e97533de0972da90a908a2395682213ae4147f3b6195"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-02.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-02.brr",
+      "bytes": 5346,
+      "sourceSha256": "3b59d41d585f007936d533053ceb5faac0e2f90fb742d836e46febcbad888399"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-03.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-03.brr",
+      "bytes": 981,
+      "sourceSha256": "d74485350e1035b276080becdba54d7d7d8efb56c4f3b6b666e358d0de3eadb4"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-04.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-04.brr",
+      "bytes": 1179,
+      "sourceSha256": "1436720adcaf66da4c737a8663dd745cf230af86bab7404a42b39b57f14420f4"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-05.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-05.brr",
+      "bytes": 180,
+      "sourceSha256": "5eac366c990991167dd7dae256794a73f9b7f30e4d22ff0ce6da907d2d1a5c97"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-06.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-06.brr",
+      "bytes": 1908,
+      "sourceSha256": "3946f41d5d48a31648240e4c388a7dd5b0cb947fcd0ba61b7572fc84cf132ce8"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-07.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-07.brr",
+      "bytes": 774,
+      "sourceSha256": "e313eaf0894afb1c669e03f21cb340e58a5099220b6404fd9eb43d324a456d04"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-08.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-08.brr",
+      "bytes": 180,
+      "sourceSha256": "ae840032df015d784012de62fdbab90a1113429cace9ad1942d5e6ddd80f8021"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-09.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-09.brr",
+      "bytes": 4500,
+      "sourceSha256": "2b596b26c6a2ace9c7beaf7a7834e9038c58d59aea824f452377f82813b5056e"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-0a.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-0a.brr",
+      "bytes": 2511,
+      "sourceSha256": "01a98bce73443ac1f556b7001bb8d8f69427925178c8ec98e1f71831676d7cf6"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-0b.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-0b.brr",
+      "bytes": 27,
+      "sourceSha256": "e8983c037ae60076424555aee2c658392e5fa5b697e92861d85b936bf4badce0"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-0c.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-0c.brr",
+      "bytes": 1341,
+      "sourceSha256": "fe217da2a5f2b0cf9f3daf40fa8aeb1f9a93faebdb7222f1cd3d9014aab67ca7"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-0d.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-0d.brr",
+      "bytes": 621,
+      "sourceSha256": "a58f1bbfcf9b606d4bf5c5235c05c16bc174ac1e42edd86e6ed7953cbed8b868"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-0e.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-0e.brr",
+      "bytes": 5778,
+      "sourceSha256": "6d01fe1e7442b846c39b8c82ad876eec4662f3efc56c4aa327eb9b0a99f78e82"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-0f.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-0f.brr",
+      "bytes": 2682,
+      "sourceSha256": "7249594ca3e50fa8c4aafb4ba7e0e1c1b9a0ceb24b8e5fd7b985b5eb62ecf100"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-10.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-10.brr",
+      "bytes": 1431,
+      "sourceSha256": "05405e5536aaa2ddc7d74eba91c7631d30e3b6c957b36ad69436d1aaafa24b83"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-11.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-11.brr",
+      "bytes": 27,
+      "sourceSha256": "e8983c037ae60076424555aee2c658392e5fa5b697e92861d85b936bf4badce0"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-12.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-12.brr",
+      "bytes": 477,
+      "sourceSha256": "40545b5173bf5dc916a79a149e69956d6930de70c3f8b3df0a3b8729cb22281e"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-13.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-13.brr",
+      "bytes": 1476,
+      "sourceSha256": "eca51a6e9707c37532732cd117266cc3d8bdd020fe7046b7eecda8722a501a3f"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-14.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-14.brr",
+      "bytes": 27,
+      "sourceSha256": "e8983c037ae60076424555aee2c658392e5fa5b697e92861d85b936bf4badce0"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-15.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-15.brr",
+      "bytes": 27,
+      "sourceSha256": "e8983c037ae60076424555aee2c658392e5fa5b697e92861d85b936bf4badce0"
+    },
+    {
+      "source": "asset-packs/mario-paint/raw/sample-16.brr",
+      "destination": "asset-packs/mario-paint/raw/sample-16.brr",
+      "bytes": 1476,
+      "sourceSha256": "a06f8743ac8ab2d7285b8a375d540a652e04fc66d96c7bea4aff34e3116b416f"
+    },
+    {
+      "source": "asset-packs/mario-paint/source/audio.ts",
+      "destination": "asset-packs/mario-paint/source/audio.ts",
+      "bytes": 4694,
+      "sourceSha256": "fac1dfa5ed4cdc21fcb766466e99333224938ee5065ec74d2971f24f0f78e7b9"
+    },
+    {
+      "source": "asset-packs/mario-paint/source/index.ts",
+      "destination": "asset-packs/mario-paint/source/index.ts",
+      "bytes": 76,
+      "sourceSha256": "d293f0277158f3922a74fbe46a6eef4266f43abdb48b842423de149dd284b196"
+    },
+    {
+      "source": "asset-packs/mario-paint/source/models.ts",
+      "destination": "asset-packs/mario-paint/source/models.ts",
+      "bytes": 3035,
+      "sourceSha256": "0e48c4b21b1280e018a3dfa14a9591ea18e83572affe5ea5cf2c83e14a5781d8"
+    },
+    {
+      "source": "asset-packs/mario-paint/source/types.ts",
+      "destination": "asset-packs/mario-paint/source/types.ts",
+      "bytes": 3807,
+      "sourceSha256": "354492556aacc95ee2d53f438a6684ab88e1ad3c5976b7ee626c13f509d91a4f"
+    },
+    {
+      "source": "asset-packs/mario-paint/source-comparison.json",
+      "destination": "asset-packs/mario-paint/source-comparison.json",
+      "bytes": 293,
+      "sourceSha256": "edc263bb3c97b49f3e98cd13be68f641f77b26936235bb4590736f1069959820"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/00-mario.png",
+      "destination": "asset-packs/mario-paint/sprites/00-mario.png",
+      "bytes": 261,
+      "sourceSha256": "a382c3543338a4d385ad8a633633373b0fa53595306afe469b2732e56bb65c27"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/01-mushroom.png",
+      "destination": "asset-packs/mario-paint/sprites/01-mushroom.png",
+      "bytes": 224,
+      "sourceSha256": "c2071a65d5ba0f8a425a663ff54bf4e9c5c7fed1bae4d028601ad3b789c58344"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/02-yoshi.png",
+      "destination": "asset-packs/mario-paint/sprites/02-yoshi.png",
+      "bytes": 257,
+      "sourceSha256": "3f27c94d10a12f9230309fc10acdcc4d09280e8fe336708e79b0a08fe2d52cf4"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/03-star.png",
+      "destination": "asset-packs/mario-paint/sprites/03-star.png",
+      "bytes": 186,
+      "sourceSha256": "398f4ebcdb5edd6f2c0c43755c6c7a1563d7618fe74e2d6beb20d9c60f869fbf"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/04-flower.png",
+      "destination": "asset-packs/mario-paint/sprites/04-flower.png",
+      "bytes": 247,
+      "sourceSha256": "3b314c79f92bcaaa942a2e62842faa57f97c84e98858b7bcaae8ea67d75a198c"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/05-game-boy.png",
+      "destination": "asset-packs/mario-paint/sprites/05-game-boy.png",
+      "bytes": 196,
+      "sourceSha256": "394675e9fb01d43c337ffeda32a1ffec0086d56ed4b678a4a2a9c09d26eefad8"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/06-dog.png",
+      "destination": "asset-packs/mario-paint/sprites/06-dog.png",
+      "bytes": 171,
+      "sourceSha256": "f4978db98b67afd7c4bd5dd57116f24c8394befe4f5dad1cdf6a2654bde450fa"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/07-cat.png",
+      "destination": "asset-packs/mario-paint/sprites/07-cat.png",
+      "bytes": 204,
+      "sourceSha256": "7c4d971b93703cc55d42a606642f26badcb7024b20a2432ba23c306aa892d097"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/08-pig.png",
+      "destination": "asset-packs/mario-paint/sprites/08-pig.png",
+      "bytes": 206,
+      "sourceSha256": "8fcf914306734a9f236ba7e830edcf66bfa0f3b5de0ea1683a062d1f04783f9d"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/09-swan.png",
+      "destination": "asset-packs/mario-paint/sprites/09-swan.png",
+      "bytes": 269,
+      "sourceSha256": "9a21683652d767024858beb8c69f0c830c63445ff78c7acec0e326c396f01d7e"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/10-baby.png",
+      "destination": "asset-packs/mario-paint/sprites/10-baby.png",
+      "bytes": 208,
+      "sourceSha256": "edead310931197cdffbd204e3c3a1dc9b3c5a53b5e42cd8c27dc41f531228572"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/11-airplane.png",
+      "destination": "asset-packs/mario-paint/sprites/11-airplane.png",
+      "bytes": 181,
+      "sourceSha256": "a6045c1babf8ee15b7a398b4a9c86a7aa2cb8cd6806686b5648acbe8ab661ca4"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/12-boat.png",
+      "destination": "asset-packs/mario-paint/sprites/12-boat.png",
+      "bytes": 163,
+      "sourceSha256": "ff9b705f277b966a14f2cca13dc9945e910756588cd3b58a7b1e30deff0c34c0"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/13-car.png",
+      "destination": "asset-packs/mario-paint/sprites/13-car.png",
+      "bytes": 188,
+      "sourceSha256": "70a94a1ec9eb27c9c437dba7bd6c0c6b2e5d18bdb710cfcb79e048d70a4749b3"
+    },
+    {
+      "source": "asset-packs/mario-paint/sprites/14-heart.png",
+      "destination": "asset-packs/mario-paint/sprites/14-heart.png",
+      "bytes": 178,
+      "sourceSha256": "75bf6b1b5584f685554d0ed00c74d32f691cdaf800b86a773bbd18ef2a14790d"
+    },
+    {
+      "source": "asset-packs/mario-paint/validation.json",
+      "destination": "asset-packs/mario-paint/validation.json",
+      "bytes": 535,
+      "sourceSha256": "9fd07d3d06e7f4558bd860ad5376fe3ed64355f63476c9383337a121c3d1b662"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/00-mario.json",
+      "destination": "asset-packs/mario-paint/voxels/00-mario.json",
+      "bytes": 33403,
+      "sourceSha256": "0d864897fe67846bda35cabf354237a9631f2923d62f83ace97021e58385c65a"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/00-mario.vox",
+      "destination": "asset-packs/mario-paint/voxels/00-mario.vox",
+      "bytes": 3816,
+      "sourceSha256": "5c1b06261d06e1357c6907ba876b0d7eb516fb9f69ed4799d0897b05c610c477"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/01-mushroom.json",
+      "destination": "asset-packs/mario-paint/voxels/01-mushroom.json",
+      "bytes": 40810,
+      "sourceSha256": "8dc7cecbe1d7418bcc3d62f322ee7f379aabd4de426fc738f8c75f7d70c57e48"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/01-mushroom.vox",
+      "destination": "asset-packs/mario-paint/voxels/01-mushroom.vox",
+      "bytes": 4424,
+      "sourceSha256": "0e841c0065d51d3aae2154907cf4a2743ecd1cbed81c216aa6f4befe453d1498"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/02-yoshi.json",
+      "destination": "asset-packs/mario-paint/voxels/02-yoshi.json",
+      "bytes": 32620,
+      "sourceSha256": "36d776f7389a8f5151be4dd5919c69fe8d5847065584cadd2e018d303a45e5b4"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/02-yoshi.vox",
+      "destination": "asset-packs/mario-paint/voxels/02-yoshi.vox",
+      "bytes": 3752,
+      "sourceSha256": "bad59cde746fa9cafb01011ecfd40affa42f8c7e6ac600724cb701540f0d08c8"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/03-star.json",
+      "destination": "asset-packs/mario-paint/voxels/03-star.json",
+      "bytes": 28012,
+      "sourceSha256": "a2db0ecd072ddf8ae65eb7de85985c8468f6062e2b939f65f2d6f1a31eda9dc0"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/03-star.vox",
+      "destination": "asset-packs/mario-paint/voxels/03-star.vox",
+      "bytes": 3384,
+      "sourceSha256": "3fc6a9a5fbe78a01e090e786d54efe580630db9cefbb5ce5b450546701235fd7"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/04-flower.json",
+      "destination": "asset-packs/mario-paint/voxels/04-flower.json",
+      "bytes": 37887,
+      "sourceSha256": "3a45c90683b0956c7f87cabca47b2eae8d5600c005371c5568a5a75e931dd329"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/04-flower.vox",
+      "destination": "asset-packs/mario-paint/voxels/04-flower.vox",
+      "bytes": 4184,
+      "sourceSha256": "8b87b8432ee247ed2d85bbff0cd682d3d01f26d5c96fa088accba0db51b4ded5"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/05-game-boy.json",
+      "destination": "asset-packs/mario-paint/voxels/05-game-boy.json",
+      "bytes": 36952,
+      "sourceSha256": "99a7c635704487fa438adda95a68353de9ee02dea843a5bd3f26707b130600c9"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/05-game-boy.vox",
+      "destination": "asset-packs/mario-paint/voxels/05-game-boy.vox",
+      "bytes": 4104,
+      "sourceSha256": "a5d7e534e4f0fa6c376240cdef472556a658dcad6de72814bb89bea3ab385ddb"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/06-dog.json",
+      "destination": "asset-packs/mario-paint/voxels/06-dog.json",
+      "bytes": 29211,
+      "sourceSha256": "47905e3e3022b773e0da9602a97db6bb3bc01545bb9943ca7a78669da4d2dbb4"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/06-dog.vox",
+      "destination": "asset-packs/mario-paint/voxels/06-dog.vox",
+      "bytes": 3480,
+      "sourceSha256": "cfd76096a4c2b964380f33aa6f2d715eefcb7f7d4acbd136236b3dd3cc5752d8"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/07-cat.json",
+      "destination": "asset-packs/mario-paint/voxels/07-cat.json",
+      "bytes": 23016,
+      "sourceSha256": "ac72484bc8b6a6e306a991bc953a50cd8be185a5a214878f0f73671e75e38441"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/07-cat.vox",
+      "destination": "asset-packs/mario-paint/voxels/07-cat.vox",
+      "bytes": 2968,
+      "sourceSha256": "6cd52583b3df449c2272dbf89cde455f3dd23fb6b076e0c9f39a3a998d26838d"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/08-pig.json",
+      "destination": "asset-packs/mario-paint/voxels/08-pig.json",
+      "bytes": 36273,
+      "sourceSha256": "9c4909dfe40c6d33c19ff600db7b67250634852e1265ca7d3c4c8464f0a0e761"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/08-pig.vox",
+      "destination": "asset-packs/mario-paint/voxels/08-pig.vox",
+      "bytes": 4056,
+      "sourceSha256": "b265fcc6a67f6d0c82e6257a8528ba2f26b20d897dce3ae2e5c1715f09cca066"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/09-swan.json",
+      "destination": "asset-packs/mario-paint/voxels/09-swan.json",
+      "bytes": 25152,
+      "sourceSha256": "6a0509bc8960f0f54c4c58353a5ca37c54c4958189b71aab90b9d38f3b5be60e"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/09-swan.vox",
+      "destination": "asset-packs/mario-paint/voxels/09-swan.vox",
+      "bytes": 3144,
+      "sourceSha256": "f79f33f8dc267416f14bc24cf4fd756725030c1c3facc80bb2e0e134ba5abb22"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/10-baby.json",
+      "destination": "asset-packs/mario-paint/voxels/10-baby.json",
+      "bytes": 40806,
+      "sourceSha256": "3c902d763fec10ff05a53d484e845b7e77e5994001ddb9e0b20f4f8a1baf12cd"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/10-baby.vox",
+      "destination": "asset-packs/mario-paint/voxels/10-baby.vox",
+      "bytes": 4424,
+      "sourceSha256": "e29f4e4871bc08fe4c64f518514974e163093188689b084d075199b038d3e719"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/11-airplane.json",
+      "destination": "asset-packs/mario-paint/voxels/11-airplane.json",
+      "bytes": 22458,
+      "sourceSha256": "cb03d92328655803193d83a6cc3760162e454287bec6ba683817659f91295094"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/11-airplane.vox",
+      "destination": "asset-packs/mario-paint/voxels/11-airplane.vox",
+      "bytes": 2920,
+      "sourceSha256": "833c6edd43d183575f93f1852093a40f8539b41a2776caa9e505757403e55d66"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/12-boat.json",
+      "destination": "asset-packs/mario-paint/voxels/12-boat.json",
+      "bytes": 25197,
+      "sourceSha256": "afc7cc206cf49ed492aeaaa185f739253049c50163a00edbfa6a42f62343c9b4"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/12-boat.vox",
+      "destination": "asset-packs/mario-paint/voxels/12-boat.vox",
+      "bytes": 3144,
+      "sourceSha256": "5e751d012a969d77e90ac543c55307143708d7bbca6c5a8c8af43ca4074a84e0"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/13-car.json",
+      "destination": "asset-packs/mario-paint/voxels/13-car.json",
+      "bytes": 23684,
+      "sourceSha256": "4c8fbca40a190640782ff082e0dee62e9db9beacf7c33d8a87f8b92b522548aa"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/13-car.vox",
+      "destination": "asset-packs/mario-paint/voxels/13-car.vox",
+      "bytes": 3016,
+      "sourceSha256": "90ecad3b5c0242e0becd0881f6f5bb3127ca8e3fe344801dca91c0f7cdaab61c"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/14-heart.json",
+      "destination": "asset-packs/mario-paint/voxels/14-heart.json",
+      "bytes": 27557,
+      "sourceSha256": "de0556e28de8182c16956cba9d5a555ac36171a4fb2de080d18f729cfe5c4db6"
+    },
+    {
+      "source": "asset-packs/mario-paint/voxels/14-heart.vox",
+      "destination": "asset-packs/mario-paint/voxels/14-heart.vox",
+      "bytes": 3336,
+      "sourceSha256": "f0ba65b05ecf4f276194d0d235b997319aa1369297d5cb6d5266b57039566985"
+    },
+    {
+      "source": "public/audio/harmony-bloom/glass.wav",
+      "destination": "public/audio/harmony-bloom/glass.wav",
+      "bytes": 617444,
+      "sourceSha256": "16ce0816ab88f2d02303190b135f477212746eda4fc44970d3987b1fbcd1d74d"
+    },
+    {
+      "source": "public/audio/harmony-bloom/guitar.wav",
+      "destination": "public/audio/harmony-bloom/guitar.wav",
+      "bytes": 362196,
+      "sourceSha256": "35f79c8f1fc0f1b31c22a1ca5ee34507b0868ba1beefea3f08e94df76df18c77"
+    },
+    {
+      "source": "public/audio/harmony-bloom/kalimba.wav",
+      "destination": "public/audio/harmony-bloom/kalimba.wav",
+      "bytes": 705644,
+      "sourceSha256": "a6c18e80ecad0180d1f5252a756035fd9bb555d44dacb7b1f9b76f1e52228086"
+    },
+    {
+      "source": "public/audio/harmony-bloom/marimba.wav",
+      "destination": "public/audio/harmony-bloom/marimba.wav",
+      "bytes": 420488,
+      "sourceSha256": "4ade2586146eb8f85d5a7f7d8efe73bcd8f3a3a2b47b9533d01479e5c7dfcb5c"
+    },
+    {
+      "source": "public/audio/harmony-bloom/piano.wav",
+      "destination": "public/audio/harmony-bloom/piano.wav",
+      "bytes": 529244,
+      "sourceSha256": "063998e634e1d4915e161ff2ad119bfedfc4e4d3d4e64fd360b17055fe29793a"
+    },
+    {
+      "source": "public/audio/harmony-bloom/source-manifest.json",
+      "destination": "public/audio/harmony-bloom/source-manifest.json",
+      "bytes": 3588,
+      "sourceSha256": "6ad981169b7862fb100b63a83d14f641619ad21f0d004089e25b00045adf28f9"
+    },
+    {
+      "source": "public/audio/percussion/bongo-high-A.wav",
+      "destination": "public/audio/percussion/bongo-high-A.wav",
+      "bytes": 59202,
+      "sourceSha256": "0998a2f2df33852e628f19ed49cfb1f222139640185922b2751f184643b12884"
+    },
+    {
+      "source": "public/audio/percussion/bongo-high-B.wav",
+      "destination": "public/audio/percussion/bongo-high-B.wav",
+      "bytes": 58084,
+      "sourceSha256": "85a0029b378af5f6109920feb31bb1beef0daa124ef00ff2689ad0c0c2526e7b"
+    },
+    {
+      "source": "public/audio/percussion/bongo-low-A.wav",
+      "destination": "public/audio/percussion/bongo-low-A.wav",
+      "bytes": 58962,
+      "sourceSha256": "55726d355d5fd1d3b2dc007ade65baacef9e6e832243d67c4a045fad6b4e1f80"
+    },
+    {
+      "source": "public/audio/percussion/bongo-low-B.wav",
+      "destination": "public/audio/percussion/bongo-low-B.wav",
+      "bytes": 60060,
+      "sourceSha256": "666a694a4bb31cf0c51ca1e2b15e2cb48f2ff912873dbe1e680c3604cbc154cb"
+    },
+    {
+      "source": "public/audio/percussion/hat-closed-A.wav",
+      "destination": "public/audio/percussion/hat-closed-A.wav",
+      "bytes": 42774,
+      "sourceSha256": "869c3a7c458fc48492ecd7b5e288a05debf48c05ebdf33836fae2a7b11195fa5"
+    },
+    {
+      "source": "public/audio/percussion/hat-closed-B.wav",
+      "destination": "public/audio/percussion/hat-closed-B.wav",
+      "bytes": 80390,
+      "sourceSha256": "80858c4f0544878a74ed37ee0ed40d898ee94857129f42f3076d0211232eb16f"
+    },
+    {
+      "source": "public/audio/percussion/kick-A.wav",
+      "destination": "public/audio/percussion/kick-A.wav",
+      "bytes": 167974,
+      "sourceSha256": "7fd83df7f3e749b2d2026508fe84c50f92f1f3d32d2235f62eb1f0ee0c59d626"
+    },
+    {
+      "source": "public/audio/percussion/kick-B.wav",
+      "destination": "public/audio/percussion/kick-B.wav",
+      "bytes": 165360,
+      "sourceSha256": "3a3952dde1b76e1c41abaf6f24908a55405876443fbb6a7dd955693328af84d2"
+    },
+    {
+      "source": "public/audio/percussion/snare-A.wav",
+      "destination": "public/audio/percussion/snare-A.wav",
+      "bytes": 43304,
+      "sourceSha256": "fe130b3232953688305235123fb9d7f717fba8e26d688a88e7f669707ce602a7"
+    },
+    {
+      "source": "public/audio/percussion/snare-B.wav",
+      "destination": "public/audio/percussion/snare-B.wav",
+      "bytes": 50456,
+      "sourceSha256": "2c50d1fc77d900dd08a2cdde41c6c80b7fcf99934b96d2aae81c02532c91451f"
+    },
+    {
+      "source": "public/audio/percussion/source-manifest.json",
+      "destination": "public/audio/percussion/source-manifest.json",
+      "bytes": 23051,
+      "sourceSha256": "228cd14d9b7dc919bb7f89bba583aadaf06b8724506c37010cbc343a1ef3daed"
+    },
+    {
+      "source": "docs/licenses/DM-Sans-LICENSE.txt",
+      "destination": "docs/licenses/DM-Sans-LICENSE.txt",
+      "bytes": 4502,
+      "sourceSha256": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7"
+    },
+    {
+      "source": "docs/licenses/Manrope-LICENSE.txt",
+      "destination": "docs/licenses/Manrope-LICENSE.txt",
+      "bytes": 4383,
+      "sourceSha256": "d826ab6583b12c26807d8716a545bdbbb672df04f48608a364ba9efdbe501c30"
+    },
+    {
+      "source": "docs/licenses/Playwright-Core-LICENSE.txt",
+      "destination": "docs/licenses/Playwright-Core-LICENSE.txt",
+      "bytes": 11601,
+      "sourceSha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+    },
+    {
+      "source": "docs/licenses/Playwright-Core-NOTICE.txt",
+      "destination": "docs/licenses/Playwright-Core-NOTICE.txt",
+      "bytes": 254,
+      "sourceSha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+    },
+    {
+      "source": "docs/licenses/Playwright-LICENSE.txt",
+      "destination": "docs/licenses/Playwright-LICENSE.txt",
+      "bytes": 11601,
+      "sourceSha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb"
+    },
+    {
+      "source": "docs/licenses/Playwright-NOTICE.txt",
+      "destination": "docs/licenses/Playwright-NOTICE.txt",
+      "bytes": 254,
+      "sourceSha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d"
+    },
+    {
+      "source": "docs/licenses/Three-LICENSE.txt",
+      "destination": "docs/licenses/Three-LICENSE.txt",
+      "bytes": 1081,
+      "sourceSha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "source": "docs/licenses/VCSL-CC0-1.0.txt",
+      "destination": "docs/licenses/VCSL-CC0-1.0.txt",
+      "bytes": 7048,
+      "sourceSha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "source": "docs/licenses/Virtuosity-CC0-1.0.txt",
+      "destination": "docs/licenses/Virtuosity-CC0-1.0.txt",
+      "bytes": 7048,
+      "sourceSha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "source": "docs/licenses/Zod-LICENSE.txt",
+      "destination": "docs/licenses/Zod-LICENSE.txt",
+      "bytes": 1072,
+      "sourceSha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+    },
+    {
+      "source": "docs/licenses/ws-LICENSE.txt",
+      "destination": "docs/licenses/ws-LICENSE.txt",
+      "bytes": 1183,
+      "sourceSha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef"
+    },
+    {
+      "source": "docs/templates/instrument-set/manifest.example.json",
+      "destination": "docs/templates/instrument-set/manifest.example.json",
+      "bytes": 3661,
+      "sourceSha256": "471caf21d091693845b8ea92d9aa87ccf702ac9318b4ba9a5efa974942786fa1"
+    },
+    {
+      "source": "docs/Composer-PRD.md",
+      "destination": "docs/Composer-PRD.md",
+      "bytes": 43954,
+      "sourceSha256": "ce7f77f2cabb0398bb87f2b89ddd56736034e9cc2121a49bda7a0a9f6b41a8a1"
+    },
+    {
+      "source": "docs/Three-View-Music-PRD.md",
+      "destination": "docs/Three-View-Music-PRD.md",
+      "bytes": 43015,
+      "sourceSha256": "604023367ab50e12ed5bd571d8e0feafa1bb13f5f62027dbda4e3735abcc3f7b"
+    },
+    {
+      "source": "philharmonic/Acceptance.md",
+      "destination": "docs/Acceptance.md",
+      "bytes": 9507,
+      "sourceSha256": "b7f9a1083c3ae8a21e499808cf9ae95a780a3f81c8108402e315287d22ef893d"
+    },
+    {
+      "source": "philharmonic/Library-Layouts.md",
+      "destination": "docs/Library-Layouts.md",
+      "bytes": 2746,
+      "sourceSha256": "34ffa3d6b04b5a2766c4ae66af232d340a6e3d3454f992146990e02ffbde1bbb"
+    },
+    {
+      "source": "philharmonic/UI-Refinement-2026-10-16.md",
+      "destination": "docs/UI-Refinement-2026-10-16.md",
+      "bytes": 2861,
+      "sourceSha256": "843dca9566bb3c9442d7618d7178d17ef40227f67bbc3c52fa8ed7439de5c50b"
+    },
+    {
+      "source": "philharmonic/README.md",
+      "destination": "README.md",
+      "bytes": 5359,
+      "sourceSha256": "dfd26ddc0bad4534b05f7731ea846edf5c319797745c4d7fb371c717beaa0697"
+    },
+    {
+      "source": "composer/index.html",
+      "destination": "index.html",
+      "bytes": 633,
+      "sourceSha256": "d7bbd615ca49bdd79bc392410128673ea6f4366b3425acfd91b06a65fe996783"
+    },
+    {
+      "source": "src/experiments/song-studio/assets/mario-paint-composer.png",
+      "destination": "tests/fixtures/src/experiments/song-studio/assets/mario-paint-composer.png",
+      "bytes": 668,
+      "sourceSha256": "341c27f8d8b5c4e8d4c4afcc7461aa2a0f36a65737f3ea8bca563f512a4789bc"
+    },
+    {
+      "source": "public/fixtures/S13.json",
+      "destination": "tests/fixtures/public/fixtures/S13.json",
+      "bytes": 23774,
+      "sourceSha256": "652bd6556f4976f5f0578abcb22109627fbafc5c552b2ffe66293b790176cbde"
+    },
+    {
+      "source": "public/fixtures/F10.json",
+      "destination": "tests/fixtures/public/fixtures/F10.json",
+      "bytes": 1594,
+      "sourceSha256": "ad4fb705a6a40223ca15c0b1bd7dae8635398ee8c28edae42f1061b95b03207d"
+    },
+    {
+      "source": "public/fixtures/A01.json",
+      "destination": "tests/fixtures/public/fixtures/A01.json",
+      "bytes": 11611,
+      "sourceSha256": "7f3e44da11381aebdd725dbae443951096150544ca84aeec10c9510887870dec"
+    },
+    {
+      "source": "public/fixtures/R-S44.json",
+      "destination": "tests/fixtures/public/fixtures/R-S44.json",
+      "bytes": 28806,
+      "sourceSha256": "dbb41195f3031b86491b8558da74154e686238477dd903c7533c5f33ca8f5877"
+    },
+    {
+      "source": "public/fixtures/N02.json",
+      "destination": "tests/fixtures/public/fixtures/N02.json",
+      "bytes": 16734,
+      "sourceSha256": "14e34460e061b076ae7043e6a17014bd855307a94b9bf08818b372ee95020d13"
+    },
+    {
+      "source": "public/fixtures/S43.json",
+      "destination": "tests/fixtures/public/fixtures/S43.json",
+      "bytes": 27463,
+      "sourceSha256": "8f5fa4a8e5761b98400e458668704d4a8bade35c560b83f52265d1a06f5738eb"
+    },
+    {
+      "source": "public/fixtures/BR02-FAV.json",
+      "destination": "tests/fixtures/public/fixtures/BR02-FAV.json",
+      "bytes": 18790,
+      "sourceSha256": "b32b0c7f014bbbcac2c85566ff3313cb7c4480d1a7faac06d06910af288a227f"
+    },
+    {
+      "source": "public/fixtures/C01.json",
+      "destination": "tests/fixtures/public/fixtures/C01.json",
+      "bytes": 21408,
+      "sourceSha256": "b2190e0ce500a8c122d312e2660a186aec6642c81466a39d31a912930643c965"
+    },
+    {
+      "source": "public/fixtures/C02.json",
+      "destination": "tests/fixtures/public/fixtures/C02.json",
+      "bytes": 19285,
+      "sourceSha256": "5258bf3b2f6df34b82d897d168e54bf4f5d7ba8ddf0e065356bf697f1b8bf087"
+    },
+    {
+      "source": "public/fixtures/C03.json",
+      "destination": "tests/fixtures/public/fixtures/C03.json",
+      "bytes": 18326,
+      "sourceSha256": "7375fdaecb620601b67c060cb0ee33fbcf5b7ab2c01ef8110af4c3aed131f8e5"
+    },
+    {
+      "source": "public/fixtures/C06.json",
+      "destination": "tests/fixtures/public/fixtures/C06.json",
+      "bytes": 30783,
+      "sourceSha256": "2687f0e28fab6c412908b63d57accce7e5a8aade7ffb8fcf651cf19ddc865d70"
+    },
+    {
+      "source": "public/fixtures/C07.json",
+      "destination": "tests/fixtures/public/fixtures/C07.json",
+      "bytes": 24208,
+      "sourceSha256": "238015c73980105ff2d84b292490b0e3b860a6b08140937adbd23f85a143ece5"
+    },
+    {
+      "source": "public/fixtures/C08.json",
+      "destination": "tests/fixtures/public/fixtures/C08.json",
+      "bytes": 22085,
+      "sourceSha256": "a5077e8a9b2943f5067cc3a2040ced10aafbbed9e84f3af113f0f1e07ea2d300"
+    },
+    {
+      "source": "public/fixtures/C09.json",
+      "destination": "tests/fixtures/public/fixtures/C09.json",
+      "bytes": 22497,
+      "sourceSha256": "71d18590a876fb56340552b966cf1512bb53cdb748bbd362cd6ee259685a2027"
+    },
+    {
+      "source": "public/fixtures/C10.json",
+      "destination": "tests/fixtures/public/fixtures/C10.json",
+      "bytes": 18562,
+      "sourceSha256": "0213509f888e1612eea36a448e3c6c5ed9031ea8257d736355610d301808816c"
+    },
+    {
+      "source": "public/fixtures/C11.json",
+      "destination": "tests/fixtures/public/fixtures/C11.json",
+      "bytes": 17137,
+      "sourceSha256": "e9a933f86ea27d20c16e36824ebd017d627d9fb0d1d7461c6241f85645a57a6c"
+    },
+    {
+      "source": "public/fixtures/C12.json",
+      "destination": "tests/fixtures/public/fixtures/C12.json",
+      "bytes": 30204,
+      "sourceSha256": "0e89389f68fa1293393029f4e34e34f1e5797c95eccad674bc6d109fc1a14572"
+    },
+    {
+      "source": "public/fixtures/P04.json",
+      "destination": "tests/fixtures/public/fixtures/P04.json",
+      "bytes": 18798,
+      "sourceSha256": "6ed70c7f9a21a9d4647154a651543464e52d2663692a2234972b06ffeb3a9919"
+    },
+    {
+      "source": "public/fixtures/P05.json",
+      "destination": "tests/fixtures/public/fixtures/P05.json",
+      "bytes": 19424,
+      "sourceSha256": "acf1915e2e2628911a9db826691ae9e723c0009383f136eb1e2985025a0b423c"
+    },
+    {
+      "source": "public/fixtures/BR01.json",
+      "destination": "tests/fixtures/public/fixtures/BR01.json",
+      "bytes": 18109,
+      "sourceSha256": "d31c6bdb421f68575b28d043f205a94bf3a7ed2092b36a22247f84fc599a2460"
+    },
+    {
+      "source": "public/fixtures/BR02.json",
+      "destination": "tests/fixtures/public/fixtures/BR02.json",
+      "bytes": 18790,
+      "sourceSha256": "b32b0c7f014bbbcac2c85566ff3313cb7c4480d1a7faac06d06910af288a227f"
+    },
+    {
+      "source": "public/fixtures/BR03.json",
+      "destination": "tests/fixtures/public/fixtures/BR03.json",
+      "bytes": 11983,
+      "sourceSha256": "d011ac975669396d04b5bc0d0812fa24fcf1075ca154cbf840c9c46732e459d7"
+    },
+    {
+      "source": "public/compositions/porch-lights/Bongo-Planet.json",
+      "destination": "tests/fixtures/planet-composition.json",
+      "bytes": 22342,
+      "sourceSha256": "ae3432b5ab2d9ca9a015e164bbb818b9b2235798ad17d8e78488be60c290d645"
+    }
+  ]
+}

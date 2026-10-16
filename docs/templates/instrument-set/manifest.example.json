@@ -1,0 +1,174 @@
+{
+  "format": "bongo-planet-asset-set-delivery",
+  "specVersion": 1,
+  "exampleOnly": true,
+  "id": "example-toy-set",
+  "name": "Example Toy Set",
+  "assetVersion": "1.0.0",
+  "intendedApps": [
+    "bongo-planet",
+    "bongo-philharmonic"
+  ],
+  "author": "REPLACE WITH CREATOR",
+  "distribution": "local-only",
+  "rights": {
+    "license": "UNRESOLVED",
+    "provenance": "README.md",
+    "licenseDirectory": "licenses/",
+    "note": "Replace with per-asset authorship, source and rights records before acceptance."
+  },
+  "audioDelivery": {
+    "container": "wav",
+    "encoding": "pcm-s16le",
+    "sampleRateHz": 48000,
+    "preferredChannels": 1,
+    "tuningA4Hz": 440,
+    "maximumPeakDbfs": -1,
+    "maximumDurationSeconds": 8
+  },
+  "modelDelivery": {
+    "format": "glb",
+    "gltfVersion": "2.0",
+    "axes": "x-right-y-up-z-outward",
+    "units": "planet-radius-approximately-one",
+    "mountOrigin": [
+      0,
+      0,
+      0
+    ],
+    "rootScale": [
+      1,
+      1,
+      1
+    ],
+    "boundsMin": [
+      -0.09,
+      -0.09,
+      0
+    ],
+    "boundsMax": [
+      0.09,
+      0.09,
+      0.12
+    ],
+    "maximumTriangles": 10000,
+    "maximumPrimitives": 4,
+    "maximumMaterials": 4,
+    "maximumBytes": 1048576,
+    "embeddedDependenciesOnly": true,
+    "requiredExtensions": []
+  },
+  "instruments": [
+    {
+      "id": "bell",
+      "name": "Bell",
+      "description": "A short, dry tuned toy bell with a clear fundamental.",
+      "category": "pitched",
+      "audio": {
+        "profile": "pitched-root",
+        "rootMidi": 60,
+        "rootHz": 261.6255653005986,
+        "tuneCents": 0,
+        "usefulMidiRange": [
+          48,
+          72
+        ],
+        "pitchMapping": "transpose-from-root",
+        "velocityLayers": 1,
+        "velocityBehavior": "amplitude-only",
+        "ending": "gate-or-natural-boundary",
+        "loop": false,
+        "takeOrder": [
+          "A"
+        ],
+        "samples": [
+          {
+            "take": "A",
+            "path": "audio/bell-c4.wav"
+          }
+        ]
+      },
+      "visual": {
+        "model": "models/bell.glb",
+        "icon": "icons/bell.png",
+        "iconPixels": [
+          512,
+          512
+        ],
+        "iconScaling": "smooth",
+        "bodyNode": "Body",
+        "eyesNode": "Eyes",
+        "tintableMaterials": [
+          "Body"
+        ],
+        "reaction": "application-driven"
+      },
+      "sources": [
+        "source/bell.blend",
+        "source/bell-master.wav"
+      ]
+    },
+    {
+      "id": "wood-drum",
+      "name": "Wood Drum",
+      "description": "An unpitched wooden tap, with two matched performances.",
+      "category": "unpitched",
+      "audio": {
+        "profile": "unpitched-round-robin",
+        "rootMidi": null,
+        "rootHz": null,
+        "tuneCents": null,
+        "usefulMidiRange": null,
+        "pitchMapping": "ignore-note-pitch-play-at-rate-one",
+        "velocityLayers": 1,
+        "velocityBehavior": "amplitude-only",
+        "ending": "natural-boundary",
+        "loop": false,
+        "takeOrder": [
+          "A",
+          "B"
+        ],
+        "samples": [
+          {
+            "take": "A",
+            "path": "audio/wood-drum-a.wav"
+          },
+          {
+            "take": "B",
+            "path": "audio/wood-drum-b.wav"
+          }
+        ]
+      },
+      "visual": {
+        "model": "models/wood-drum.glb",
+        "icon": "icons/wood-drum.png",
+        "iconPixels": [
+          512,
+          512
+        ],
+        "iconScaling": "smooth",
+        "bodyNode": "Body",
+        "eyesNode": "Eyes",
+        "tintableMaterials": [
+          "Body"
+        ],
+        "reaction": "application-driven"
+      },
+      "sources": [
+        "source/wood-drum.blend",
+        "source/wood-drum-master-a.wav",
+        "source/wood-drum-master-b.wav"
+      ]
+    }
+  ],
+  "deliveryRecords": {
+    "readme": "README.md",
+    "measurementsAndAcceptance": "validation.json",
+    "payloadChecksums": "checksums.json",
+    "checksumAlgorithm": "sha256",
+    "checksumsExclude": [
+      "checksums.json"
+    ]
+  },
+  "exceptions": []
+}
