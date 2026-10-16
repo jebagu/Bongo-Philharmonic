@@ -7,6 +7,7 @@
     "preview": "vite preview",
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
+    "resources:verify": "node scripts/verify-resource-versions.mjs",
     "test": "vitest run",
     "test:web": "playwright test",
     "verify": "npm run build && npm test && npm run test:web",

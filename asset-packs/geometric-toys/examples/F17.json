@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "topology": "icosa-3v-v1",
+  "settings": {
+    "bpm": 120,
+    "key": 0,
+    "scale": "major",
+    "travel": 0.75,
+    "quantization": 0.25,
+    "volume": 0.65,
+    "propagation": "gated"
+  },
+  "pieces": [
+    {
+      "label": "Generator 1",
+      "id": "gate-source",
+      "vertex": 44,
+      "kind": "generator",
+      "period": 8,
+      "phase": 0,
+      "reach": 90,
+      "enabled": true,
+      "travel": "infinite"
+    },
+    {
+      "label": "Piano 1",
+      "id": "gate-note-0",
+      "vertex": 46,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.3,
+      "level": 0.65
+    },
+    {
+      "label": "Piano 2",
+      "id": "gate-note-1",
+      "vertex": 47,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.3,
+      "level": 0.65
+    },
+    {
+      "label": "Piano 3",
+      "id": "gate-note-2",
+      "vertex": 45,
+      "kind": "note",
+      "degree": 4,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.3,
+      "level": 0.65
+    }
+  ],
+  "wiring": [
+    {
+      "vertex": 44,
+      "exits": [
+        46
+      ]
+    },
+    {
+      "vertex": 46,
+      "exits": [
+        47
+      ]
+    },
+    {
+      "vertex": 47,
+      "exits": [
+        44
+      ]
+    }
+  ]
+}

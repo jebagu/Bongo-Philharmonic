@@ -1,0 +1,47 @@
+{
+  "url": "http://127.0.0.1:5717/BongoPhilharmonic/",
+  "themes": [
+    {
+      "id": "original",
+      "color": "5262e9"
+    },
+    {
+      "id": "nebula-space",
+      "color": "8275a8"
+    },
+    {
+      "id": "firefly-garden",
+      "color": "285d5e"
+    }
+  ],
+  "layouts": [
+    {
+      "width": 1024,
+      "height": 66
+    },
+    {
+      "width": 900,
+      "height": 66
+    },
+    {
+      "width": 768,
+      "height": 66
+    },
+    {
+      "width": 760,
+      "height": 96
+    },
+    {
+      "width": 390,
+      "height": 96
+    },
+    {
+      "width": 319,
+      "height": 96
+    }
+  ],
+  "playbackPreserved": true,
+  "musicUnchanged": true,
+  "reloadAndMenuSync": true,
+  "errors": []
+}

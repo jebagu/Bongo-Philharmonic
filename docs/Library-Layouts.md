@@ -1,5 +1,7 @@
 # Bongo Planet Philharmonic composition library layouts
 
+**Current library:** the 16 October 2026 expansion adds seven full-length arrangements and replaces thumbnail cards with horizontal rows. There are now 32 local entries, with a separate Original Mario Paint songs collection. See [Library-Arrangements.md](Library-Arrangements.md). The source-preservation and spatial-layout record below describes the original 25 entries and remains applicable to those entries.
+
 The Library view includes every current Favorites menu entry and all three original Mario Paint demos: **25 entries**, containing **3,204 separate note events**. The live inventory was checked against `src/core/examples.ts` on 16 October 2026.
 
 | Collection | Entries |

@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "topology": "icosa-3v-v1",
+  "settings": {
+    "bpm": 88,
+    "key": 0,
+    "scale": "major",
+    "travel": 0.75,
+    "quantization": 0,
+    "volume": 0.55,
+    "propagation": "routes"
+  },
+  "pieces": [
+    {
+      "id": "F14-spark",
+      "vertex": 44,
+      "kind": "generator",
+      "period": 8,
+      "phase": 0,
+      "reach": 120,
+      "enabled": true,
+      "path": [
+        44,
+        88,
+        41,
+        39,
+        66,
+        63,
+        73,
+        71,
+        62
+      ]
+    },
+    {
+      "id": "F14-note-0",
+      "vertex": 88,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.48,
+      "level": 0.55
+    },
+    {
+      "id": "F14-note-1",
+      "vertex": 41,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.48,
+      "level": 0.55
+    },
+    {
+      "id": "F14-note-2",
+      "vertex": 39,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.48,
+      "level": 0.55
+    },
+    {
+      "id": "F14-note-3",
+      "vertex": 66,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.48,
+      "level": 0.55
+    },
+    {
+      "id": "F14-note-4",
+      "vertex": 63,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.48,
+      "level": 0.55
+    },
+    {
+      "id": "F14-note-5",
+      "vertex": 73,
+      "kind": "note",
+      "degree": 1,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 0.48,
+      "level": 0.55
+    },
+    {
+      "id": "F14-note-6",
+      "vertex": 71,
+      "kind": "note",
+      "degree": 2,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "glass",
+      "duration": 0.48,
+      "level": 0.55
+    },
+    {
+      "id": "F14-note-7",
+      "vertex": 62,
+      "kind": "note",
+      "degree": 0,
+      "octave": 4,
+      "timbre": "sine",
+      "instrument": "piano",
+      "duration": 1.2,
+      "level": 0.55
+    }
+  ]
+}

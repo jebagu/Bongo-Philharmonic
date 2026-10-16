@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-16",
+  "localURL": "http://127.0.0.1:5417/BongoPlanet/composer/",
+  "published": true,
+  "build": "passed",
+  "unitTests": 101,
+  "browserSuite": {
+    "passed": 25,
+    "finalFocusedChecks": 4,
+    "viewportWidths": [
+      1440,
+      1024,
+      768,
+      390,
+      319
+    ]
+  },
+  "manualChecks": [
+    "Desktop Composer and selected-note row inspected",
+    "Desktop Performance inspected",
+    "Performance divider dragged from 35 percent to 49 percent score space in the in-app browser",
+    "390px Performance screenshot inspected"
+  ],
+  "screenshots": [
+    "performance.jpg",
+    "composer.jpg",
+    "composer-note-controls.jpg"
+  ],
+  "publicVersion": 11,
+  "publicURL": "https://bongo-philharmonic.jebagu.chatgpt.site/",
+  "hostedLayoutChecks": 3
+}

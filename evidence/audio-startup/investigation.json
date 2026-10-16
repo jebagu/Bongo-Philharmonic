@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-16",
+  "status": "DONE",
+  "symptom": "Audio clock interrupted. Playback paused; press Play to resume.",
+  "rootCause": "A forward audio-clock gap over 100 ms cancelled pending silent warm-up even though the score driver had not begun playback.",
+  "fix": "Reset the startup stability window after a clock gap; only fail for a forward clock gap when the score driver is playing.",
+  "source": "src/score-worklet.ts",
+  "regressions": {
+    "file": "tests/score-worklet.test.ts",
+    "before": { "failed": 3, "passed": 1 },
+    "after": { "failed": 0, "passed": 4 },
+    "cases": [
+      "Clock gap during silent warm-up preserves Play and starts the first note once after 250 ms of stability",
+      "Deliberate Play tolerates a gap since the last idle quantum",
+      "An interruption after playback begins still pauses with no automatic restart or catch-up",
+      "Stop cancels pending startup after a gap"
+    ]
+  },
+  "validation": {
+    "unitTestsPassed": 98,
+    "unitTestFilesPassed": 9,
+    "typecheck": "passed",
+    "developmentBuild": "passed",
+    "publicBuildAndPayloadAudit": "passed",
+    "resourceBaseline": "1.0.0",
+    "resourceFilesVerified": 497,
+    "existingPublicBrowserChecksPassed": 13,
+    "newLocalColdStartChecksPassed": 2,
+    "newHostedColdStartChecksPassed": 2,
+    "startsPerSoundSetPerEnvironment": 3,
+    "hostedScores": ["full-prelude", "mario-demo-3"],
+    "manualChrome": "Existing user tab reloaded after deployment; saved Toy Ensemble started on one Play press, advanced without the notice and was left paused in Performance with Fireflies and Slow rotate restored.",
+    "limits": "No acoustic or physical-device qualification. Actual clock interruptions during active playback remain guarded."
+  },
+  "publication": {
+    "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "audience": "public",
+    "commit_sha": "dc7529dfad2cecb85ccefdb6645cb89af57d40d9",
+    "version_number": 7,
+    "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_acef72dce72c819188962d1ad4bcd19a",
+    "deployment_id": "appgdep_6ad248b04c948191828d64fb109cd417",
+    "status": "succeeded",
+    "publicFiles": 311,
+    "publicBytes": 11571502
+  }
+}

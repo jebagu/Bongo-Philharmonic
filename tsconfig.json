@@ -19,6 +19,7 @@
   "include": [
     "src",
     "foundation/src",
+    "sound-set-mockup",
     "tests",
     "vite.config.ts",
     "playwright.config.ts",

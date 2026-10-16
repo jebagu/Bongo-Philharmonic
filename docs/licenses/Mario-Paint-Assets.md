@@ -1,0 +1,9 @@
+# Mario Paint instrument assets
+
+The fifteen original instrument pictures, vertex-colored voxel models and 195 prepared note recordings are derived from Nintendo's Mario Paint. Nintendo owns the underlying artwork and sounds. No redistribution license has been established; these assets are not CC0 and are not licensed by the extraction tools' code licenses.
+
+The Composer playhead also uses the original three 16×24 Mario Paint poses (walk-a, walk-b and jump) and its 32-sample hop table at `0x00F7B4`. The poses are lossless crops of the retained composer atlas; they are Nintendo artwork with no established redistribution license. Source addresses and image hashes remain recorded in the development repository's `src/assets/mario-paint-playhead.json`. The original movement routine indexes the arc by 32 pixels of horizontal travel into an occupied note column, holds the jump pose throughout, and walks through empty space. Composer follows the audio clock, scales the native arc with the sprite, and shortens it proportionally when authored notes are closer than one native hop so Mario lands on the next onset.
+
+The note reaction also follows the original `CODE_00FC23` / `DATA_00FC73` table: pictures in the struck column move down by 0–7 native pixels over the next 32 pixels of horizontal travel. Artwork translates without stretching; the staff stays still. This table and its source address are recorded alongside the playhead provenance.
+
+The runtime manifest preserves source provenance and note metadata. Models use vertex colors without external texture images. This release includes only the original runtime pictures, models, prepared notes, manifest and three playhead poses. It excludes ROMs, raw samples, extraction tools, editable voxel sources, landmarks and alternate/upscaled variants.

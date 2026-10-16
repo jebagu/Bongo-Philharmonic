@@ -1,0 +1,17 @@
+Tool: built-in Image Gen. All three PNGs requested with transparent_background=true.
+The original generation prompts below are retained as provenance. The current PNGs use the foot-removal edit logged at the end.
+Reference: design/mockups/2026-10-12/geometric-personality.png.
+
+GENERATOR
+Create one transparent-background game UI asset for Bongo Planet: an isolated cute butter-yellow chunky donut-ring character with two small navy oval eyes with tiny white highlights and two small cream feet. NO wind-up key, NO metal hardware, NO antenna, NO text. Match the provided Bongo Planet concept's yellow generator but remove the wind-up completely. Softly beveled simple low-polygon 3D toy, warm soft directional light, gentle material shading, front three-quarter view, ring hole clearly visible. Full object centered with generous transparent padding. Target 512 x 512 square. This image is the actual draggable palette thumbnail for the yellow generator; no background, no clouds, no ground plane, no other objects. Original character.
+
+NOTE
+Create one transparent-background game UI asset for Bongo Planet: an isolated mint-green rounded upright capsule character with two small navy oval eyes with tiny white highlights and two small mint feet. Match the provided Bongo Planet concept's mint note character. No mouth, no arms, no hardware, no text. Softly beveled simple low-polygon 3D toy, warm soft directional light, gentle material shading, front three-quarter view. Tall capsule proportions: about twice as tall as wide. Full object centered with generous transparent padding. Target 512 x 512 square. This is the actual draggable palette thumbnail for the mint note piece; no background, no clouds, no ground plane, no other objects. Original character.
+
+BEAT
+Create one transparent-background game UI asset for Bongo Planet: an isolated coral-peach rounded squat cube drum character with two small navy oval eyes with tiny white highlights and two small coral feet. Match the provided Bongo Planet concept's coral beat character. No mouth, no arms, no hardware, no text. Softly beveled simple low-polygon 3D toy, warm soft directional light, gentle material shading, front three-quarter view showing the rounded top and side. Full object centered with generous transparent padding. Target 512 x 512 square. This is the actual draggable palette thumbnail for the coral beat piece; no background, no clouds, no ground plane, no other objects. Original character.
+
+FOOT REMOVAL — October 14, 2026
+Tool: built-in Image Gen; transparent_background=true; one edit per character with its existing PNG as the sole edit target. Final files: public/art/geometric-toys/generator.png, note.png, beat.png.
+Exact prompt template (CHARACTER expanded to generator, note, and beat respectively):
+Use case: precise-object-edit. Edit target: the provided Bongo Planet CHARACTER palette character image. Remove BOTH feet completely, leaving only the existing main geometric shape with its two eyes. Preserve the body's exact silhouette, proportions, color, lighting, surface finish, eye placement and eye highlights, viewing angle, scale, framing, and generous padding. Do not replace or redesign the body. The bottom body contour should be clean and naturally rounded with no feet, legs, nubs, pedestal, arms, ground plane, shadows beneath the character, extra objects, or text. Keep the background genuinely transparent.

@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import sourceAudit from '../assets/library/library-provenance.json' with { type: 'json' };
 import { getInstrument } from '../src/catalog';
-import { convertSourceEntry, LIBRARY, loadLibrary, SOURCE_LIBRARY, validateLibraryInventory } from '../src/library';
+import { convertSourceEntry, LIBRARY, loadLibrary, SOURCE_ENTRIES, SOURCE_LIBRARY, validateLibraryInventory } from '../src/library';
 import { validateComposition } from '../src/model';
 import { MARIO_PAINT_IDS } from '../foundation/src/asset-packs/mario-paint/types';
 import EXAMPLE_GROUPS from './fixtures/favorite-groups.json' with { type: 'json' };
@@ -23,14 +23,15 @@ describe('Composer source-only capped library arrangements', () => {
 
   it('inventories all 25 menu entries and verifies the independently retained Favorite fixture hashes', () => {
     expect(validateLibraryInventory()).toBeUndefined();
-    expect(LIBRARY).toHaveLength(25);
-    expect(LIBRARY.filter(entry => entry.assetSetId === 'bongo')).toHaveLength(22);
-    expect(LIBRARY.filter(entry => entry.assetSetId === 'mario')).toHaveLength(3);
+    expect(SOURCE_ENTRIES).toHaveLength(25);
+    expect(LIBRARY).toHaveLength(32);
+    expect(SOURCE_ENTRIES.filter(entry => entry.assetSetId === 'bongo')).toHaveLength(22);
+    expect(SOURCE_ENTRIES.filter(entry => entry.assetSetId === 'mario')).toHaveLength(3);
     const favoriteGroups = EXAMPLE_GROUPS.filter(group => group.name.toLowerCase().startsWith('favorites'));
     for (const group of favoriteGroups) {
       expect(LIBRARY.filter(entry => entry.group === group.name).map(entry => entry.id)).toEqual(group.examples.map(entry => `bongo-${entry.id}`));
     }
-    expect(LIBRARY.reduce((count, entry) => count + entry.composition.events.length, 0)).toBe(3204);
+    expect(SOURCE_ENTRIES.reduce((count, entry) => count + entry.composition.events.length, 0)).toBe(3204);
     for (const record of sourceAudit.favorites) {
       expect(createHash('sha256').update(readFileSync(new URL(`./fixtures/${record.fixture}`, import.meta.url))).digest('hex'), record.fixture).toBe(record.fixtureSha256);
     }
@@ -53,7 +54,7 @@ describe('Composer source-only capped library arrangements', () => {
 
   it('uses different spatial shapes for different songs with equally sized bands', () => {
     const layouts = new Map<number, Set<string>>();
-    for (const entry of LIBRARY.filter(item => item.id !== 'bongo-BR02-FAV')) {
+    for (const entry of SOURCE_ENTRIES.filter(item => item.id !== 'bongo-BR02-FAV')) {
       const junctions = entry.composition.performers.map(performer => performer.junctionId).sort((a, b) => a - b);
       const peers = layouts.get(junctions.length) ?? new Set<string>();
       const shape = junctions.join(',');
@@ -141,8 +142,8 @@ describe('Composer source-only capped library arrangements', () => {
 
   it('returns independent compositions and retains the deliberately duplicated menu arrangement', () => {
     const loaded = loadLibrary();
-    loaded[0].composition.events.splice(0);
-    expect(LIBRARY[0].composition.events).toHaveLength(163);
+    loaded.find(entry => entry.id === 'mario-demo-1')!.composition.events.splice(0);
+    expect(LIBRARY.find(entry => entry.id === 'mario-demo-1')!.composition.events).toHaveLength(163);
     const tuple = (id: string) => LIBRARY.find(entry => entry.id === id)!.composition.events.map(event => [event.pitch, event.startBeat, event.durationBeats, event.velocity]);
     expect(tuple('bongo-BR02-FAV')).toEqual(tuple('bongo-BR02'));
   });

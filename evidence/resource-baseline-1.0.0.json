@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-16",
+  "baselineVersion": "1.0.0",
+  "resourceGroups": 11,
+  "versionedFileMappings": 497,
+  "contentSha256": "0be3b16018e71c40bf228a88747360352d28a70a2b2ddebc1c58b963c126d27f",
+  "comparison": {
+    "verified": true,
+    "local": {
+      "project": "bongo-philharmonic",
+      "version": "1.0.0",
+      "contentSha256": "0be3b16018e71c40bf228a88747360352d28a70a2b2ddebc1c58b963c126d27f",
+      "resources": 11,
+      "files": 497,
+      "bytes": 21703613,
+      "lockSha256": "babd2313086dacedcaeab115db3fe1c9c19845c9f4bbaf41f9ec179b4774b3f8"
+    },
+    "peer": {
+      "project": "bongo-planet",
+      "version": "1.0.0",
+      "contentSha256": "0be3b16018e71c40bf228a88747360352d28a70a2b2ddebc1c58b963c126d27f",
+      "resources": 11,
+      "files": 497,
+      "bytes": 21703613,
+      "lockSha256": "babd2313086dacedcaeab115db3fe1c9c19845c9f4bbaf41f9ec179b4774b3f8"
+    },
+    "identicalBaseline": true
+  },
+  "browser": {
+    "checkedAt": "2026-10-16T15:34:11.652Z",
+    "results": [
+      {
+        "base": "http://127.0.0.1:5617/BongoPlanet/composer/",
+        "resource": "asset-packs/mario-paint/",
+        "passed": true
+      },
+      {
+        "base": "http://127.0.0.1:5617/BongoPlanet/composer/",
+        "resource": "instrument-candidates/",
+        "passed": true
+      },
+      {
+        "base": "http://127.0.0.1:5617/BongoPlanet/composer/",
+        "resource": "sound-set-mockup/",
+        "passed": true
+      },
+      {
+        "base": "http://127.0.0.1:5617/BongoPlanet/composer/",
+        "resource": "mario-landmarks/",
+        "passed": true
+      },
+      {
+        "base": "http://127.0.0.1:5618/BongoPlanet/",
+        "resource": "asset-packs/mario-paint/",
+        "passed": true
+      },
+      {
+        "base": "http://127.0.0.1:5618/BongoPlanet/",
+        "resource": "instrument-candidates/",
+        "passed": true
+      },
+      {
+        "base": "http://127.0.0.1:5618/BongoPlanet/",
+        "resource": "sound-set-mockup/",
+        "passed": true
+      },
+      {
+        "base": "http://127.0.0.1:5618/BongoPlanet/",
+        "resource": "mario-landmarks/",
+        "passed": true
+      }
+    ]
+  },
+  "validation": {
+    "unitTests": {
+      "files": 6,
+      "passed": 83
+    },
+    "localBuild": "passed",
+    "publicBuildAndPayloadAudit": "passed",
+    "verifierChecks": [
+      "matching baseline accepted",
+      "same-size content drift rejected",
+      "unversioned addition rejected",
+      "missing file rejected",
+      "symlink rejected",
+      "restored baseline accepted"
+    ],
+    "archives": "both existing ZIPs passed CRC checks; neither contains ROM files",
+    "previewState": "separate shortlist keys verified in both projects",
+    "publication": "no copied support pages, tools, reference collections, archives or version records in public payload; no deployment performed"
+  },
+  "limits": [
+    "Temporary strict-port overrides 5617/5618 were used for QA; permanent URLs were not changed.",
+    "Original landmark downloads remain pending authentication; the reference collection stays inactive.",
+    "No new human listening, Safari, physical-device or venue acceptance is claimed."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "saved": {
+    "id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_39da410c34848191af62bb276b451b44",
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "version_number": 6,
+    "source": {
+      "commit_sha": "f27dbc60ff72cee4096ad325656a1b608533e5d2"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_0000000042808211be4e3ce6bb58b17a",
+      "content_hash": "sha256:5b4f21d222a712210b4e5fa1cbb9e1206d8fc113b9ae00994a03db6da38cee94",
+      "size_bytes": 11776000,
+      "file_count": 312
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ad246873344819197efd890a8909482",
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "title": "Bongo Philharmonic",
+    "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_39da410c34848191af62bb276b451b44",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad23b8ada4081918bf45b0ad02007c9",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-16T15:45:29.823524+00:00"
+  },
+  "source": {
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "commit_sha": "f27dbc60ff72cee4096ad325656a1b608533e5d2",
+    "archive": "/tmp/bongo-philharmonic-song-files-public.tar.gz"
+  },
+  "checks": {
+    "unitTests": 94,
+    "localPublicBrowserTests": 12,
+    "resourceFiles": 497,
+    "files": 311,
+    "bytes": 11521816,
+    "liveFAQBrowserTests": 4
+  },
+  "hostedAudioVerification": "Advancing audio clock verified after following the existing first-start Play-to-resume notice once when displayed."
+}

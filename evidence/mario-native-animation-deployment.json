@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-16",
+  "status": "succeeded",
+  "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+  "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+  "source_commit": "8eaf7dbdf7fbd70f38b118e8f9d8544ec9cae137",
+  "version": 8,
+  "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_4ecf21d14cf88191887101cf1cfd5965",
+  "deployment_id": "appgdep_6ad24c2a999c8191830a4c3b38b5d527",
+  "source_reference": "https://github.com/Yoshifanatic1/Mario-Paint-Disassembly/blob/730df333bd4110da7965e0ad063c1c5dcf894a73/MPAINT/Routine_Macros_MPAINT.asm",
+  "native": {
+    "routine": "CODE_00F6AC",
+    "hopPixels": 32,
+    "risePixels": 17,
+    "pose": "0x014D",
+    "displayAt2x": {
+      "hop": 64,
+      "rise": 34
+    }
+  },
+  "behavior": "Jump into occupied note columns, walk through rests, shorten dense arcs proportionally, scale with the sprite, remain still when paused or reduced motion is requested.",
+  "verification": {
+    "snapshotUnitTests": 95,
+    "developmentUnitTests": 99,
+    "localBrowserChecks": 2,
+    "hostedBrowserChecks": 2,
+    "scope": "Baseline rebuild matched version 7 byte-for-byte except updated provenance paragraph",
+    "resourceFiles": 497
+  },
+  "limits": "No console introductory run-in. Dense authored notes are closer than native columns, so their arcs shorten proportionally to meet the next onset."
+}

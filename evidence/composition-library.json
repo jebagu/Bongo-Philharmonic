@@ -1,0 +1,486 @@
+{
+  "date": "2026-10-16",
+  "localURL": "http://127.0.0.1:5417/BongoPlanet/composer/",
+  "libraryEntries": 32,
+  "sourceEntries": 25,
+  "authoredEntries": [
+    {
+      "id": "full-canon",
+      "title": "Pachelbel’s Canon",
+      "duration": "4:24",
+      "seconds": 264,
+      "bars": 88,
+      "soundSet": "bongo",
+      "instruments": [
+        "guitar",
+        "piano",
+        "kalimba",
+        "marimba",
+        "glass",
+        "piano",
+        "bongo-low",
+        "bongo-high"
+      ],
+      "notes": 1862,
+      "sections": [
+        {
+          "name": "Ground bass",
+          "startBeat": 0,
+          "endBeat": 32
+        },
+        {
+          "name": "Three voices",
+          "startBeat": 32,
+          "endBeat": 96
+        },
+        {
+          "name": "Flowing variation",
+          "startBeat": 96,
+          "endBeat": 160
+        },
+        {
+          "name": "Interwoven lines",
+          "startBeat": 160,
+          "endBeat": 224
+        },
+        {
+          "name": "Bright water",
+          "startBeat": 224,
+          "endBeat": 288
+        },
+        {
+          "name": "Homeward",
+          "startBeat": 288,
+          "endBeat": 320
+        },
+        {
+          "name": "Coda",
+          "startBeat": 320,
+          "endBeat": 352
+        }
+      ],
+      "budget": {
+        "peakVoices": 9,
+        "peakAttacksPerQuantum": 3,
+        "checkedAttacks": 1862,
+        "alternatePeriod": 1
+      }
+    },
+    {
+      "id": "full-prelude",
+      "title": "Final Fantasy — Prelude",
+      "duration": "3:26",
+      "seconds": 205.71428571428572,
+      "bars": 96,
+      "soundSet": "bongo",
+      "instruments": [
+        "piano",
+        "guitar",
+        "marimba",
+        "kalimba",
+        "glass",
+        "bongo-low"
+      ],
+      "notes": 1874,
+      "sections": [
+        {
+          "name": "First light",
+          "startBeat": 0,
+          "endBeat": 32
+        },
+        {
+          "name": "Crystal staircase",
+          "startBeat": 32,
+          "endBeat": 96
+        },
+        {
+          "name": "A melody appears",
+          "startBeat": 96,
+          "endBeat": 160
+        },
+        {
+          "name": "Through the minor sky",
+          "startBeat": 160,
+          "endBeat": 224
+        },
+        {
+          "name": "Open horizon",
+          "startBeat": 224,
+          "endBeat": 288
+        },
+        {
+          "name": "The ascent returns",
+          "startBeat": 288,
+          "endBeat": 352
+        },
+        {
+          "name": "Last constellation",
+          "startBeat": 352,
+          "endBeat": 384
+        }
+      ],
+      "budget": {
+        "peakVoices": 8,
+        "peakAttacksPerQuantum": 3,
+        "checkedAttacks": 1874,
+        "alternatePeriod": 1
+      }
+    },
+    {
+      "id": "full-take-on-me",
+      "title": "Take On Me",
+      "duration": "3:05",
+      "seconds": 185.06024096385542,
+      "bars": 128,
+      "soundSet": "mario",
+      "instruments": [
+        "game-boy",
+        "mario",
+        "swan",
+        "heart",
+        "flower",
+        "star",
+        "mushroom",
+        "boat",
+        "pig",
+        "yoshi"
+      ],
+      "notes": 4061,
+      "sections": [
+        {
+          "name": "Switch on",
+          "startBeat": 0,
+          "endBeat": 32
+        },
+        {
+          "name": "Verse I",
+          "startBeat": 32,
+          "endBeat": 96
+        },
+        {
+          "name": "Lift",
+          "startBeat": 96,
+          "endBeat": 128
+        },
+        {
+          "name": "Chorus I",
+          "startBeat": 128,
+          "endBeat": 192
+        },
+        {
+          "name": "Riff break",
+          "startBeat": 192,
+          "endBeat": 224
+        },
+        {
+          "name": "Verse II",
+          "startBeat": 224,
+          "endBeat": 288
+        },
+        {
+          "name": "Lift II",
+          "startBeat": 288,
+          "endBeat": 320
+        },
+        {
+          "name": "Chorus II",
+          "startBeat": 320,
+          "endBeat": 384
+        },
+        {
+          "name": "Half-time dream",
+          "startBeat": 384,
+          "endBeat": 448
+        },
+        {
+          "name": "Final chorus",
+          "startBeat": 448,
+          "endBeat": 496
+        },
+        {
+          "name": "Sign-off",
+          "startBeat": 496,
+          "endBeat": 512
+        }
+      ],
+      "budget": {
+        "peakVoices": 17,
+        "peakAttacksPerQuantum": 7,
+        "checkedAttacks": 4061,
+        "alternatePeriod": 1
+      }
+    },
+    {
+      "id": "full-avril-14th",
+      "title": "Avril 14th",
+      "duration": "2:57",
+      "seconds": 176.8421052631579,
+      "bars": 56,
+      "soundSet": "bongo",
+      "instruments": [
+        "piano",
+        "piano",
+        "guitar",
+        "glass",
+        "kalimba",
+        "marimba"
+      ],
+      "notes": 684,
+      "sections": [
+        {
+          "name": "An empty room",
+          "startBeat": 0,
+          "endBeat": 16
+        },
+        {
+          "name": "First memory",
+          "startBeat": 16,
+          "endBeat": 48
+        },
+        {
+          "name": "A different answer",
+          "startBeat": 48,
+          "endBeat": 80
+        },
+        {
+          "name": "The room opens",
+          "startBeat": 80,
+          "endBeat": 128
+        },
+        {
+          "name": "Return in sunlight",
+          "startBeat": 128,
+          "endBeat": 176
+        },
+        {
+          "name": "Music box",
+          "startBeat": 176,
+          "endBeat": 208
+        },
+        {
+          "name": "Last page",
+          "startBeat": 208,
+          "endBeat": 224
+        }
+      ],
+      "budget": {
+        "peakVoices": 7,
+        "peakAttacksPerQuantum": 2,
+        "checkedAttacks": 684,
+        "alternatePeriod": 1
+      }
+    },
+    {
+      "id": "full-dancing-queen",
+      "title": "Dancing Queen",
+      "duration": "4:10",
+      "seconds": 249.6,
+      "bars": 104,
+      "soundSet": "mario",
+      "instruments": [
+        "mario",
+        "heart",
+        "swan",
+        "airplane",
+        "flower",
+        "star",
+        "mushroom",
+        "boat",
+        "pig",
+        "cat",
+        "game-boy"
+      ],
+      "notes": 3717,
+      "sections": [
+        {
+          "name": "Mirror ball",
+          "startBeat": 0,
+          "endBeat": 32
+        },
+        {
+          "name": "Chorus I",
+          "startBeat": 32,
+          "endBeat": 96
+        },
+        {
+          "name": "Verse",
+          "startBeat": 96,
+          "endBeat": 160
+        },
+        {
+          "name": "Rising lights",
+          "startBeat": 160,
+          "endBeat": 192
+        },
+        {
+          "name": "Chorus II",
+          "startBeat": 192,
+          "endBeat": 256
+        },
+        {
+          "name": "Picture parade",
+          "startBeat": 256,
+          "endBeat": 288
+        },
+        {
+          "name": "Under the lights",
+          "startBeat": 288,
+          "endBeat": 320
+        },
+        {
+          "name": "Final chorus",
+          "startBeat": 320,
+          "endBeat": 384
+        },
+        {
+          "name": "Last dance",
+          "startBeat": 384,
+          "endBeat": 416
+        }
+      ],
+      "budget": {
+        "peakVoices": 14,
+        "peakAttacksPerQuantum": 6,
+        "checkedAttacks": 3717,
+        "alternatePeriod": 1
+      }
+    },
+    {
+      "id": "full-night-music",
+      "title": "Eine kleine Nachtmusik",
+      "duration": "3:53",
+      "seconds": 232.72727272727272,
+      "bars": 128,
+      "soundSet": "bongo",
+      "instruments": [
+        "marimba",
+        "kalimba",
+        "guitar",
+        "piano",
+        "glass",
+        "bongo-low",
+        "bongo-high"
+      ],
+      "notes": 2569,
+      "sections": [
+        {
+          "name": "Curtain up",
+          "startBeat": 0,
+          "endBeat": 32
+        },
+        {
+          "name": "First subject",
+          "startBeat": 32,
+          "endBeat": 96
+        },
+        {
+          "name": "Second subject",
+          "startBeat": 96,
+          "endBeat": 160
+        },
+        {
+          "name": "Closing dance",
+          "startBeat": 160,
+          "endBeat": 192
+        },
+        {
+          "name": "Development",
+          "startBeat": 192,
+          "endBeat": 288
+        },
+        {
+          "name": "On tiptoe",
+          "startBeat": 288,
+          "endBeat": 320
+        },
+        {
+          "name": "Home again",
+          "startBeat": 320,
+          "endBeat": 384
+        },
+        {
+          "name": "Second subject at home",
+          "startBeat": 384,
+          "endBeat": 448
+        },
+        {
+          "name": "Final bows",
+          "startBeat": 448,
+          "endBeat": 512
+        }
+      ],
+      "budget": {
+        "peakVoices": 8,
+        "peakAttacksPerQuantum": 5,
+        "checkedAttacks": 2569,
+        "alternatePeriod": 1
+      }
+    },
+    {
+      "id": "full-swan-lake",
+      "title": "Swan Lake",
+      "duration": "4:00",
+      "seconds": 240,
+      "bars": 72,
+      "soundSet": "bongo",
+      "instruments": [
+        "glass",
+        "piano",
+        "guitar",
+        "kalimba",
+        "marimba",
+        "glass",
+        "bongo-low",
+        "bongo-high"
+      ],
+      "notes": 1348,
+      "sections": [
+        {
+          "name": "Moon on the lake",
+          "startBeat": 0,
+          "endBeat": 32
+        },
+        {
+          "name": "The swan",
+          "startBeat": 32,
+          "endBeat": 96
+        },
+        {
+          "name": "Reflections dance",
+          "startBeat": 96,
+          "endBeat": 160
+        },
+        {
+          "name": "The storm",
+          "startBeat": 160,
+          "endBeat": 208
+        },
+        {
+          "name": "The swan returns",
+          "startBeat": 208,
+          "endBeat": 256
+        },
+        {
+          "name": "Still water",
+          "startBeat": 256,
+          "endBeat": 288
+        }
+      ],
+      "budget": {
+        "peakVoices": 11,
+        "peakAttacksPerQuantum": 4,
+        "checkedAttacks": 1348,
+        "alternatePeriod": 1
+      }
+    }
+  ],
+  "authoredNotes": 16115,
+  "totalSeconds": 1553.9439046685718,
+  "verification": {
+    "localBuild": "passed",
+    "unitTests": 94,
+    "browserTests": 19,
+    "browserScope": "All 32 loads and recovery; desktop and 390px library rows; each new score from opening, middle and final section; rapid section selection; existing editor and FAQ regression checks.",
+    "audition": "Runtime and score checks completed; no human listening acceptance claimed."
+  }
+}

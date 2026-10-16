@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "source": {
+    "commit_sha": "c18b9118cdde4b1948404425931bba1848f703dd"
+  },
+  "deployment": {
+    "id": "appgdep_6ad242e6795081918e66c277db400bc6",
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "title": "Bongo Philharmonic",
+    "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_6e7346110de0819198493f18fe2e5709",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad23b8ada4081918bf45b0ad02007c9",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-16T15:29:59.656720+00:00"
+  },
+  "screenshots": [
+    "guide/placement.png",
+    "guide/composer.png",
+    "guide/performance.png"
+  ]
+}

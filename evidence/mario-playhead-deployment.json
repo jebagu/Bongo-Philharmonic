@@ -1,0 +1,21 @@
+{
+  "change": "Restore the original Mario Paint Composer playhead in public builds",
+  "date": "2026-10-16",
+  "site_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+  "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+  "audience": "public",
+  "source_commit": "4fe52f063f63fde64a8ae72b13c82254d95eba8c",
+  "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_ee8bd93036848191b0ab82fba0e58321",
+  "version_number": 4,
+  "deployment_id": "appgdep_6ad24347d5d4819197d934eabf7f7174",
+  "status": "succeeded",
+  "verification": {
+    "public_build": "passed; 311 files, 11480994 bytes, three native pose hashes verified",
+    "unit_tests": "83 passed at build verification",
+    "resource_baseline": "1.0.0; 497 files verified",
+    "local_public_browser": "7 passed",
+    "live_playhead_browser": "1 passed covering both sound sets, native image size, jump, pause, reduced motion and 390px layout",
+    "regression_before_fix": "Live site returned Bongo portrait at 32px with data-pose=bongo",
+    "hosted_audio_observation": "Cold-start headless runs encountered the existing audio-clock interruption. Final animation regression passed after loading the sound bank with Play/Stop. Transport unchanged."
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.public.config.ts",
+      "score-follow-browser.spec.ts"
+    ],
+    "configFile": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/playwright.public.config.ts",
+    "rootDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/tmp/bongo-philharmonic-public-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "public-browser.spec.ts",
+          "faq-browser.spec.ts",
+          "performance-backgrounds.spec.ts",
+          "playhead-browser.spec.ts",
+          "score-reaction-browser.spec.ts",
+          "score-follow-browser.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/tmp/bongo-philharmonic-public-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+        "snapshotDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "public-browser.spec.ts",
+          "faq-browser.spec.ts",
+          "performance-backgrounds.spec.ts",
+          "playhead-browser.spec.ts",
+          "score-reaction-browser.spec.ts",
+          "score-follow-browser.spec.ts"
+        ],
+        "timeout": 45000,
+        "use": {
+          "baseURL": "https://bongo-philharmonic.jebagu.chatgpt.site",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "launchOptions": {
+            "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "args": [
+              "--enable-unsafe-swiftshader"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/public-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "score-follow-browser.spec.ts",
+      "file": "score-follow-browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Composer follows to the real song ending at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12429,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:46:57.215Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-ed8101d9dbdcc39fcaa9",
+          "file": "score-follow-browser.spec.ts",
+          "line": 14,
+          "column": 3
+        },
+        {
+          "title": "Composer follows to the real song ending at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9836,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:47:10.932Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-22ad5239192ebad068dc",
+          "file": "score-follow-browser.spec.ts",
+          "line": 14,
+          "column": 3
+        },
+        {
+          "title": "Performance follows to the real song ending at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13576,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:47:20.848Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-4b0262166e0b5cf15f66",
+          "file": "score-follow-browser.spec.ts",
+          "line": 14,
+          "column": 3
+        },
+        {
+          "title": "Performance follows to the real song ending at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11933,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:47:34.542Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-6cfd1b355d3ba2b08436",
+          "file": "score-follow-browser.spec.ts",
+          "line": 14,
+          "column": 3
+        },
+        {
+          "title": "Composer follows a loop wrap and freezes on pause",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13780,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m33\u001b[39m\nReceived length: \u001b[31m32\u001b[39m\nReceived array:  \u001b[31m[{\"durationBeats\": 0.25, \"id\": \"event_094696b6-1707-482b-90da-47f1ed0d7443\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 0, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_7db25665-c5d0-4e91-808d-eb1875a39727\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 1, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_fe54b23b-cad5-416b-b233-7e488d4e3c36\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 2, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_75de66d5-a512-4a49-8dce-2c142b979bb6\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 3, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_739e5a08-4177-4914-9e9c-da18378e7f9f\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 4, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_bb210336-ffdf-4726-8404-1d57c1a7a99a\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 5, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_3c4ae5a3-1ec8-42f7-b1c2-b8dcb0c01bc0\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 6, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_f46b6532-4870-4189-a9f2-c710d43a273e\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 7, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_dd405230-b086-494e-bd69-01784da681ab\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 8, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_8acd44f1-f84a-4f85-bf81-2085ea187dc9\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 9, \"velocity\": 0.7}, …]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m33\u001b[39m\nReceived length: \u001b[31m32\u001b[39m\nReceived array:  \u001b[31m[{\"durationBeats\": 0.25, \"id\": \"event_094696b6-1707-482b-90da-47f1ed0d7443\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 0, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_7db25665-c5d0-4e91-808d-eb1875a39727\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 1, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_fe54b23b-cad5-416b-b233-7e488d4e3c36\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 2, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_75de66d5-a512-4a49-8dce-2c142b979bb6\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 3, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_739e5a08-4177-4914-9e9c-da18378e7f9f\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 4, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_bb210336-ffdf-4726-8404-1d57c1a7a99a\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 5, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_3c4ae5a3-1ec8-42f7-b1c2-b8dcb0c01bc0\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 6, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_f46b6532-4870-4189-a9f2-c710d43a273e\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 7, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_dd405230-b086-494e-bd69-01784da681ab\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 8, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_8acd44f1-f84a-4f85-bf81-2085ea187dc9\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 9, \"velocity\": 0.7}, …]\u001b[39m\n    at /private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests/score-follow-browser.spec.ts:96:22",
+                    "location": {
+                      "file": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests/score-follow-browser.spec.ts",
+                      "column": 22,
+                      "line": 96
+                    },
+                    "snippet": "  94 |       await page.mouse.click(point.x, point.y);\n  95 |       const events = await page.evaluate(() => (window as any).__bongoPhilharmonic.composition.events);\n> 96 |       expect(events).toHaveLength(composition.events.length + 1);\n     |                      ^\n  97 |       expect(events.at(-1)).toMatchObject({ pitch: 64, startBeat: beat });\n  98 |     }\n  99 |     await page.getByRole('button', { name: 'Stop and rewind' }).click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests/score-follow-browser.spec.ts",
+                        "column": 22,
+                        "line": 96
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoHaveLength\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected length: \u001b[32m33\u001b[39m\nReceived length: \u001b[31m32\u001b[39m\nReceived array:  \u001b[31m[{\"durationBeats\": 0.25, \"id\": \"event_094696b6-1707-482b-90da-47f1ed0d7443\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 0, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_7db25665-c5d0-4e91-808d-eb1875a39727\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 1, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_fe54b23b-cad5-416b-b233-7e488d4e3c36\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 2, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_75de66d5-a512-4a49-8dce-2c142b979bb6\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 3, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_739e5a08-4177-4914-9e9c-da18378e7f9f\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 4, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_bb210336-ffdf-4726-8404-1d57c1a7a99a\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 5, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_3c4ae5a3-1ec8-42f7-b1c2-b8dcb0c01bc0\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 6, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_f46b6532-4870-4189-a9f2-c710d43a273e\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 7, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_dd405230-b086-494e-bd69-01784da681ab\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 8, \"velocity\": 0.7}, {\"durationBeats\": 0.25, \"id\": \"event_8acd44f1-f84a-4f85-bf81-2085ea187dc9\", \"performerId\": \"performer_70179832-ac2d-4173-81fb-1a4a81400958\", \"pitch\": 60, \"startBeat\": 9, \"velocity\": 0.7}, …]\u001b[39m\n\n  94 |       await page.mouse.click(point.x, point.y);\n  95 |       const events = await page.evaluate(() => (window as any).__bongoPhilharmonic.composition.events);\n> 96 |       expect(events).toHaveLength(composition.events.length + 1);\n     |                      ^\n  97 |       expect(events.at(-1)).toMatchObject({ pitch: 64, startBeat: beat });\n  98 |     }\n  99 |     await page.getByRole('button', { name: 'Stop and rewind' }).click();\n    at /private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests/score-follow-browser.spec.ts:96:22"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:47:46.707Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/bongo-philharmonic-public-browser/score-follow-browser-Compo-369cc-p-wrap-and-freezes-on-pause/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests/score-follow-browser.spec.ts",
+                    "column": 22,
+                    "line": 96
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "700692459d63918880ad-902492e69fefcc12d049",
+          "file": "score-follow-browser.spec.ts",
+          "line": 64,
+          "column": 3
+        },
+        {
+          "title": "Performance follows a loop wrap and freezes on pause",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23228,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:48:12.302Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-6a1ba8e6b7b7a19391a8",
+          "file": "score-follow-browser.spec.ts",
+          "line": 64,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-16T16:46:55.851Z",
+    "duration": 111473.617,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

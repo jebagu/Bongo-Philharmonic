@@ -97,5 +97,13 @@
     36
   ],
   "artwork": "Original Nintendo Mario Paint artwork; local experimental asset, not CC0 or covered by the disassembly code license.",
-  "adaptation": "Lossless crops of the three retained native poses; no smoothing, recoloring or invented frames. Composer uses the original 32-sample hop table, closed at the next timing line and scaled to its grid subdivision. It hops through rests as a regular timing cue; native Mario Paint walks through empty columns."
+  "nativeMovement": { "routine": "CODE_00F6AC", "jumpPose": "0x014D", "hopWidthPixels": 32, "risePixels": 17, "walkCycleTicks": 9, "walkAPhases": [0, 1, 2, 3], "walkBPhases": [4, 5, 6, 7, 8] },
+  "noteReaction": {
+    "routine": "CODE_00FC23",
+    "tableAddress": "0x00FC73",
+    "travelPixels": 32,
+    "offsetY": [0, 0, 1, 2, 3, 3, 4, 5, 5, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 6, 6, 5, 5, 4, 3, 3, 2, 1, 0],
+    "behavior": "Every note in the current column is translated downward by the table value as Mario moves 0-31 source pixels past it. The source does not stretch the pictures or move the staff lines."
+  },
+  "adaptation": "Lossless native poses. The original 32-sample Y table is indexed by horizontal travel into an occupied note column; the jump pose is held throughout the arc and Mario walks through empty space. A 2x sprite travels 64 display pixels and rises 34 pixels. If authored notes are closer than one native hop, the arc is shortened proportionally to land exactly on the next onset. Performance and zoom scale the sprite and arc together. The editing grid never changes the animation. The web transport begins at beat zero without the console's introductory run-in."
 }

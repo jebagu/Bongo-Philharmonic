@@ -4,17 +4,19 @@ import '@fontsource/dm-sans/600.css';
 import '@fontsource/manrope/700.css';
 import '@fontsource/manrope/800.css';
 import './style.css';
-import { PUBLIC_SITE } from './release';
+import { FAQ_GUIDE } from './faq';
+import { AGENT_MUSIC_PROMPT, EXAMPLE_SONG, SONG_FORMAT, readSongFile } from './songGuide';
 import { addEvent, addPerformer, createComposition, History, locationLabel, movePerformer, performerLabel, removeEvents, removePerformer, renameLocation, STORAGE_KEY, updateEvent, validateComposition, type AssetSetId, type Composition, type Performer, type ScoreEvent } from './model';
 import { getInstrument, getInstruments } from './catalog';
-import { LIBRARY } from './library';
+import { LIBRARY, compositionDuration } from './library';
 import { ComposerSphere } from './sphere';
 import { ComposerScore, pitchName, pitchStep } from './score';
 import { ScoreTransport } from './audio';
 import { topology } from '../foundation/src/core/geometry';
 import { migrateComposerStorage, readPhilharmonicStorage } from './storage';
 
-type View = 'placement'|'composer'|'performance'|'library';
+type View = 'placement'|'composer'|'performance'|'library'|'faq';
+const VISUAL_STYLES = [['original','Blue Marble'],['nebula-space','Nebula'],['firefly-garden','Fireflies']] as const;
 const $ = <T extends HTMLElement>(selector:string) => document.querySelector<T>(selector)!;
 const el = <K extends keyof HTMLElementTagNameMap>(tag:K, className='', content?:string):HTMLElementTagNameMap[K] => {
   const node=document.createElement(tag);node.className=className;if(content!==undefined)node.textContent=content;return node;
@@ -37,28 +39,35 @@ catch {startupMessage='Saved draft could not be opened. The stored copy has been
 const history=new History(initial);
 let composition=history.current;
 let view:View='placement', previousEditor:'placement'|'composer'='placement';
-let scoreZoom=1,slowRotate=false,libraryFilter:'all'|AssetSetId='all';
+let scoreZoom=1.5,slowRotate=false,libraryFilter:'all'|AssetSetId='all';
 let selectedPerformer:string|null=null, brushId:string|null=null, selectedEvents:string[]=[];
 let placementType:string|null=null, erase=false, pageStart=0, loop=composition.loopEnabled??true, loading=false;
 let brushByFamily:Record<string,string>={};
 let pendingReturn:{type:string,brush:string|null,events:string[],page:number,x:number,y:number,newIds:string[]}|null=null;
 let familyMenu:string|null=null;
 let editorViewport={page:0,x:0,y:0};
-try {const presentation=JSON.parse(readPhilharmonicStorage(localStorage,'-presentation')||'null');if(presentation?.view==='composer')view='composer';}
+let performanceScoreRatio:number|null=null;
+try {
+  const presentation=JSON.parse(readPhilharmonicStorage(localStorage,'-presentation')||'null');
+  if(presentation?.view==='composer')view='composer';
+  if(typeof presentation?.performanceScoreRatio==='number'&&Number.isFinite(presentation.performanceScoreRatio))performanceScoreRatio=Math.max(.1,Math.min(.8,presentation.performanceScoreRatio));
+}
 catch {/* A broken presentation preference never prevents opening the score. */}
 
 const root=$<HTMLDivElement>('#philharmonic-app');
 root.innerHTML=`
-  <header class="app-header"><div class="brand">Bongo <span class="brand-subtitle">Philharmonic</span></div><nav class="view-nav" aria-label="Workspace"><button data-view="placement">Placement</button><button data-view="composer">Composer</button><button data-view="performance">Performance</button><button data-view="library">Library</button></nav><input id="composition-title" aria-label="Composition title" maxlength="180"><div class="header-actions"><button id="more-open" aria-label="More options">•••</button></div></header>
-  <div class="performance-bar panel"><div class="brand">Bongo <span class="brand-subtitle">Philharmonic</span></div><div id="performance-transport-slot"></div></div>
+  <header class="app-header"><div class="brand">Bongo <span class="brand-subtitle">Philharmonic</span></div><nav class="view-nav" aria-label="Workspace"><button data-view="placement">Placement</button><button data-view="composer">Composer</button><button data-view="performance">Performance</button><button data-view="library">Library</button><button data-view="faq">FAQ</button></nav><input id="composition-title" aria-label="Composition title" maxlength="180"><div class="header-actions"><button id="files-open">Files</button><button id="more-open" aria-label="More options">•••</button></div></header>
   <main class="workspace">
-    <aside class="placement-panel panel"><div class="section-heading"><h1>Instruments</h1><span class="band-count">0 / 16</span></div><label class="set-field">Sound set<select id="asset-set"><option value="bongo">Bongo Planet</option>${PUBLIC_SITE?'':'<option value="mario">Mario Paint</option>'}</select></label><div id="placement-palette" class="placement-palette"></div><div id="placement-intent" class="intent-tray" hidden></div><div id="performer-tray" class="performer-tray"></div></aside>
-    <section class="sphere-stage" aria-label="Instrument Placement"><div id="sphere-host"></div><div class="sphere-controls"><button id="reset-camera">Reset view</button><button id="slow-rotate" aria-pressed="false">Slow rotate</button></div><div id="sphere-hint" class="sphere-hint"></div></section>
-    <section class="composer-tools panel"><div class="composer-tool-top"><div><h1>Composer</h1><div id="current-stamp" class="current-stamp"></div></div><span class="band-count">0 / 16</span></div><div id="family-row" class="family-row" aria-label="Instrument pictures"></div><div id="family-menu" class="family-menu" hidden></div></section>
-    <section class="score-section panel"><div class="score-heading"><div class="score-tools"><button id="stamp-tool" aria-pressed="true">Stamp</button><button id="erase-tool" aria-pressed="false">Erase</button><label>Grid<select id="edit-grid"><option value="1">¼ note</option><option value="2">⅛ note</option><option value="4">¹⁄₁₆ note</option><option value="8">¹⁄₃₂ note</option><option value="3">Triplets</option></select></label><div class="score-zoom" aria-label="Score zoom"><button id="zoom-out" aria-label="Zoom out score">−</button><output id="zoom-value">100%</output><button id="zoom-in" aria-label="Zoom in score">+</button></div></div><div class="score-pages"><button id="page-back" aria-label="Previous passage">←</button><span id="page-label"></span><button id="page-next" aria-label="Next passage">→</button></div><output id="pitch-feedback" aria-live="off"></output></div><div id="note-toolbar" class="note-toolbar" hidden></div><div id="score-scroll" class="score-scroll"><div id="score-host"></div></div></section>
+    <aside class="placement-panel panel"><div class="section-heading"><h1>Instruments</h1><span class="band-count">0 / 16</span></div><label class="set-field">Sound set<select id="asset-set"><option value="bongo">Bongo Planet</option><option value="mario">Mario Paint</option></select></label><div id="placement-palette" class="placement-palette"></div><div id="placement-intent" class="intent-tray" hidden></div><div id="performer-tray" class="performer-tray"></div></aside>
+    <section id="sphere-stage" class="sphere-stage" aria-label="Instrument Placement"><div id="sphere-host"></div><div class="sphere-controls"><label class="performance-style">Visual style<select id="performance-style" aria-label="Visual style">${VISUAL_STYLES.map(([id,name])=>`<option value="${id}">${name}</option>`).join('')}</select></label><button id="reset-camera">Reset view</button><button id="slow-rotate" aria-pressed="false">Slow rotate</button></div><div id="sphere-hint" class="sphere-hint"></div></section>
+    <section class="composer-tools panel"><div class="composer-tool-top"><h1>Instruments</h1><span class="band-count">0 / 16</span></div><div id="family-row" class="family-row" aria-label="Instrument pictures"></div><div id="family-menu" class="family-menu" hidden></div></section>
+    <div id="performance-divider" role="separator" aria-label="Resize performance score" aria-orientation="horizontal" aria-controls="sphere-stage score-section" tabindex="0"></div>
+    <section id="score-section" class="score-section panel"><div class="score-heading" role="group" aria-label="Score controls"><div class="score-tools"><div class="edit-tools" role="group" aria-label="Editing tool"><button id="stamp-tool" aria-pressed="true">Draw</button><button id="erase-tool" aria-pressed="false">Erase</button></div><label>Grid<select id="edit-grid" aria-label="Editing grid"><option value="1">¼ note</option><option value="2">⅛ note</option><option value="4">¹⁄₁₆ note</option><option value="8">¹⁄₃₂ note</option><option value="3">Triplets</option></select></label><div class="score-zoom" aria-label="Score zoom"><button id="zoom-out" aria-label="Zoom out score">−</button><output id="zoom-value">150%</output><button id="zoom-in" aria-label="Zoom in score">+</button></div></div><div id="note-toolbar" class="note-toolbar" role="group" aria-label="Note controls"><label class="field">Pitch<input id="note-pitch" type="text" aria-label="Note pitch" placeholder="—" disabled></label><label class="field">Length<input id="note-duration" type="number" min=".015625" step="any" aria-label="Note duration beats" placeholder="—" disabled></label><select id="note-selection" aria-label="Selected notes" disabled><option>No note</option></select><button id="show-on-sphere" disabled>Show on sphere</button><button id="deselect-notes" class="quiet" aria-label="Deselect notes" disabled>×</button></div><output id="pitch-feedback" aria-live="off"></output></div><div id="score-scroll" class="score-scroll" tabindex="0" aria-label="Scroll the composition"><div id="score-host"></div></div></section>
     <section id="composition-library" class="library-page panel" aria-label="Composition library"><div class="library-heading"><div><h1>Composition library</h1><p id="library-count"></p></div><div id="library-filters" class="library-filters" aria-label="Library sound sets"></div></div><div id="library-collection"></div></section>
-    <footer class="transport panel"><button id="play" class="primary" aria-label="Play">▶ Play</button><button id="stop" aria-label="Stop and rewind">■ Stop</button><button id="loop" aria-pressed="true">↻ Loop</button><output id="position">1 : 1</output><label class="tempo-field">BPM<input id="tempo" type="number" min="20" max="400" step="any" aria-label="Tempo BPM"></label><label class="volume-field">Volume<input id="master-volume" type="range" min="0" max="1" step="0.01" aria-label="Master volume"></label><div class="history-tools"><button id="undo" aria-label="Undo">↶</button><button id="redo" aria-label="Redo">↷</button></div><button id="exit-performance">Exit Performance</button></footer>
-  </main><div id="notice" role="status" aria-live="polite"></div><input id="import-file" type="file" accept="application/json,.json" hidden>
+    <section id="faq-guide" class="faq-page panel" aria-labelledby="faq-title" tabindex="0">${FAQ_GUIDE}</section>
+  </main>
+  <footer class="transport panel" aria-label="Playback"><button id="play" class="primary" aria-label="Play">▶ Play</button><button id="stop" aria-label="Stop and rewind">■ Stop</button><button id="loop" aria-pressed="true">↻ Loop</button><output id="position">1 : 1</output><label class="tempo-field">BPM<input id="tempo" type="number" min="20" max="400" step="any" aria-label="Tempo BPM"></label><label class="volume-field">Volume<input id="master-volume" type="range" min="0" max="1" step="0.01" aria-label="Master volume"></label><div class="history-tools"><button id="undo" aria-label="Undo">↶</button><button id="redo" aria-label="Redo">↷</button></div></footer>
+  <div id="notice" role="status" aria-live="polite"></div><input id="import-file" type="file" accept="application/json,.json" hidden>
   <dialog id="app-dialog"><div class="dialog-heading"><h2 id="dialog-title"></h2><button id="dialog-close" aria-label="Close dialog">×</button></div><div id="dialog-body"></div></dialog>`;
 
 const transport=new ScoreTransport(snapshot=>updateTransport(snapshot));
@@ -90,11 +99,12 @@ const score=new ComposerScore($('#score-host'),{
   stamp:(pitch,beat)=>stamp(pitch,beat),
   select:(ids,extend)=>{
     if(erase){edit(c=>removeEvents(c,ids));selectedEvents=[];}
-    else selectedEvents=extend?[...new Set([...selectedEvents,...ids])]:ids;
+    else {selectScoreEvents(ids,extend);renderPalette();}
     renderNoteToolbar();renderScore();
   },
   move:(id,pitch,beat)=>edit(c=>updateEvent(c,id,{pitch,startBeat:beat})),
   hover:text=>{$('#pitch-feedback').textContent=text;},
+  navigate:()=>{transport.pause();},
 });
 transport.setLoop(loop);
 transport.onAttack=attacks=>{
@@ -105,11 +115,75 @@ transport.onAttack=attacks=>{
 
 function notice(message:string) {$('#notice').textContent=message;}
 function performer(id:string|null) {return composition.performers.find(p=>p.id===id);}
+function selectScoreEvents(ids:string[],extend=false) {
+  selectedEvents=extend?[...new Set([...selectedEvents,...ids])]:ids;
+  const note=composition.events.find(e=>e.id===ids[0]),p=performer(note?.performerId??null);
+  if(p){brushId=selectedPerformer=p.id;brushByFamily[p.instrumentTypeId]=p.id;}
+}
 function targetLabel(p:Performer) {return `${locationLabel(composition,p.junctionId)} · ${performerLabel(composition,p)}`;}
 function persist() {
   try {localStorage.setItem(STORAGE_KEY,JSON.stringify(composition));return true;}
   catch {notice('Draft could not be saved. Export JSON to keep a copy.');return false;}
 }
+function persistPresentation() {
+  try{localStorage.setItem(UI_KEY,JSON.stringify({view:view==='performance'?previousEditor:view,performanceScoreRatio}));}
+  catch{/* Presentation preferences never prevent editing or playback. */}
+}
+let performanceResize:{pointerId:number,startY:number,startHeight:number,startRatio:number|null}|null=null;
+function performanceSplitBounds() {
+  const available=Math.max(1,$('.workspace').clientHeight-$('#performance-divider').offsetHeight);
+  return {available,min:Math.min(110,available*.35),max:available-Math.min(150,available*.4)};
+}
+function updatePerformanceSplit() {
+  if(view!=='performance')return;
+  const {available,min,max}=performanceSplitBounds();
+  const requested=performanceScoreRatio===null?Math.min(240,available*.5):available*performanceScoreRatio;
+  const height=Math.max(min,Math.min(max,requested));
+  $('.workspace').style.setProperty('--performance-score-height',`${height}px`);
+  const divider=$('#performance-divider');
+  divider.setAttribute('aria-valuemin',String(Math.round(min/available*100)));
+  divider.setAttribute('aria-valuemax',String(Math.round(max/available*100)));
+  divider.setAttribute('aria-valuenow',String(Math.round(height/available*100)));
+  divider.setAttribute('aria-valuetext',`Score ${Math.round(height/available*100)}%, stage ${Math.round((available-height)/available*100)}%`);
+}
+function finishPerformanceResize(cancel=false) {
+  if(!performanceResize)return;
+  const drag=performanceResize;performanceResize=null;
+  if(cancel){performanceScoreRatio=drag.startRatio;updatePerformanceSplit();}
+  root.classList.remove('resizing-performance');
+  const divider=$('#performance-divider');
+  if(divider.hasPointerCapture(drag.pointerId))divider.releasePointerCapture(drag.pointerId);
+  if(!cancel)persistPresentation();
+}
+function cancelPerformanceResize(){finishPerformanceResize(true);}
+const performanceDivider=$('#performance-divider');
+performanceDivider.title='Drag to resize the score, or focus and use the Up and Down arrow keys';
+performanceDivider.onpointerdown=e=>{
+  if(view!=='performance'||!e.isPrimary||e.button!==0)return;
+  e.preventDefault();performanceDivider.focus({preventScroll:true});
+  performanceResize={pointerId:e.pointerId,startY:e.clientY,startHeight:$('#score-section').getBoundingClientRect().height,startRatio:performanceScoreRatio};
+  performanceDivider.setPointerCapture(e.pointerId);root.classList.add('resizing-performance');
+};
+performanceDivider.onpointermove=e=>{
+  if(!performanceResize||performanceResize.pointerId!==e.pointerId)return;
+  const {available,min,max}=performanceSplitBounds();
+  performanceScoreRatio=Math.max(min,Math.min(max,performanceResize.startHeight+performanceResize.startY-e.clientY))/available;
+  updatePerformanceSplit();
+};
+performanceDivider.onpointerup=e=>{if(performanceResize?.pointerId===e.pointerId)finishPerformanceResize();};
+performanceDivider.onpointercancel=cancelPerformanceResize;
+performanceDivider.onlostpointercapture=cancelPerformanceResize;
+window.addEventListener('blur',cancelPerformanceResize);
+new ResizeObserver(updatePerformanceSplit).observe($('.workspace'));
+performanceDivider.onkeydown=e=>{
+  if(e.key==='Escape'&&performanceResize){e.preventDefault();e.stopPropagation();cancelPerformanceResize();return;}
+  if(!['ArrowUp','ArrowDown','Home','End'].includes(e.key))return;
+  e.preventDefault();e.stopPropagation();
+  const {available,min,max}=performanceSplitBounds();
+  const current=$('#score-section').getBoundingClientRect().height;
+  performanceScoreRatio=(e.key==='Home'?min:e.key==='End'?max:Math.max(min,Math.min(max,current+(e.key==='ArrowUp'?20:-20))))/available;
+  updatePerformanceSplit();persistPresentation();
+};
 function reconcile() {
   if(!performer(brushId))brushId=null;
   if(!performer(selectedPerformer))selectedPerformer=null;
@@ -146,20 +220,24 @@ function replace(next:Composition,message:string) {
 function switchView(next:View) {
   const oldView=view;
   if(oldView==='placement'||oldView==='composer')previousEditor=oldView;
-  if(next==='library'&&(oldView==='placement'||oldView==='composer'))editorViewport={page:pageStart,x:$('#score-scroll').scrollLeft,y:$('#score-scroll').scrollTop};
+  if((next==='library'||next==='faq')&&(oldView==='placement'||oldView==='composer'))editorViewport={page:pageStart,x:$('#score-scroll').scrollLeft,y:$('#score-scroll').scrollTop};
+  if(next==='faq')notice('');
   if(next==='performance'){
     if(oldView==='placement'||oldView==='composer')editorViewport={page:pageStart,x:$('#score-scroll').scrollLeft,y:$('#score-scroll').scrollTop};
     familyMenu=null;
     notice('');
+    const span=composition.meter[0]*4/composition.meter[1]*(matchMedia('(max-width:600px)').matches?1:2);
+    pageStart=Math.floor(transport.snapshot().position/span)*span;
   } else if(view==='performance'){
     if(next==='placement'||next==='composer')previousEditor=next;pageStart=editorViewport.page;
   }
-  if(next==='composer'&&view==='placement'&&pendingReturn){returnToComposer();return;}
+  if(next==='composer'&&pendingReturn){returnToComposer();return;}
+  cancelPerformanceResize();
   view=next;
   if(next==='composer'&&oldView==='placement'&&performer(selectedPerformer)){brushId=selectedPerformer;brushByFamily[performer(brushId)!.instrumentTypeId]=brushId!;}
-  try{localStorage.setItem(UI_KEY,JSON.stringify({view:next==='performance'?previousEditor:next}));}catch{/* draft has independent error feedback */}
+  persistPresentation();
   render();
-  if(oldView==='performance'){$('#score-scroll').scrollLeft=editorViewport.x;$('#score-scroll').scrollTop=editorViewport.y;}
+  if(oldView==='performance'||oldView==='faq'){$('#score-scroll').scrollLeft=editorViewport.x;$('#score-scroll').scrollTop=editorViewport.y;}
 }
 function armPlacement(type:string,fromComposer=false) {
   familyMenu=null;
@@ -183,7 +261,7 @@ function returnToComposer() {
   if(viewport){$('#score-scroll').scrollLeft=viewport.x;$('#score-scroll').scrollTop=viewport.y;}
 }
 function chooseFamily(type:string) {
-  erase=false;
+  erase=false;selectedEvents=[];
   const members=composition.performers.filter(p=>p.instrumentTypeId===type);
   if(!members.length){armPlacement(type,true);return;}
   if(members.length===1){selectedPerformer=brushId=members[0].id;brushByFamily[type]=brushId;familyMenu=null;}
@@ -229,7 +307,7 @@ function renderFamilyMenu() {
   menu.setAttribute('role','group');menu.setAttribute('aria-label',`${getInstrument(composition.assetSetId,familyMenu).name} performers`);
   for(const p of composition.performers.filter(p=>p.instrumentTypeId===familyMenu)) {
     const duplicates=composition.performers.filter(other=>locationLabel(composition,other.junctionId)===locationLabel(composition,p.junctionId)).length>1;
-    const pick=button(`${targetLabel(p)}${duplicates?` · J${p.junctionId+1}`:''}`,()=>{brushId=p.id;selectedPerformer=p.id;brushByFamily[p.instrumentTypeId]=p.id;familyMenu=null;erase=false;render();},'instance-choice');
+    const pick=button(`${targetLabel(p)}${duplicates?` · J${p.junctionId+1}`:''}`,()=>{brushId=p.id;selectedPerformer=p.id;brushByFamily[p.instrumentTypeId]=p.id;familyMenu=null;erase=false;selectedEvents=[];render();},'instance-choice');
     pick.setAttribute('aria-pressed',String(brushByFamily[p.instrumentTypeId]===p.id));menu.append(pick);
   }
   const type=familyMenu;
@@ -268,44 +346,47 @@ function renderPerformer() {
   tray.append(field('Location name',name),moveRow,actions);
 }
 function renderNoteToolbar() {
-  const bar=$('#note-toolbar');bar.replaceChildren();
   const selected=selectedEvents.map(id=>composition.events.find(e=>e.id===id)).filter((e):e is ScoreEvent=>!!e);
-  bar.hidden=!selected.length||view==='performance';
-  if(!selected.length||view==='performance')return;
-  const note=selected[0],p=performer(note.performerId)!;
-  bar.setAttribute('aria-label','Selected note controls');
-  if(selected.length>1)bar.append(el('span','selected-count',`${selected.length} notes`));
-  const pitch=input('text',pitchName(note.pitch),'Note pitch');
-  pitch.addEventListener('change',()=>{
-    const match=/^([a-g])([#b]?)(-?\d)$/i.exec(pitch.value.trim().replace('♯','#').replace('♭','b'));
-    if(!match){notice('Use a pitch such as C4, F♯4 or B♭3.');return;}
-    const midi=(Number(match[3])+1)*12+({C:0,D:2,E:4,F:5,G:7,A:9,B:11}[match[1].toUpperCase()]!)+(match[2]==='#'?1:match[2].toLowerCase()==='b'?-1:0);
-    edit(c=>updateEvent(c,note.id,{pitch:midi}));
-  });
-  bar.append(field('Pitch',pitch));
-  if(composition.assetSetId==='bongo'&&!getInstrument(composition.assetSetId,p.instrumentTypeId).percussion){
-    const duration=input('number',String(note.durationBeats),'Note duration beats');duration.min='.015625';duration.step='any';
-    duration.onchange=()=>edit(c=>updateEvent(c,note.id,{durationBeats:Number(duration.value)}));bar.append(field('Beats',duration));
-  }
-  const velocity=input('range',String(note.velocity),'Note volume');velocity.min='0';velocity.max='1';velocity.step='.01';
-  velocity.onchange=()=>edit(c=>updateEvent(c,note.id,{velocity:Number(velocity.value)}));
-  const assignment=el('select');assignment.setAttribute('aria-label','Note performer');
-  for(const candidate of composition.performers)assignment.append(option(candidate.id,targetLabel(candidate)));
-  assignment.value=p.id;assignment.onchange=()=>edit(c=>{
-    const changed=selected.map(e=>({...e,performerId:assignment.value}));
-    rejectAccidentalDuplicates(c.events.filter(e=>!selectedEvents.includes(e.id)),changed,selected);
-    return validateComposition({...c,events:c.events.map(e=>changed.find(n=>n.id===e.id)||e)});
-  });bar.append(field('Performer',assignment));
-  bar.append(field('Note volume',velocity));
-  const overlaps=composition.events.filter(e=>pitchStep(e.pitch)===pitchStep(note.pitch)&&e.startBeat===note.startBeat);
-  if(overlaps.length>1){const picker=el('select');picker.setAttribute('aria-label','Overlapping notes');for(const e of overlaps)picker.append(option(e.id,`${targetLabel(performer(e.performerId)!)} · ${pitchName(e.pitch)}`));picker.value=note.id;picker.onchange=()=>{selectedEvents=[picker.value];renderNoteToolbar();renderScore();};bar.append(field(`${overlaps.length} overlapping notes`,picker));}
-  bar.append(button('Show on sphere',()=>{selectedPerformer=p.id;view='placement';render();sphere.reveal(p.id);}),button('Erase',()=>{edit(c=>removeEvents(c,selectedEvents));selectedEvents=[];render();},'danger'),button('×',()=>{selectedEvents=[];renderNoteToolbar();renderScore();},'quiet','Deselect notes'));
+  const note=selected.length===1?selected[0]:null,p=note?performer(note.performerId):null;
+  const pitch=$<HTMLInputElement>('#note-pitch'),duration=$<HTMLInputElement>('#note-duration');
+  pitch.disabled=!note;pitch.value=note?pitchName(note.pitch):'';
+  const supportsLength=!!p&&composition.assetSetId==='bongo'&&!getInstrument(composition.assetSetId,p.instrumentTypeId).percussion;
+  duration.disabled=!supportsLength;duration.value=supportsLength?String(note!.durationBeats):'';
+  duration.title=supportsLength?'Duration in quarter-note beats':'Length applies to a single pitched Bongo note';
+  const picker=$<HTMLSelectElement>('#note-selection');picker.replaceChildren();
+  const overlaps=note?composition.events.filter(e=>pitchStep(e.pitch)===pitchStep(note.pitch)&&e.startBeat===note.startBeat):[];
+  if(overlaps.length>1){
+    for(const e of overlaps)picker.append(option(e.id,`${performerLabel(composition,performer(e.performerId)!)} · ${pitchName(e.pitch)}`));
+    picker.value=note!.id;
+  }else picker.append(option('',selected.length?`${selected.length} ${selected.length===1?'note':'notes'}`:'No note'));
+  picker.disabled=overlaps.length<2;
+  picker.title=overlaps.length>1?'Choose an overlapping note':'Shift-click to select multiple notes';
+  $<HTMLButtonElement>('#show-on-sphere').disabled=!selected.length||!selected.every(e=>e.performerId===selected[0].performerId);
+  $<HTMLButtonElement>('#deselect-notes').disabled=!selected.length;
 }
+$<HTMLInputElement>('#note-pitch').onchange=()=>{
+  const note=composition.events.find(e=>e.id===selectedEvents[0]);if(!note||selectedEvents.length!==1)return;
+  const match=/^([a-g])([#b]?)(-?\d)$/i.exec($<HTMLInputElement>('#note-pitch').value.trim().replace('♯','#').replace('♭','b'));
+  if(!match){notice('Use a pitch such as C4, F♯4 or B♭3.');renderNoteToolbar();return;}
+  const midi=(Number(match[3])+1)*12+({C:0,D:2,E:4,F:5,G:7,A:9,B:11}[match[1].toUpperCase()]!)+(match[2]==='#'?1:match[2].toLowerCase()==='b'?-1:0);
+  edit(c=>updateEvent(c,note.id,{pitch:midi}));renderNoteToolbar();
+};
+$<HTMLInputElement>('#note-duration').onchange=()=>{
+  if(selectedEvents.length===1)edit(c=>updateEvent(c,selectedEvents[0],{durationBeats:Number($<HTMLInputElement>('#note-duration').value)}));
+  renderNoteToolbar();
+};
+$<HTMLSelectElement>('#note-selection').onchange=()=>{selectScoreEvents([$<HTMLSelectElement>('#note-selection').value]);renderPalette();renderNoteToolbar();renderScore();};
+$('#show-on-sphere').onclick=()=>{
+  const note=composition.events.find(e=>e.id===selectedEvents[0]);if(!note)return;
+  selectedPerformer=note.performerId;switchView('placement');sphere.reveal(note.performerId);
+};
+$('#deselect-notes').onclick=()=>{selectedEvents=[];renderNoteToolbar();renderScore();};
 function renderScore(){score.set(composition,{performance:view==='performance',selectedIds:selectedEvents,brushId,erase,pageStart,zoom:scoreZoom});}
 function render() {
   root.dataset.view=view;root.dataset.theme=composition.appearance;
-  const transportElement=$('.transport'),transportParent=view==='performance'?$('#performance-transport-slot'):$('.workspace');
-  if(transportElement.parentElement!==transportParent)transportParent.append(transportElement);
+  $<HTMLSelectElement>('#performance-style').value=composition.appearance;
+  $('.transport').setAttribute('aria-label',`Playback · ${composition.title}`);
+  updatePerformanceSplit();
   document.documentElement.style.colorScheme='light';
   $('#composition-title').setAttribute('value',composition.title);$<HTMLInputElement>('#composition-title').value=composition.title;
   for(const node of document.querySelectorAll<HTMLButtonElement>('.view-nav button'))node.setAttribute('aria-pressed',String(node.dataset.view===view));
@@ -318,10 +399,7 @@ function render() {
   $('#slow-rotate').setAttribute('aria-pressed',String(slowRotate));
   $('#zoom-value').textContent=`${Math.round(scoreZoom*100)}%`;
   $<HTMLButtonElement>('#zoom-out').disabled=scoreZoom<=.65;$<HTMLButtonElement>('#zoom-in').disabled=scoreZoom>=1.75;
-  $<HTMLButtonElement>('#undo').disabled=!history.canUndo;$<HTMLButtonElement>('#redo').disabled=!history.canRedo;
-  const p=performer(brushId);const stamp=$('#current-stamp');stamp.replaceChildren();
-  if(p){stamp.append(el('span','',targetLabel(p)));stamp.append(button('⌄',()=>{familyMenu=familyMenu===p.instrumentTypeId?null:p.instrumentTypeId;renderFamilyMenu();},'stamp-details','Choose performer or place another'));}
-  else stamp.append(el('span','','Choose a placed instrument to stamp'));
+  $<HTMLButtonElement>('#undo').disabled=view==='performance'||!history.canUndo;$<HTMLButtonElement>('#redo').disabled=view==='performance'||!history.canRedo;
   $('#sphere-hint').textContent=view==='performance'?'':placementType?`Place ${getInstrument(composition.assetSetId,placementType).name} · choose an empty junction`:'Drag the background to turn the planet';
   renderPalette();renderIntent();renderPerformer();renderNoteToolbar();
   if(view==='library')renderLibrary();
@@ -334,15 +412,8 @@ function updateTransport(snapshot=transport.snapshot()) {
   $<HTMLButtonElement>('#play').disabled=loading;
   const beatsPerBar=composition.meter[0]*4/composition.meter[1];
   $('#position').textContent=`${Math.floor(snapshot.position/beatsPerBar)+1} : ${Math.floor(snapshot.position%beatsPerBar)+1}`;
-  if(view==='performance'){
-    const span=beatsPerBar*(matchMedia('(max-width:600px)').matches?1:2);
-    const nextPage=Math.floor(snapshot.position/span)*span;
-    if(nextPage!==pageStart){pageStart=nextPage;renderScore();}
-  }
   score.updatePosition(snapshot.position,snapshot.playing);
-  const span=view==='performance'?score.span:16;
-  $('#page-label').textContent=`Beats ${pageStart+1}–${Math.min(composition.lengthBeats,pageStart+span)}`;
-  $<HTMLButtonElement>('#page-back').disabled=pageStart<=0;$<HTMLButtonElement>('#page-next').disabled=pageStart+span>=composition.lengthBeats;
+  if(score.following)pageStart=score.startBeat;
 }
 function openDialog(title:string) {$('#dialog-title').textContent=title;const body=$('#dialog-body');body.replaceChildren();if(!$<HTMLDialogElement>('#app-dialog').open)$<HTMLDialogElement>('#app-dialog').showModal();return body;}
 function closeDialog() {$<HTMLDialogElement>('#app-dialog').close();}
@@ -358,28 +429,62 @@ function requestRemove(p:Performer) {
 function renderLibrary() {
   const collection=$('#library-collection');collection.replaceChildren();
   const entries=LIBRARY.filter(entry=>libraryFilter==='all'||entry.assetSetId===libraryFilter);
-  $('#library-count').textContent=`${LIBRARY.length} compositions · ${PUBLIC_SITE?'Bongo Favorites':'all Favorites and Mario Paint demos'}`;
+  const fullCount=entries.filter(entry=>entry.kind==='full').length;
+  $('#library-count').textContent=`${entries.length} compositions · ${fullCount} full-length arrangements`;
   const filters=$('#library-filters');filters.replaceChildren();
-  for(const [id,label] of (PUBLIC_SITE ? [['all','All'],['bongo','Bongo Planet']] : [['all','All'],['bongo','Bongo Planet'],['mario','Mario Paint']]) as [string,string][]){const choice=button(label,()=>{libraryFilter=id as typeof libraryFilter;renderLibrary();});choice.setAttribute('aria-pressed',String(libraryFilter===id));filters.append(choice);}
-  let group='',grid=el('div');
+  for(const [id,label] of [['all','All'],['bongo','Bongo Planet'],['mario','Mario Paint']]){const choice=button(label,()=>{libraryFilter=id as typeof libraryFilter;renderLibrary();});choice.setAttribute('aria-pressed',String(libraryFilter===id));filters.append(choice);}
+  let group='',list=el('ul');
   for(const entry of entries){
-    if(group!==entry.group){group=entry.group;collection.append(el('h2','library-group',group));grid=el('div','library-grid');collection.append(grid);}
-    const card=button('',()=>replace(entry.composition,`Opened ${entry.title}`),'composition-card');card.dataset.libraryId=entry.id;
-    const preview=el('div','composition-preview');
-    const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','-115 -104 230 208');svg.setAttribute('aria-hidden','true');
-    const shape=(tag:string,attrs:Record<string,string|number>)=>{const node=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))node.setAttribute(k,String(v));return node;};
-    svg.append(shape('circle',{cx:0,cy:0,r:87,fill:'#6069e2',stroke:'#9da6ef','stroke-width':1}));
-    for(const [a,b] of topology.edges){const p=topology.vertices[a],q=topology.vertices[b];if(p[1]>.12||q[1]>.12)continue;svg.append(shape('line',{x1:p[0]*87,y1:-p[2]*87,x2:q[0]*87,y2:-q[2]*87,stroke:'#c6cdff','stroke-opacity':.35,'stroke-width':.7}));}
-    for(const p of entry.composition.performers){const point=topology.vertices[p.junctionId],image=getInstrument(entry.assetSetId,p.instrumentTypeId).portrait;svg.append(shape('image',{href:image,x:point[0]*87-13,y:-point[2]*87-13,width:26,height:26}));}
-    preview.append(svg);
-    const info=el('div','composition-card-info');info.append(el('span','composition-set',entry.assetSetId==='mario'?'Mario Paint':'Bongo Planet'),el('h3','',entry.title),el('p','',`${entry.composition.performers.length} ${entry.composition.performers.length===1?'instrument':'instruments'} · ${entry.composition.events.length} notes`));
-    const footer=el('div','composition-card-footer');footer.append(el('span','',entry.layoutName),el('span','','Open →'));
-    card.append(preview,info,footer);grid.append(card);
+    if(group!==entry.group){
+      group=entry.group;const heading=el('h2','library-group',group);
+      heading.append(el('span','library-group-count',String(entries.filter(item=>item.group===group).length)));
+      collection.append(heading);list=el('ul','composition-list');list.setAttribute('aria-label',group);collection.append(list);
+    }
+    const row=button('',()=>replace(entry.composition,`Opened ${entry.title}`),'composition-row',`Open ${entry.title}`);row.dataset.libraryId=entry.id;
+    const info=el('span','composition-info');info.append(el('strong','composition-title',entry.title));
+    const detail=entry.kind==='full'?entry.description:entry.kind==='original'?'Original demo score · original notes and timing':`${entry.group.toLowerCase().includes('loops')?'Loop study':'Original sketch'} · ${entry.composition.events.length} notes`;
+    info.append(el('span','composition-description',detail));
+    const band=el('span','composition-band');const types=[...new Set(entry.composition.performers.map(p=>p.instrumentTypeId))];
+    band.title=types.map(type=>getInstrument(entry.assetSetId,type).name).join(', ');
+    const portraits=el('span','composition-portraits');portraits.setAttribute('aria-hidden','true');
+    for(const type of types.slice(0,5)){const image=el('img');image.src=getInstrument(entry.assetSetId,type).portrait;image.alt='';image.loading='lazy';portraits.append(image);}
+    const performers=entry.composition.performers.length;
+    band.append(portraits,el('span','',`${performers} ${performers===1?'instrument':'instruments'}`));
+    const bars=entry.composition.lengthBeats/(entry.composition.meter[0]*4/entry.composition.meter[1]);
+    const duration=el('span','composition-duration');duration.append(el('strong','',compositionDuration(entry.composition)),el('span','',`${bars} bars`));
+    const soundSet=el('span','composition-set',entry.assetSetId==='mario'?'Mario Paint':'Bongo Planet');
+    const open=el('span','composition-open','Open →');open.setAttribute('aria-hidden','true');
+    row.append(info,band,duration,soundSet,open);const item=el('li');item.append(row);list.append(item);
   }
 }
 function download() {
-  const blob=new Blob([JSON.stringify(composition,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob);
-  const anchor=el('a');anchor.href=url;anchor.download=`${composition.title.replace(/[^\p{L}\p{N}_-]+/gu,'-')||'Untitled'}-Philharmonic.json`;anchor.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notice('JSON exported');
+  downloadFile(JSON.stringify(composition,null,2),`${composition.title.replace(/[^\p{L}\p{N}_-]+/gu,'-')||'Untitled'}-Philharmonic.json`,'application/json');notice('JSON exported');
+}
+function downloadFile(contents:string,filename:string,type='text/plain') {
+  const url=URL.createObjectURL(new Blob([contents],{type}));
+  const anchor=el('a');anchor.href=url;anchor.download=filename;anchor.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function saveLocally() {
+  try {
+    localStorage.setItem(SAVED_KEY,JSON.stringify(composition));
+    const draftSaved=persist();closeDialog();notice(draftSaved?'Composition saved locally':'Checkpoint saved locally; draft autosave failed. Export JSON to keep a portable copy.');
+  }catch{notice('Local save failed. Export JSON to keep a copy.');}
+}
+function loadLocalSave() {
+  try{const raw=readPhilharmonicStorage(localStorage,'-saved');if(!raw)throw Error('No local save yet.');replace(validateComposition(JSON.parse(raw)),'Local save loaded');}catch(e){notice(errorText(e));}
+}
+function recoverPreviousDraft() {
+  try{const raw=readPhilharmonicStorage(localStorage,'-recovery');if(!raw)throw Error('No replaced draft to recover yet.');replace(validateComposition(JSON.parse(raw)),'Previous draft recovered');}catch(e){notice(errorText(e));}
+}
+function fileActions() {
+  const actions=el('div','more-actions');
+  actions.append(button('Save locally',saveLocally),button('Load local save',loadLocalSave),button('Export JSON',download),button('Import JSON',()=>$('#import-file').click()),button('Recover previous draft',recoverPreviousDraft));
+  return actions;
+}
+function openFiles() {
+  const body=openDialog('Save & share');
+  body.append(el('p','local-save-hint','Your draft autosaves in this browser. Save locally keeps one checkpoint and replaces the previous checkpoint. Export JSON downloads a song file to keep, share or open on another device.'),fileActions(),el('p','local-save-hint','Import and Load replace the current song, pause playback and keep the previous draft in recovery. Invalid files leave your music unchanged. Browser saves do not sync and can be lost if browser data is cleared. JSON contains the band and score, not an audio recording.'));
+  body.append(button('File format & agent prompt →',()=>{closeDialog();switchView('faq');$('#guide-agent').scrollIntoView();}));
 }
 function duplicateSelection() {
   const notes=composition.events.filter(e=>selectedEvents.includes(e.id));
@@ -405,17 +510,15 @@ function inspectNotes(offset=0) {
   const next=button('Next 100 →',()=>inspectNotes(offset+100));next.disabled=offset+100>=ordered.length;
   controls.append(previous,next);body.append(el('p','',`${ordered.length} notes · ${ordered.length?offset+1:0}–${Math.min(offset+100,ordered.length)}`),controls);
   for(const {event} of ordered.slice(offset,offset+100))body.append(button(`${pitchName(event.pitch)} · beat ${Number(event.startBeat.toFixed(6))} · ${targetLabel(performer(event.performerId)!)}`,()=>{
-    selectedEvents=[event.id];view='composer';pageStart=Math.floor(event.startBeat/16)*16;closeDialog();render();
+    selectScoreEvents([event.id]);view='composer';pageStart=Math.floor(event.startBeat/16)*16;closeDialog();render();
   },'instance-choice'));
 }
 function openMore() {
   const body=openDialog('More');
-  const fileActions=el('div','more-actions');
-  fileActions.append(button('Save locally',()=>{try{localStorage.setItem(SAVED_KEY,JSON.stringify(composition));persist();notice('Composition saved locally');closeDialog();}catch{notice('Local save failed. Export JSON to keep a copy.');}}),button('Load local save',()=>{try{const raw=readPhilharmonicStorage(localStorage,'-saved');if(!raw)throw Error('No local save yet.');replace(validateComposition(JSON.parse(raw)),'Local save loaded');}catch(e){notice(errorText(e));}}),button('Export JSON',download),button('Import JSON',()=>$('#import-file').click()),button('Recover previous draft',()=>{try{const raw=readPhilharmonicStorage(localStorage,'-recovery');if(!raw)throw Error('No replaced draft to recover yet.');replace(validateComposition(JSON.parse(raw)),'Previous draft recovered');}catch(e){notice(errorText(e));}}));
-  body.append(el('h3','','Files'),fileActions);
+  body.append(el('h3','','Files'),fileActions());
   const title=input('text',composition.title,'Composition title in More');title.maxLength=180;title.onchange=()=>edit(c=>({...c,title:title.value}),false);
   body.append(field('Title',title));
-  const theme=el('select');theme.setAttribute('aria-label','Theme');for(const [id,name] of [['original','Blue Marble'],['nebula-space','Nebula'],['firefly-garden','Fireflies']])theme.append(option(id,name));theme.value=composition.appearance;theme.onchange=()=>edit(c=>({...c,appearance:theme.value}),false);body.append(field('Theme',theme));
+  const theme=el('select');theme.setAttribute('aria-label','Theme');for(const [id,name] of VISUAL_STYLES)theme.append(option(id,name));theme.value=composition.appearance;theme.onchange=()=>edit(c=>({...c,appearance:theme.value}),false);body.append(field('Theme',theme));
   const meter=el('select');meter.setAttribute('aria-label','Meter');for(const value of ['4/4','3/4','6/8','5/4','7/8'])meter.append(option(value,value));meter.value=composition.meter.join('/');meter.onchange=()=>edit(c=>({...c,meter:meter.value.split('/').map(Number) as [number,number]}));body.append(field('Meter',meter));
   const tools=el('div','more-actions');tools.append(button('Duplicate selected notes',duplicateSelection),button('Inspect notes…',()=>inspectNotes()),button('Extend four bars',()=>{const n=composition.meter[0]*16/composition.meter[1];edit(c=>({...c,lengthBeats:c.lengthBeats+n,loopRange:[c.loopRange[0],c.loopRange[1]===c.lengthBeats?c.lengthBeats+n:c.loopRange[1]]}));}),button('Score ending / erase range…',openEnding),button('Clear score',()=>{edit(c=>({...c,events:[]}));selectedEvents=[];closeDialog();}),button('New composition',()=>replace(createComposition(composition.assetSetId),'New composition')));body.append(el('h3','','Score'),tools);
   const loopStart=input('number',String(composition.loopRange[0]),'Loop start beat');loopStart.min='0';loopStart.step='any';
@@ -436,27 +539,36 @@ function openEnding() {
 }
 
 for(const node of document.querySelectorAll<HTMLButtonElement>('.view-nav button'))node.onclick=()=>switchView(node.dataset.view as View);
-$('#exit-performance').onclick=()=>switchView(previousEditor);
+for(const node of document.querySelectorAll<HTMLButtonElement>('[data-guide-view]'))node.onclick=()=>switchView(node.dataset.guideView as View);
+$<HTMLSelectElement>('#performance-style').onchange=()=>edit(c=>({...c,appearance:$<HTMLSelectElement>('#performance-style').value}),false);
 $('#reset-camera').onclick=()=>sphere.resetCamera();
 $('#slow-rotate').onclick=()=>{slowRotate=!slowRotate;sphere.setSlowRotate(slowRotate);$('#slow-rotate').setAttribute('aria-pressed',String(slowRotate));};
 $('#more-open').onclick=openMore;$('#dialog-close').onclick=closeDialog;
+$('#files-open').onclick=openFiles;
+for(const node of document.querySelectorAll<HTMLButtonElement>('[data-guide-files]'))node.onclick=openFiles;
+$('#guide-example-download').onclick=()=>{downloadFile(JSON.stringify(EXAMPLE_SONG,null,2),'First-Light-Philharmonic.json','application/json');notice('Example song downloaded · use Files → Import JSON to open it');};
+$('#guide-format-download').onclick=()=>downloadFile(SONG_FORMAT,'Bongo-Philharmonic-File-Format.txt');
+$('#guide-prompt-download').onclick=()=>downloadFile(AGENT_MUSIC_PROMPT,'Bongo-Philharmonic-Agent-Prompt.txt');
+$('#guide-prompt-copy').onclick=async()=>{
+  try{await navigator.clipboard.writeText(AGENT_MUSIC_PROMPT);notice('Agent prompt copied · replace MY SONG REQUEST with your idea');}
+  catch{const prompt=$<HTMLTextAreaElement>('#guide-agent-prompt');prompt.focus();prompt.select();notice('Copy is unavailable here. The prompt is selected; use Copy or download the prompt.');}
+};
 $<HTMLDialogElement>('#app-dialog').addEventListener('click',e=>{if(e.target===$('#app-dialog'))closeDialog();});
 $<HTMLInputElement>('#composition-title').onchange=()=>edit(c=>({...c,title:$<HTMLInputElement>('#composition-title').value}),false);
 $<HTMLSelectElement>('#asset-set').onchange=()=>{
   const set=$<HTMLSelectElement>('#asset-set').value as AssetSetId;
   replace(createComposition(set),`${set==='mario'?'Mario Paint':'Bongo Planet'} composition opened`);
 };
-$('#stamp-tool').onclick=()=>{erase=false;render();};$('#erase-tool').onclick=()=>{erase=true;render();};
+$('#stamp-tool').onclick=()=>{erase=false;render();};$('#erase-tool').onclick=()=>{erase=true;selectedEvents=[];render();};
 $<HTMLSelectElement>('#edit-grid').onchange=()=>edit(c=>({...c,editSubdivision:Number($<HTMLSelectElement>('#edit-grid').value)}),false);
 function changeZoom(delta:number){scoreZoom=Math.round(Math.max(.65,Math.min(1.75,scoreZoom+delta))*100)/100;$('#zoom-value').textContent=`${Math.round(scoreZoom*100)}%`;$<HTMLButtonElement>('#zoom-out').disabled=scoreZoom<=.65;$<HTMLButtonElement>('#zoom-in').disabled=scoreZoom>=1.75;renderScore();}
 $('#zoom-out').onclick=()=>changeZoom(-.25);$('#zoom-in').onclick=()=>changeZoom(.25);
-$('#page-back').onclick=()=>{pageStart=Math.max(0,pageStart-16);renderScore();updateTransport();};$('#page-next').onclick=()=>{pageStart+=16;renderScore();updateTransport();};
 $('#play').onclick=async()=>{
   if(transport.snapshot().playing){transport.pause();return;}
   loading=true;updateTransport();
   try{await transport.play(composition);notice('');}catch(e){notice(errorText(e));}finally{loading=false;updateTransport();}
 };
-$('#stop').onclick=()=>{transport.stop();loading=false;updateTransport();};
+$('#stop').onclick=()=>{score.resetFollow();pageStart=0;transport.stop();loading=false;renderScore();updateTransport();};
 $('#loop').onclick=()=>{const next=!loop;edit(c=>({...c,loopEnabled:next}));loop=next;transport.setLoop(loop);$('#loop').setAttribute('aria-pressed',String(loop));};
 $<HTMLInputElement>('#tempo').onchange=()=>edit(c=>({...c,tempo:Number($<HTMLInputElement>('#tempo').value)}));
 $<HTMLInputElement>('#master-volume').oninput=()=>transport.setVolume(Number($<HTMLInputElement>('#master-volume').value));
@@ -471,13 +583,14 @@ function travelHistory(redo=false) {
 $('#undo').onclick=()=>travelHistory();$('#redo').onclick=()=>travelHistory(true);
 $<HTMLInputElement>('#import-file').onchange=async()=>{
   const file=$<HTMLInputElement>('#import-file').files?.[0];if(!file)return;
-  try{if(file.size>12*1024*1024)throw Error('This file is too large. The score limit is 32,768 events.');const next=validateComposition(JSON.parse(await file.text()));replace(next,'JSON imported');}
+  try{const next=await readSongFile(file);replace(next,'JSON imported');}
   catch(e){notice(`Import failed: ${errorText(e)}`);}finally{$<HTMLInputElement>('#import-file').value='';}
 };
 document.addEventListener('keydown',e=>{
   if($<HTMLDialogElement>('#app-dialog').open)return;
   const target=e.target as HTMLElement;
   if(target.closest('input,select,textarea'))return;
+  if(view==='faq')return;
   if(e.key==='Escape'){
     if(view==='performance')switchView(previousEditor);
     else if(familyMenu){familyMenu=null;renderFamilyMenu();}
@@ -495,7 +608,7 @@ document.addEventListener('keydown',e=>{
     });
   }
 });
-window.addEventListener('resize',()=>{renderScore();});
+window.addEventListener('resize',()=>{cancelPerformanceResize();updatePerformanceSplit();renderScore();});
 window.addEventListener('beforeunload',()=>transport.dispose());
 render();if(startupMessage)notice(startupMessage);
 // Visual feedback reads the audio clock; it never dispatches a sounding event.

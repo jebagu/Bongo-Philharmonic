@@ -1,0 +1,101 @@
+{
+  "title": "Bongo Planet — instrument candidates",
+  "checkedOn": "2026-10-16",
+  "scope": "Local audition only. No production integration or publication.",
+  "synthesis": "Original procedural Web Audio studies. Reference recordings are not included. Synth/drum render output contains no third-party sampled instrument audio.",
+  "sources": [
+    {
+      "id": "ellenmentor",
+      "creator": "EllenMentor",
+      "title": "ooh-aha.wav",
+      "license": "CC0-1.0",
+      "page": "https://freesound.org/people/ellenmentor/sounds/419161/",
+      "download": "https://cdn.freesound.org/previews/419/419161_7048224-hq.mp3",
+      "files": [
+        "ellenmentor-ooh-aha.mp3"
+      ],
+      "note": "Freesound high-quality MP3 preview. Original layered female vocal; two separate excerpts and treatments. Original recording not concert-pitch calibrated.",
+      "assets": [
+        {
+          "file": "ellenmentor-ooh-aha.mp3",
+          "bytes": 147479,
+          "sha256": "fe25a9aa48d2624f0897f1b0f857e1c2485f2148658e0a64c896169c7ced688d"
+        }
+      ]
+    },
+    {
+      "id": "cough-e",
+      "creator": "Cough-E",
+      "title": "Robot Voice Pack",
+      "license": "CC0-1.0",
+      "page": "https://opengameart.org/content/robot-voice-pack",
+      "download": "https://opengameart.org/sites/default/files/Voices.zip",
+      "files": [
+        "cough-e-initializing.wav"
+      ],
+      "originalPath": "Voices/Initializing.wav",
+      "note": "Author states: I waive all of my rights to these sound files. Used as a fixed spoken phrase.",
+      "assets": [
+        {
+          "file": "cough-e-initializing.wav",
+          "bytes": 201946,
+          "sha256": "6ff3bc7673e6e8046fb6f5bbeefe90ad584a8ffdca50a7c29adaae01d6d79525"
+        }
+      ]
+    },
+    {
+      "id": "kenney",
+      "creator": "Kenney",
+      "title": "Voiceover Pack",
+      "license": "CC0-1.0",
+      "page": "https://kenney.nl/assets/voiceover-pack",
+      "download": "https://kenney.nl/media/pages/assets/voiceover-pack/3f7f168698-1677589897/kenney_voiceover-pack.zip",
+      "files": [
+        "kenney-female-ready.ogg",
+        "kenney-male-go.ogg",
+        "Kenney-License.txt"
+      ],
+      "originalPaths": [
+        "Female/ready.ogg",
+        "Male/go.ogg"
+      ],
+      "note": "Original pack License.txt retained. Speech transposed and optionally echoed at runtime.",
+      "assets": [
+        {
+          "file": "kenney-female-ready.ogg",
+          "bytes": 7313,
+          "sha256": "4a49258fab1f84b00d0060e1535218b22a3b4bba61ef4d989b82e4cab15d69b3"
+        },
+        {
+          "file": "kenney-male-go.ogg",
+          "bytes": 7537,
+          "sha256": "35c7b85d74935a2718e067ba26cdddbb114ccea23fa7253ad2586a9065f1bec1"
+        },
+        {
+          "file": "Kenney-License.txt",
+          "bytes": 486,
+          "sha256": "57d021b53ab176ba287ee0e32abe3a31df86a2449715bf437789cf9779cc1d4e"
+        }
+      ]
+    },
+    {
+      "id": "leonschi13",
+      "creator": "DJ N.D.5 / leonschi13",
+      "title": "Yeah (Vocal)",
+      "license": "CC0-1.0",
+      "page": "https://freesound.org/people/leonschi13/sounds/129360/",
+      "download": "https://cdn.freesound.org/previews/129/129360_1928537-hq.mp3",
+      "files": [
+        "leonschi13-yeah.mp3"
+      ],
+      "note": "Freesound high-quality MP3 preview. Used as a fixed spoken shout.",
+      "assets": [
+        {
+          "file": "leonschi13-yeah.mp3",
+          "bytes": 37951,
+          "sha256": "958e81fef5963f59eece6917d8d5b417ffc4b0d7cea9cacdd3e8fcaa44973526"
+        }
+      ]
+    }
+  ]
+}

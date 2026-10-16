@@ -96,7 +96,9 @@ class ComposerProcessor extends AudioWorkletProcessor {
       if (this.previousEnd === undefined) this.stableSince = start;
       else if (start - this.previousEnd > .1) {
         this.stableSince = start;
-        if (this.driver?.playing || this.pending) {
+        // Startup is still silent: restart its stability window rather than
+        // cancelling the user's Play before the score has begun.
+        if (this.driver?.playing) {
           this.fail(Error('Audio clock interrupted. Playback paused; press Play to resume.'));
           channels.forEach(channel => channel.fill(0)); this.previousEnd = end; return true;
         }

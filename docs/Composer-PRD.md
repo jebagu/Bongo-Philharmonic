@@ -230,7 +230,7 @@ Performance is a third layout, not Placement with a miniature editor attached.
 - Camera orbit/zoom may remain; that gesture must not select/move instruments.
 - Keep restrained Play/Pause, Stop, Loop and **Exit Performance** controls. Exit restores the prior editor; Escape works on desktop, and touch has an accessible visible/revealable exit. Controls cannot vanish while focused or trap keyboard navigation.
 - Entering/exiting preserves playback or paused state and exact musical position. There is no automatic start, rewind or new audio context on a view change.
-- Follow two bars on desktop, one on narrow screens where needed, preserving legible spacing. Page/scroll predictably at musical boundaries; the playhead and Mario coordinate transform follows the visible passage correctly.
+- Follow two bars on desktop, one on narrow screens where needed, preserving legible spacing. During playback in both Composer and Performance, Mario approaches the middle and the notes scroll continuously beneath him. Keep him visible through passage changes and loop wraps. Near the actual end, stop scrolling and let him finish the passage; a non-looping completion runs him off the right edge. Pause holds the view, Stop rewinds it, and manual passage navigation pauses for editing. This amends the earlier page-at-boundaries behavior at the user's request on 16 October 2026.
 - Mario hops between displayed timing columns in time, including rests. In reduced motion, use a steady position/highlight instead of hopping. Sound never waits for an animation frame.
 - A chord produces one performer's coherent reaction, optionally with a brief note flourish. Temporary effects never become selectable band objects or count toward the cap.
 

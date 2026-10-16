@@ -1,0 +1,44 @@
+{
+  "url": "http://127.0.0.1:5717/BongoPhilharmonic/",
+  "nebulaRotationAndZoomStable": true,
+  "resetAndSlowRotate": true,
+  "layouts": [
+    {
+      "width": 1440,
+      "height": 68.1875
+    },
+    {
+      "width": 1200,
+      "height": 66
+    },
+    {
+      "width": 1024,
+      "height": 66
+    },
+    {
+      "width": 901,
+      "height": 66
+    },
+    {
+      "width": 900,
+      "height": 108
+    },
+    {
+      "width": 768,
+      "height": 108
+    },
+    {
+      "width": 760,
+      "height": 96
+    },
+    {
+      "width": 390,
+      "height": 96
+    },
+    {
+      "width": 319,
+      "height": 96
+    }
+  ],
+  "errors": []
+}

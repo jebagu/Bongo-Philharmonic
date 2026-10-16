@@ -1,0 +1,113 @@
+{
+  "date": "2026-10-16",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "scope": "Local layout review; no application implementation or deployment",
+  "steps": [
+    {
+      "step": 1,
+      "screenshot": "01-placement.jpg",
+      "screen": "Placement — empty band",
+      "health": "Needs alignment",
+      "finding": "The header is stable and the palette is clear. The bottom bar begins after the sidebar, so Play sits at x=335 rather than the x=31 used in Composer.",
+      "recommendation": "Use a full-width bottom bar outside the work area. Keep instrument choices and performer details in the left panel."
+    },
+    {
+      "step": 2,
+      "screenshot": "02-composer.jpg",
+      "screen": "Composer — empty score",
+      "health": "Usable; crowded vertically",
+      "finding": "The normal header remains, but the instrument area is tall. The score receives much less height than the palette and staff can extend beyond its visible area.",
+      "recommendation": "Shorten the palette heading and combine selection information into a compact strip; give the score the recovered space."
+    },
+    {
+      "step": 3,
+      "screenshot": "03-performance.jpg",
+      "screen": "Performance — empty score",
+      "health": "Strong presentation; inconsistent controls",
+      "finding": "The workspace tabs, title, Files and More disappear. Visual style, camera and playback replace them. Play moves to the top right.",
+      "recommendation": "Retain the regular header and bottom bar. Keep the sphere and compact read-only score in the center."
+    },
+    {
+      "step": 4,
+      "screenshot": "04-library.jpg",
+      "screen": "Library",
+      "health": "Mostly consistent",
+      "finding": "The ordinary header and full-width bottom playback bar remain. The current song is Untitled while library rows offer other songs through Open.",
+      "recommendation": "Keep the structure and explicitly identify the current song in the playback area. Browsing and filtering should preserve playback; opening another song should load it paused."
+    },
+    {
+      "step": 5,
+      "screenshot": "05-loaded-composer.jpg",
+      "screen": "Composer — Pachelbel’s Canon",
+      "health": "Needs more score space",
+      "finding": "The first passage contains bass notes but they are initially below the visible portion of the score. The top instrument panel takes about 193 pixels at this viewport.",
+      "recommendation": "Reduce the instrument panel height and retain section/passage navigation beside the score. Consider opening the score at the relevant register as a separate usability refinement."
+    },
+    {
+      "step": 6,
+      "screenshot": "06-more-options.jpg",
+      "screen": "More / song settings",
+      "health": "Needs clearer grouping",
+      "finding": "The dialog combines duplicate file actions, title, Theme, Meter, score operations and loop-range settings. Its lower controls require scrolling.",
+      "recommendation": "Keep saving/loading in Files; group appearance together; keep Meter and score length in Song settings. Put loop-range access beside Loop and note operations near the selection."
+    },
+    {
+      "step": 7,
+      "screenshot": "07-files.jpg",
+      "screen": "Files / Save & share",
+      "health": "Clear on its own",
+      "finding": "Files provides saving, loading, import, export and recovery with explanatory copy. The same core actions are also present in More.",
+      "recommendation": "Make Files the consistent home for these actions. Retain the useful explanation and recovery behavior."
+    },
+    {
+      "step": 8,
+      "screenshot": "08-faq.jpg",
+      "screen": "FAQ",
+      "health": "Mostly consistent",
+      "finding": "The regular header and bottom transport remain while help scrolls in the center.",
+      "recommendation": "Keep this structure, showing which current song the persistent playback controls operate on."
+    },
+    {
+      "step": 9,
+      "screenshot": "09-note-controls.jpg",
+      "screen": "Composer — selected note",
+      "health": "Useful controls; reduces score height",
+      "finding": "Pitch, duration, performer, note volume and actions appear as an extra row, reducing the score viewport. The volume label clearly distinguishes note volume from master volume.",
+      "recommendation": "Give selection tools a predictable location and keep master controls in the fixed bottom bar. Choose between a reserved compact row and a side inspector only after comparing available score space."
+    },
+    {
+      "step": 10,
+      "screenshot": "10-loaded-placement.jpg",
+      "screen": "Placement — selected performer",
+      "health": "Useful tools; details can be buried",
+      "finding": "The selected performer appears below the complete instrument palette. Its location and move actions lie below the visible sidebar area at this viewport. Play is at (335,650).",
+      "recommendation": "Scroll the palette independently or provide a compact expandable selected-performer area so the current selection remains easy to reach."
+    },
+    {
+      "step": 11,
+      "screenshot": "11-loaded-performance.jpg",
+      "screen": "Performance — Pachelbel’s Canon",
+      "health": "Keep the presentation; replace the surrounding controls",
+      "finding": "The sphere, instruments, Mario and compact score work together well. The top bar is still entirely different and omits BPM and master volume. Play is at approximately (801,30).",
+      "recommendation": "Use the same header, title and bottom transport as the other workspaces. Place Visual style, Reset view and Slow rotate in a consistent corner of the sphere in Placement and Performance."
+    }
+  ],
+  "proposal": {
+    "Header": "Same brand, workspace tabs, song title, Files and settings access in every workspace. Keep their order and positions stable. Performance stays an ordinary selected tab; remove the separate Exit Performance requirement.",
+    "Playback bar": "Always full width at the bottom, below every sidebar. Stable left-to-right order: Play/Pause, Stop, Loop, position; then BPM and master volume. Keep Play’s size fixed when its label becomes Pause. Show the current song when browsing Library or FAQ.",
+    "Work area": "Placement: instruments left, sphere right. Composer: compact instrument strip above the large score, with editing tools beside the score. Performance: large sphere and compact score. Library and FAQ: scrolling content. Shared controls stay outside the scrolling area.",
+    "Sphere controls": "Visual style, Reset view and Slow rotate in the same sphere corner in Placement and Performance. These do not replace navigation. Appearance changes remain separate from sound-set changes.",
+    "Song and selection settings": "Files owns save/load/import/export/recovery. Song settings owns meter and score length. Loop-range access sits beside Loop. Note and performer properties stay contextual. Undo/Redo need one stable location and disabled states rather than shifting other controls.",
+    "Playback behavior": "Switching workspaces and browsing the library preserve play/pause, position, tempo, volume and loop. Opening another composition is explicit and loads paused. A musical edit retains the current pause-to-edit behavior. Loop remains one toggle and Stop remains stop-and-rewind."
+  },
+  "decisions": {
+    "Play location": "Recommend the fixed lower-left bottom bar. Placing Play left of the treble clef is a coherent alternative only if that same control position is reserved in Placement and Library, which have no visible staff. Do not add a second Play control.",
+    "Performance score height": "The persistent bottom bar takes some height. Keep the score above it and let the sphere use the remaining space; compare dense scores before shrinking the notation. An adjustable score divider is a possible later refinement, not a prerequisite.",
+    "Selection tools": "A compact reserved row avoids vertical movement when selecting a note, but costs height even when nothing is selected. A side inspector keeps score height, but costs width. Start with a shorter palette and compare before introducing a sidebar.",
+    "Meaning of Track": "The current top tabs are Placement, Composer, Performance, Library and FAQ. Track has not been identified as a current screen. Pending clarification, song-wide settings are treated as Song settings, while performer-specific controls remain contextual.",
+    "Narrow screens": "Use one consistent compact header and bottom-control arrangement at a given screen size. Overflow lower-priority settings before allowing Play/Stop/Loop to move or vanish. This run inspected the default desktop viewport; narrow-screen acceptance remains unverified."
+  }
+}

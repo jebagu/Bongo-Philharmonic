@@ -1,4 +1,3 @@
-import { PUBLIC_SITE } from './release';
 import sourceData from '../assets/library/library.json' with { type: 'json' };
 import sourceAudit from '../assets/library/library-provenance.json' with { type: 'json' };
 import simpleFavorites from '../foundation/assets/favorite-presets.json' with { type: 'json' };
@@ -8,6 +7,7 @@ import loopFavorites from '../foundation/assets/loop-favorites.json' with { type
 import { topology, dot } from '../foundation/src/core/geometry';
 import { getInstrument } from './catalog';
 import { MAX_PERFORMERS, validateComposition, type AssetSetId, type Composition } from './model';
+import { AUTHORED_COMPOSITIONS, type CompositionSection } from './compositions';
 
 /** Read-only music input. No old experiment state, player or UI is imported. */
 export interface SourceLibraryEntry {
@@ -30,7 +30,7 @@ export interface SourceLibraryEntry {
 }
 
 export interface LibraryProvenance {
-  sourceLibrary: 'song-studio/library.json';
+  sourceLibrary: 'song-studio/library.json' | 'authored-full-length';
   sourceEntryId: string;
   sourceDescription: string;
   sourceLoop: boolean;
@@ -52,6 +52,8 @@ export interface LibraryEntry {
   group: string;
   description: string;
   layoutName: string;
+  kind: 'full' | 'sketch' | 'original';
+  sections?: CompositionSection[];
   composition: Composition;
   provenance: LibraryProvenance;
 }
@@ -195,7 +197,10 @@ export function convertSourceEntry(source: SourceLibraryEntry): LibraryEntry {
     ? sourceAudit.mario.find(record => record.id === source.id)
     : sourceAudit.favorites.find(record => `bongo-${record.id}` === source.id);
   return {
-    id: source.id, title: source.name, assetSetId: source.set, group: source.group, description: source.source ?? '', layoutName: arrangement.name, composition,
+    id: source.id, title: source.name, assetSetId: source.set,
+    group: source.set === 'mario' ? 'Original Mario Paint songs' : source.group,
+    description: source.source ?? '', layoutName: arrangement.name,
+    kind: source.set === 'mario' ? 'original' : 'sketch', composition,
     provenance: {
       sourceLibrary: 'song-studio/library.json', sourceEntryId: source.id, sourceDescription: source.source ?? '', sourceLoop: song.loop,
       originalPerformerCount: pieces.length, retainedPerformerCount: keptPieces.length,
@@ -209,15 +214,41 @@ export function convertSourceEntry(source: SourceLibraryEntry): LibraryEntry {
   };
 }
 
-export const LIBRARY: LibraryEntry[] = SOURCE_LIBRARY.map(convertSourceEntry);
+export const SOURCE_ENTRIES: LibraryEntry[] = SOURCE_LIBRARY.map(convertSourceEntry);
+const fullLength: LibraryEntry[] = AUTHORED_COMPOSITIONS
+  .map(entry => ({
+    id: entry.id, title: entry.title, assetSetId: entry.composition.assetSetId,
+    group: 'Full-length compositions', description: entry.description,
+    layoutName: 'Front concert arc', kind: 'full', sections: entry.sections, composition: entry.composition,
+    provenance: {
+      sourceLibrary: 'authored-full-length', sourceEntryId: entry.id, sourceDescription: entry.basedOn,
+      sourceLoop: false, originalPerformerCount: entry.composition.performers.length,
+      retainedPerformerCount: entry.composition.performers.length, sourceEventCount: entry.composition.events.length,
+      retainedEventCount: entry.composition.events.length, consolidated: false,
+      retainedPerformerIds: entry.composition.performers.map(performer => performer.id), omittedPerformerIds: [],
+      performerMap: Object.fromEntries(entry.composition.performers.map(performer => [performer.id, performer.id])),
+      rationale: `Newly written finite arrangement with ${entry.sections.length} authored sections, expressive note levels and a composed ending. Front concert arc. Based on ${entry.basedOn}; this is a new arrangement, not a complete transcription of the original recording or work.`,
+    },
+  }));
+
+export const LIBRARY: LibraryEntry[] = [
+  ...fullLength,
+  ...SOURCE_ENTRIES.filter(entry => entry.assetSetId === 'bongo'),
+  ...SOURCE_ENTRIES.filter(entry => entry.assetSetId === 'mario'),
+];
+
+export function compositionDuration(composition: Composition): string {
+  const seconds = Math.round(composition.lengthBeats * 60 / composition.tempo);
+  return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+}
 
 /** Verify every current Favorites menu slot, including its deliberate duplicate. */
 export function validateLibraryInventory(): void {
   const expected = [...simpleFavorites, ...chordFavorites, ...popFavorites, ...loopFavorites].map(entry => `bongo-${entry.id}`);
-  const actual = LIBRARY.filter(entry => entry.assetSetId === 'bongo').map(entry => entry.id);
+  const actual = SOURCE_ENTRIES.filter(entry => entry.assetSetId === 'bongo').map(entry => entry.id);
   if (JSON.stringify(expected) !== JSON.stringify(actual)) throw Error('Composer source library no longer matches the current Favorites menu. Refresh its retained music inputs explicitly.');
-  const native = LIBRARY.filter(entry => entry.assetSetId === 'mario').map(entry => entry.id);
-  if (!PUBLIC_SITE && JSON.stringify(native) !== JSON.stringify(['mario-demo-1', 'mario-demo-2', 'mario-demo-3'])) throw Error('Composer needs all three original Mario Paint demos.');
+  const native = SOURCE_ENTRIES.filter(entry => entry.assetSetId === 'mario').map(entry => entry.id);
+  if (JSON.stringify(native) !== JSON.stringify(['mario-demo-1', 'mario-demo-2', 'mario-demo-3'])) throw Error('Composer needs all three original Mario Paint demos.');
 }
 validateLibraryInventory();
 

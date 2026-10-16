@@ -1,0 +1,47 @@
+{
+  "version": {
+    "id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_4e681cf9da8c8191b993b2bd1b68c779",
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "version_number": 10,
+    "source": {
+      "commit_sha": "04d0bb9d0a43221b919c7feacacd418eb2949d60"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000007cbc8210afd3ee042e14a461",
+      "content_hash": "sha256:2e860d2483dd345a90d719270eeee32813eaec21430acdfdc40642ee3c2e5beb",
+      "size_bytes": 11827200,
+      "file_count": 312
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ad254d8cce48191bd28a1f1cd1f9e13",
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "title": "Bongo Philharmonic",
+    "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_4e681cf9da8c8191b993b2bd1b68c779",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad23b8ada4081918bf45b0ad02007c9",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-16T16:46:32.971040+00:00"
+  },
+  "checks": {
+    "unitTests": 101,
+    "resources": 497,
+    "publicPayloadFiles": 311,
+    "localBrowserTests": 9,
+    "hostedBrowserTests": {
+      "passed": 6,
+      "mainRunPassed": 5,
+      "correctedEditingCheckPassed": 1,
+      "note": "The first editing check targeted a point beyond the visible right edge when paused near the loop end. The corrected check stamps a visible beat and passes."
+    }
+  },
+  "sourceScope": "Version 10 adds score following to public version 9. Subsequent version 11 retains it alongside the concurrent layout update."
+}

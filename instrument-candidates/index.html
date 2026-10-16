@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <meta name="description" content="Three candidate eighties sound libraries for Bongo Planet. Audition forty-eight individual instruments and hear each sixteen-voice set in a simple groove.">
+  <title>Bongo Planet — Instrument Candidates</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23262925'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23e78158' stroke-width='5'/%3E%3Cpath d='M32 9v46M9 32h46' stroke='%23e78158' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="masthead">
+      <a class="wordmark" href="./" aria-label="Bongo Planet instrument candidates home"><span class="planet-mark" aria-hidden="true">✳</span><span>BONGO PLANET<span class="wordmark-sub">INSTRUMENT CANDIDATES</span></span></a>
+      <div class="masthead-right"><span class="local-tag"><i></i> LOCAL LISTENING ROOM</span><button id="show-picks" class="text-button">♡ <span id="pick-count">0</span> saved sounds</button></div>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div><p class="eyebrow">SOUND LIBRARY STUDIES / OCTOBER 2026</p><h1 id="page-title">The eighties.<br><em>In good company.</em></h1><p class="intro-copy">Three sets. Sixteen instruments each. Find a sound you love,<br class="desktop-break"> then hear what happens when the whole room plays.</p></div>
+        <div class="intro-aside"><span class="large-number">48<span>VOICES TO EXPLORE</span></span><p>Original synth studies<br>+ sampled human voices<br>+ a little machine rhythm.</p></div>
+      </section>
+
+      <nav id="bank-tabs" class="bank-tabs" aria-label="Candidate sound sets"></nav>
+
+      <section class="tape-deck" aria-label="Set playback">
+        <div class="deck-left">
+          <p class="eyebrow"><span id="bank-number">SIDE 01</span><span class="small-dot">•</span><span id="bank-era"></span></p>
+          <h2 id="bank-title"></h2><p id="bank-description"></p>
+          <div class="transport"><button id="groove" class="play-groove"><span class="transport-icon" aria-hidden="true">▶</span><span id="groove-label">Hear the set together</span></button><button id="tour" class="tour-button">▷ Audition all 16</button></div>
+          <p id="transport-status" class="transport-status" role="status" aria-live="polite">Press play to start. Nothing plays automatically.</p>
+        </div>
+        <div class="deck-right">
+          <div class="deck-display"><span id="display-mode">READY WHEN YOU ARE</span><span id="bar-label">D MINOR · 4 BARS</span><canvas id="scope" width="600" height="90" aria-label="Audio waveform display"></canvas><div id="steps" class="steps" aria-label="Sixteen-step beat indicator"></div></div>
+          <div class="mixer"><label class="tempo-control">TEMPO <input id="tempo" type="range" min="70" max="145" step="1" value="110" aria-label="Tempo"><output id="tempo-value">110</output><span>BPM</span></label><label class="volume-control">VOLUME <input id="volume" type="range" min="0" max="100" value="60" aria-label="Master volume"></label></div>
+          <div class="deck-options"><label><input id="backing" type="checkbox" checked> Add a simple backing beat</label><button id="stop" class="stop-button" aria-label="Stop all audio">■ Stop <kbd>esc</kbd></button></div>
+        </div>
+      </section>
+
+      <section class="instruments" aria-labelledby="instrument-title">
+        <div class="instrument-heading"><div><p class="eyebrow" id="bank-character"></p><h2 id="instrument-title">Meet the instruments<span id="visible-count">16</span></h2></div><div class="audition-controls"><span>PLAY EACH AS</span><div class="segmented" id="audition-mode" aria-label="Individual audition mode"><button data-mode="note" aria-pressed="true">A note</button><button data-mode="phrase" aria-pressed="false">A phrase</button><button data-mode="chord" aria-pressed="false">A chord</button></div></div></div>
+        <div class="filter-line"><div id="filters" class="filters" aria-label="Filter instruments"><button data-filter="all" aria-pressed="true">All sounds</button><button data-filter="synth" aria-pressed="false">Synths</button><button data-filter="voice" aria-pressed="false">Voices</button><button data-filter="drum" aria-pressed="false">Drums & effects</button></div><button id="unmute" class="text-button">Reset mix</button></div>
+        <div id="instrument-grid" class="instrument-grid"></div>
+        <p id="empty-state" class="empty-state" hidden>No saved sounds in this set yet. Tap a heart to keep one.</p>
+        <p class="grid-note"><span>▶</span> Tap a sound to hear it by itself. <span>◉</span> Use the speaker button to leave it out of the group groove. <span>♡</span> Hearts save your shortlist on this browser.</p>
+      </section>
+
+      <details class="about"><summary>About the sounds & credits <span>+</span></summary><div><p>These are candidate sound designs inspired by familiar eighties timbres. The synths, drums, flute and orchestra hit are synthesized here; they are not clips from the referenced records or exact hardware emulations. Reference names are listening directions, not claims of matching the original patch.</p><p>The voice slots use actual CC0 recordings: EllenMentor’s layered female vocal, Cough-E’s robot voice, Kenney’s spoken “ready” and “go,” and DJ N.D.5 / leonschi13’s “Yeah.” The two choir voices are different edits and treatments of the same source recording. Freesound assets use their high-quality MP3 previews.</p><p>Group playback is an original four-bar audition groove. Every bank voice appears over one cycle; the optional common backing beat helps compare the sets. Switch it off to hear only the sixteen selected voices. These studies do not change either Bongo Planet application.</p><div class="credit-links"><a href="https://freesound.org/people/ellenmentor/sounds/419161/" target="_blank" rel="noopener">EllenMentor ↗</a><a href="https://opengameart.org/content/robot-voice-pack" target="_blank" rel="noopener">Cough-E ↗</a><a href="https://kenney.nl/assets/voiceover-pack" target="_blank" rel="noopener">Kenney ↗</a><a href="https://freesound.org/people/leonschi13/sounds/129360/" target="_blank" rel="noopener">DJ N.D.5 ↗</a><a href="./sources.json" target="_blank">Source manifest ↗</a></div></div></details>
+    </main>
+    <footer><span>BONGO PLANET <span class="footer-dot">/</span> SOUND STUDIES</span><span>THREE CANDIDATES. NOTHING CHOSEN YET.</span><button id="export-picks" class="text-button">Download shortlist ↗</button></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="./main.mjs"></script>
+</body>
+</html>

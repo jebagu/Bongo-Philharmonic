@@ -1,0 +1,170 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.public.config.ts",
+      "score-follow-browser.spec.ts",
+      "-g",
+      "Composer follows a loop wrap"
+    ],
+    "configFile": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/playwright.public.config.ts",
+    "rootDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/tmp/bongo-philharmonic-public-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "public-browser.spec.ts",
+          "faq-browser.spec.ts",
+          "performance-backgrounds.spec.ts",
+          "playhead-browser.spec.ts",
+          "score-reaction-browser.spec.ts",
+          "score-follow-browser.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/tmp/bongo-philharmonic-public-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+        "snapshotDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "public-browser.spec.ts",
+          "faq-browser.spec.ts",
+          "performance-backgrounds.spec.ts",
+          "playhead-browser.spec.ts",
+          "score-reaction-browser.spec.ts",
+          "score-follow-browser.spec.ts"
+        ],
+        "timeout": 45000,
+        "use": {
+          "baseURL": "https://bongo-philharmonic.jebagu.chatgpt.site",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "launchOptions": {
+            "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "args": [
+              "--enable-unsafe-swiftshader"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/public-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "score-follow-browser.spec.ts",
+      "file": "score-follow-browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Composer follows a loop wrap and freezes on pause",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:49:36.300Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-902492e69fefcc12d049",
+          "file": "score-follow-browser.spec.ts",
+          "line": 64,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-16T16:49:32.672Z",
+    "duration": 31735.381999999998,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "site": {
+    "id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_6c5d7228370881918d531e6b47b39a1b",
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "version_number": 12,
+    "source": {
+      "commit_sha": "481d6a7598c4d8bcfdd6ef0ddc38a1c66c9e0275"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_000000009bd48243a85373e2d4c8c0b0",
+      "content_hash": "sha256:4bb43c0fdf0e192ef6ae46afefaaea51b28b72866a5c35da022dd4f143a68b8b",
+      "size_bytes": 11888640,
+      "file_count": 312
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ad274fb64b481918918253b6a01b5db",
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "title": "Bongo Philharmonic",
+    "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_6c5d7228370881918d531e6b47b39a1b",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad23b8ada4081918bf45b0ad02007c9",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-16T19:03:39.071130+00:00"
+  },
+  "source": {
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "checkout_path": "/Users/jeremyguillory/Documents/ChatGPT/bongo-philharmonic/sites/bongo-philharmonic",
+    "commit_sha": "481d6a7598c4d8bcfdd6ef0ddc38a1c66c9e0275",
+    "archive": "/Users/jeremyguillory/Documents/ChatGPT/bongo-philharmonic/evidence/composer-toolbar-public.tar.gz"
+  }
+}

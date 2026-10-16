@@ -1,7 +1,7 @@
 import { defineConfig } from '@playwright/test';
 const baseURL = process.env.BONGO_TEST_URL ?? 'http://127.0.0.1:5417/BongoPlanet/composer/';
 export default defineConfig({
-  testDir: 'tests', testMatch: 'browser.spec.ts', workers: 1, timeout: 45000,
+  testDir: 'tests', testMatch: ['browser.spec.ts', 'faq-browser.spec.ts', 'performance-backgrounds.spec.ts', 'composer-toolbar-browser.spec.ts', 'score-follow-browser.spec.ts'], workers: 1, timeout: 45000,
   outputDir: '/tmp/bongo-philharmonic-browser',
   reporter: [['list'], ['json', { outputFile: 'evidence/browser-results.json' }]],
   webServer: process.env.BONGO_TEST_URL ? undefined : {

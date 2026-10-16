@@ -11,3 +11,7 @@ evidence/**/*.png
 evidence/**/*.jpg
 dist-public/
 sites/
+.gstack/
+
+# Generated deployment bundles stay local; source and compact evidence are versioned.
+evidence/**/*.tar.gz

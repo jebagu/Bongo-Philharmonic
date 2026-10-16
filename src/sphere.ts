@@ -12,11 +12,11 @@ import { DEFAULT_APPEARANCE, type Appearance } from '../foundation/src/view/art/
 import { applyCompleteTheme } from '../foundation/src/view/art/completeThemes';
 import { PlanetMaterials } from '../foundation/src/view/art/planetMaterials';
 import { NorthPole } from '../foundation/src/view/art/northPole';
-import { ThemeAtmosphere } from '../foundation/src/view/art/ThemeAtmosphere';
 import { protectFromScenery } from '../foundation/src/view/art/SceneryMask';
 import { SCENERY_FOCUS_LAYER } from '../foundation/src/view/art/SceneryFocus';
 import nativeManifest from '../asset-packs/mario-paint/manifest.json';
 import type { Composition } from './model';
+import { ComposerBackground } from './background';
 
 type Callbacks = {
   onJunction: (junctionId: number) => void;
@@ -52,7 +52,7 @@ export class ComposerSphere {
   private readonly planet = createFacetedPlanet(topology.vertices.map((_, i) => point(i)), topology.faces, DEFAULT_APPEARANCE.planet);
   private readonly materials = new PlanetMaterials();
   private readonly pole = new NorthPole();
-  private readonly atmosphere = new ThemeAtmosphere();
+  private readonly background = new ComposerBackground();
   private readonly ambient = new THREE.AmbientLight('#ffffff', 1.2);
   private readonly key = new THREE.DirectionalLight('#fff1da', 3);
   private readonly fill = new THREE.DirectionalLight('#c4b5ff', .65);
@@ -112,7 +112,7 @@ export class ComposerSphere {
     this.key.shadow.normalBias = .018;
     this.fill.position.set(3, -1, 2);
     for (const light of [this.ambient, this.key, this.fill]) light.layers.enable(SCENERY_FOCUS_LAYER);
-    this.world.add(this.ambient, this.key, this.fill, this.planet, this.pole, this.atmosphere, this.hintRing);
+    this.world.add(this.ambient, this.key, this.fill, this.planet, this.pole, this.hintRing);
     protectFromScenery(this.pole);
     const positions = topology.edges.flatMap(([a, b]) => [...point(a, .99).toArray(), ...point(b, .99).toArray()]);
     this.edges = new LineSegments2(new LineSegmentsGeometry().setPositions(positions), new LineMaterial({ color: '#c3b8ff', linewidth: 1.6, transparent: true, opacity: .85, depthWrite: false }));
@@ -269,7 +269,7 @@ export class ComposerSphere {
     window.removeEventListener('blur', this.cancelGesture);
     document.removeEventListener('visibilitychange', this.visibilityChange);
     this.preference.removeEventListener('change', this.motionPreference);
-    this.atmosphere.dispose();
+    this.background.dispose();
     this.disposeObject(this.world);
     this.materials.dispose();
     for (const template of this.templates.values()) void template.then(object => this.disposeObject(object), () => {});
@@ -300,7 +300,7 @@ export class ComposerSphere {
     this.fill.color.set(theme?.lights.fill ?? '#c4b5ff');
     this.fill.intensity = a.lighting * (theme?.lights.fillPower ?? .65);
     this.fill.position.set(...(theme?.lights.fillPosition ?? [3, -1, 2]));
-    this.atmosphere.apply(theme);
+    this.background.apply(theme);
     this.world.fog = theme?.atmosphere.fog ? new THREE.Fog(theme.atmosphere.haze, theme.atmosphere.fogNear, theme.atmosphere.fogFar) : null;
   }
 
@@ -429,7 +429,11 @@ export class ComposerSphere {
   }
 
   private pointerDown = (event: PointerEvent) => {
-    if (this.options.performance || event.button !== 0) return;
+    if (event.button !== 0) return;
+    if (this.options.performance) {
+      this.cameraTap = { pointer: event.pointerId, x: event.clientX, y: event.clientY, moved: false };
+      return;
+    }
     const id = !this.options.placementType ? this.performerAt(event.clientX, event.clientY, event.pointerType === 'touch') : null;
     if (id) {
       event.preventDefault(); event.stopImmediatePropagation();
@@ -601,7 +605,7 @@ export class ComposerSphere {
     const elapsed=this.previousFrameTime?Math.min(.05,(timeMs-this.previousFrameTime)/1000):0;
     this.previousFrameTime=timeMs;
     if (this.contextLost || this.container.clientWidth < 2 || this.container.clientHeight < 2) return;
-    if(this.slowRotate&&!this.options.performance&&!this.reducedMotion&&!this.drag&&!this.cameraTap){
+    if(this.slowRotate&&!this.reducedMotion&&!this.drag&&!this.cameraTap){
       const axis=new THREE.Vector3(0,1,0),angle=elapsed*.065;
       this.camera.position.sub(this.controls.target).applyAxisAngle(axis,angle).add(this.controls.target);
       this.camera.up.applyAxisAngle(axis,angle);
@@ -640,13 +644,12 @@ export class ComposerSphere {
       this.orient(this.hintRing, this.focusedJunction);
     }
     this.updateLabel();
-    this.atmosphere.tick(now, this.reducedMotion, this.camera.quaternion, {
-      camera: this.camera, foreground: [], viewportHeight: this.container.clientHeight, bufferSize: this.renderer.getDrawingBufferSize(new THREE.Vector2()),
-    });
-    this.atmosphere.renderMask(this.renderer, this.world, this.camera);
+    this.camera.updateMatrixWorld();
     const autoClear = this.renderer.autoClear;
     try {
-      if (this.atmosphere.renderBackground(this.renderer, this.world, this.camera)) this.renderer.autoClear = false;
+      this.background.render(this.renderer, this.world, this.camera, now, this.reducedMotion, this.container.clientWidth, this.container.clientHeight);
+      this.renderer.autoClear = false;
+      this.renderer.clearDepth();
       this.renderer.render(this.world, this.camera);
     } finally { this.renderer.autoClear = autoClear; }
   };

@@ -1,0 +1,351 @@
+{
+  "version": 1,
+  "name": "Bongo Planet",
+  "files": [
+    {
+      "path": "guitar.glb",
+      "bytes": 214224,
+      "sha256": "9e7905404345125366581c78283997ecdc528bb6ea06115fc3daffa55f23d6d3"
+    },
+    {
+      "path": "glass.glb",
+      "bytes": 29980,
+      "sha256": "ee63e2e87de0cf14f588beee43fa5eb3089015d612e3c50f0c4ae8f38a0a8296"
+    },
+    {
+      "path": "kalimba.glb",
+      "bytes": 193816,
+      "sha256": "7049cf4e2124a73c6f8448b09c56732064a1c2c565b8197491f79405f12dff0c"
+    },
+    {
+      "path": "piano.glb",
+      "bytes": 401260,
+      "sha256": "3242ac294f85681e4fdc453884245b80c9b599f86e47ba28f097825603733921"
+    },
+    {
+      "path": "marimba.glb",
+      "bytes": 193784,
+      "sha256": "a907f3577c956adac72a72b9ed0feb232b12a5a938e36ea048ceceefd220ee2b"
+    },
+    {
+      "path": "bongo-high.glb",
+      "bytes": 37540,
+      "sha256": "10cb0a830198d6d31314c76e1131b209ee7aba66842b66a424871d9999ecb1df"
+    },
+    {
+      "path": "bongo-low.glb",
+      "bytes": 37528,
+      "sha256": "1e58b328dc44de5475a9b346373fd33949493daf4ab0eb3400bed0b1d31fee2d"
+    },
+    {
+      "path": "kick.glb",
+      "bytes": 52688,
+      "sha256": "75236972e14a05650da930293d80d3234583a71f8001032efd038016f4622fb0"
+    },
+    {
+      "path": "snare.glb",
+      "bytes": 174392,
+      "sha256": "8cd84dd0391012d089745e4f3692cb64a6d816b502f443c705f35a1f8f9c4c91"
+    },
+    {
+      "path": "hi-hat.glb",
+      "bytes": 40684,
+      "sha256": "a2c4e32f7bb30620aa9da8f0d297509f630b50b13c883a9bdb9b2b216bc86887"
+    },
+    {
+      "path": "generator-portrait.png",
+      "bytes": 22773,
+      "sha256": "8a31e20c5633325f8738bdb34d98f1b5807e4bba34d9be8a2f5a11280568ab4a"
+    },
+    {
+      "path": "guitar-portrait.png",
+      "bytes": 10875,
+      "sha256": "fd0d6db125a9b1ef74b3be57b19a968a281e6dd20bf79dac542d2db37536f442"
+    },
+    {
+      "path": "glass-portrait.png",
+      "bytes": 18879,
+      "sha256": "80793d3cfdf6d3b528e0960ddf245f312d53f618f75664165da32cd84303d92b"
+    },
+    {
+      "path": "kalimba-portrait.png",
+      "bytes": 12980,
+      "sha256": "38cd83d902f91305221e0790d9f1aecdaa92311d0eb5c7a50b09d74a505f0f29"
+    },
+    {
+      "path": "piano-portrait.png",
+      "bytes": 12100,
+      "sha256": "8ed540bfdac567894cc90673125128e22f7419526051c2f482daab63418c3ee9"
+    },
+    {
+      "path": "marimba-portrait.png",
+      "bytes": 12350,
+      "sha256": "a18b4c815f0c996aec576945b65706f9156761e12f38b56a777a4f068b07676a"
+    },
+    {
+      "path": "bongo-high-portrait.png",
+      "bytes": 14237,
+      "sha256": "a77c69eee1170a4fa46faabb5a25756c7a04f98f6c4c6b95e5d2aed1535e5438"
+    },
+    {
+      "path": "bongo-low-portrait.png",
+      "bytes": 13659,
+      "sha256": "b3dde1729a3006543bed503a7ede7e5560c5092959eca6c978633d4cbfd1da8c"
+    },
+    {
+      "path": "kick-portrait.png",
+      "bytes": 19644,
+      "sha256": "c0d542de5857f3bdc694ba231810e7ccd8de6a0aa34ba3efa8d505782bf83457"
+    },
+    {
+      "path": "snare-portrait.png",
+      "bytes": 10560,
+      "sha256": "d90f9116ede0039048c1919140304e283d48a9f41c9a9b5bd2272275a3c43fc7"
+    },
+    {
+      "path": "hi-hat-portrait.png",
+      "bytes": 9481,
+      "sha256": "7bea2b749f67aba395b6de0e7f9f80e972f1080b7665b86852e9b405d38ae2a3"
+    },
+    {
+      "path": "generator.glb",
+      "bytes": 32932,
+      "sha256": "243e21b4e59d18178f749da5709c5f1356c99e4b065a81148d1cb433012a3e53"
+    },
+    {
+      "path": "note.glb",
+      "bytes": 23500,
+      "sha256": "ec97b5de4d423e313462f56a984f40d38a6b20cfdd3ea1f65ac0c985e2cf2e7e"
+    },
+    {
+      "path": "beat.glb",
+      "bytes": 45496,
+      "sha256": "c20a5e9e7e6d790a452d9c3d859fef7c5ba52741de48508dc3ec523d7036600a"
+    },
+    {
+      "path": "planet.glb",
+      "bytes": 14048,
+      "sha256": "7966690d8cb18d047e3e9f96293b16b8db9af5f891c48e4395b5480a01a3d3ec"
+    },
+    {
+      "path": "generator.png",
+      "bytes": 703606,
+      "sha256": "efa2463a03da06061328db2de7283ccb481288918587c8227178e752fe7e0224"
+    },
+    {
+      "path": "note.png",
+      "bytes": 543323,
+      "sha256": "2dd56562b5d599228e1112aa7bc34164fdcaaef6162db3582596e12ecb63a95b"
+    },
+    {
+      "path": "beat.png",
+      "bytes": 632121,
+      "sha256": "14a878317bc9b141e5c2cea9179c798125d0db930128b9647c1b95484669f616"
+    },
+    {
+      "path": "theme.json",
+      "bytes": 752,
+      "sha256": "ca1f2799e6703fb6a7f25b30188a317f272ebc7e7ac3e6a71625d923d6f80ee7"
+    },
+    {
+      "path": "showcase.json",
+      "bytes": 1594,
+      "sha256": "ad4fb705a6a40223ca15c0b1bd7dae8635398ee8c28edae42f1061b95b03207d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5153,
+      "sha256": "d16470ce2bf8a0e14d1535922bfa211f9ac96df0c4d0b61a76ea4b8e1e63d95c"
+    },
+    {
+      "path": "Creation-Guide.md",
+      "bytes": 7426,
+      "sha256": "18e777d65b9318157c135dae70b5569f0cf80f03f00cf0ac5aee568a30258c3b"
+    },
+    {
+      "path": "Agent-Guide.md",
+      "bytes": 35655,
+      "sha256": "130ee7933dbb22c45e2bd767504d2dae7209e1f403a914150c85dded0e9545e1"
+    },
+    {
+      "path": "Rules.md",
+      "bytes": 22847,
+      "sha256": "a2ee6a602f7efa82ea9c13b669d13d99be78b3b725c40da221f447d0f63c2438"
+    },
+    {
+      "path": "Game-Design-Brief.md",
+      "bytes": 15248,
+      "sha256": "cb103786ea33b4211069e0d4c57f9c5ac07a52265f45f798f074d6d4133c68d1"
+    },
+    {
+      "path": "Spark-Gates-Work-Package.md",
+      "bytes": 46804,
+      "sha256": "b92327a1000e41aa26308e8b8908c18dd92382c7348a14e722381a1aca497be0"
+    },
+    {
+      "path": "prompts.txt",
+      "bytes": 3414,
+      "sha256": "f0117023c1015c4c6193d3e6b8fa47b713f0236b58616e9a86d010a0409b8fd6"
+    },
+    {
+      "path": "source/toys.ts",
+      "bytes": 8915,
+      "sha256": "0c4d59b628088d70c7830089e618db7d07946fe288283cc6996f7502d52decfb"
+    },
+    {
+      "path": "source/appearance.ts",
+      "bytes": 7039,
+      "sha256": "b826cb3534614e5d4028201fec726b53c15ee0c0b8e4695f7b85651c812c009d"
+    },
+    {
+      "path": "source/swatches.ts",
+      "bytes": 2075,
+      "sha256": "3a59e87b490d07d8a6a1a54cbe68b7db02814d84c221a6443545c2d63838d87c"
+    },
+    {
+      "path": "examples/F11.json",
+      "bytes": 2030,
+      "sha256": "a77491be39330a6a43df7107cfa660e7c8aa8becdb3f363b3f5a141eca890c6c"
+    },
+    {
+      "path": "examples/F12.json",
+      "bytes": 2031,
+      "sha256": "5e81650c76edee5d6790e440432a4b3cef2cdc0ea286a0b69f8db3cd28374b66"
+    },
+    {
+      "path": "examples/F13.json",
+      "bytes": 2723,
+      "sha256": "c6dadbee530d659c072329273f674cd3274d4fde14f1511d773d219a2d764dc2"
+    },
+    {
+      "path": "examples/F14.json",
+      "bytes": 2252,
+      "sha256": "f92c60a48ab2e74e06abe8f9c4fba1887919186126cfe5bb15dadecb2619d050"
+    },
+    {
+      "path": "examples/F15.json",
+      "bytes": 1448,
+      "sha256": "ec15af81b1211df8b6092ae6b5ec2e79ce5a412d68c11f290b6221a545f55e80"
+    },
+    {
+      "path": "examples/F16.json",
+      "bytes": 1442,
+      "sha256": "97819d2b3af47770fa44d6372c53c95e70f96508498cb79eb4c270f6e22fde91"
+    },
+    {
+      "path": "examples/F17.json",
+      "bytes": 1406,
+      "sha256": "f6878adff05fa22003427732324f819b8762c1b63b5ca54adeb73d9d956d40a9"
+    },
+    {
+      "path": "source/toy-style.css",
+      "bytes": 13652,
+      "sha256": "09d8738b7d25183982b83dd95b3dc6bef2dbdf51ed8c2d9df1e031ed787af6cb"
+    },
+    {
+      "path": "source/panel.css",
+      "bytes": 13542,
+      "sha256": "52e902b2b5d8f59e4c49f1453922bd144df136990aeba3170d92f81968874e2d"
+    },
+    {
+      "path": "source/effects/view/StrutSparkModel.ts",
+      "bytes": 10832,
+      "sha256": "08a0fcc7bc7c0557de69b8990794fdadb96e4c1261bccee1fc75c279c9ccd2a7"
+    },
+    {
+      "path": "source/effects/view/StrutSparkRenderer.ts",
+      "bytes": 5774,
+      "sha256": "1ee56b99936fbe6fa7bc19568b1f635019f9073a0264a3de5c4b8d6a90587e40"
+    },
+    {
+      "path": "source/effects/view/strutRoutes.ts",
+      "bytes": 5209,
+      "sha256": "279baf96fe6fb2223369e8a45a6bc861055b0aa2401ab095adcd12f9a4e6fee7"
+    },
+    {
+      "path": "source/effects/view/math.ts",
+      "bytes": 1169,
+      "sha256": "9e16d927105cccc96de98da15623acc47003a48194a0a3ab373f7b0f9950ad35"
+    },
+    {
+      "path": "source/effects/core/geometry.ts",
+      "bytes": 2550,
+      "sha256": "b6b788d732a900a102d108623033055bc221099a5d91f8e648af16d2905b69bf"
+    },
+    {
+      "path": "source/effects/core/contracts.ts",
+      "bytes": 8836,
+      "sha256": "a0b8330945598443c70e245792bdb5a6c439d81a58f1a0a5687d2307acf1c941"
+    },
+    {
+      "path": "source/effects/core/routes.ts",
+      "bytes": 3314,
+      "sha256": "f9a8c3b68ebcfdd0c3f30fde5443b8540e94820180fa0fb401767c9fa873e271"
+    },
+    {
+      "path": "source/effects/core/engine.ts",
+      "bytes": 17312,
+      "sha256": "88aa3aee4a713f07e14a1e99b979ef472a4bba0d2e8953018ced0c7e314ae0b8"
+    },
+    {
+      "path": "source/effects/core/instruments.ts",
+      "bytes": 3073,
+      "sha256": "11544c587c41c624a01251f914702af932f2b21567874674292857ec7676b082"
+    },
+    {
+      "path": "source/effects/core/examples.ts",
+      "bytes": 3309,
+      "sha256": "cd6e73fc274bd9ce3f5bf467cb46bd75d8c8bdb75d9bcc34c7dd235d17b0aa8c"
+    },
+    {
+      "path": "source/effects/core/pieceLabels.ts",
+      "bytes": 1321,
+      "sha256": "e62a7db7f2a5c859c849509e998e808fa53ae6267a6ae9ec2520e235fbee006e"
+    },
+    {
+      "path": "source/effects/view/selectionPanel.ts",
+      "bytes": 4378,
+      "sha256": "846d830b53e7c548bd53297e5674a120faf8acd7f354214dbb6c4c36f67aab70"
+    },
+    {
+      "path": "source/effects/view/SparkGateModel.ts",
+      "bytes": 1560,
+      "sha256": "a55a8fed43aa93d6269981adff5ec87834b07938682244a6805be8b11066f4e0"
+    },
+    {
+      "path": "source/effects/view/SparkGateRenderer.ts",
+      "bytes": 6680,
+      "sha256": "203282e969a4c7a1d8e7fc47c5a3698ab451890e0a9c6659ab30f2724f47038c"
+    },
+    {
+      "path": "source/effects/core/gated.ts",
+      "bytes": 3157,
+      "sha256": "06cb2588a04f46b988e56575ccb9af260c7b6d7a0b4c726328613a38c60639ff"
+    },
+    {
+      "path": "source/effects/core/gatedConversion.ts",
+      "bytes": 2252,
+      "sha256": "ba6b841827edc70a9028d0643d3d065ad3594a4ba49fe6ce5272eb7621bb76d4"
+    },
+    {
+      "path": "source/effects/core/gatedExamples.ts",
+      "bytes": 729,
+      "sha256": "1d56e6511808cb25dd61b4122a1115012c8eade4407bb7ac1babaff3c2478fc1"
+    },
+    {
+      "path": "source/effects/view/art/appearance.ts",
+      "bytes": 7048,
+      "sha256": "bd75ab71faf68d081f15e877c7800cf4165c1448176946444f53684273e2851e"
+    },
+    {
+      "path": "source/effects/view/art/swatches.ts",
+      "bytes": 2075,
+      "sha256": "3a59e87b490d07d8a6a1a54cbe68b7db02814d84c221a6443545c2d63838d87c"
+    },
+    {
+      "path": "source/effects/view/art/gateIcons.ts",
+      "bytes": 1507,
+      "sha256": "55cf810beabc92ec3af3459840fbbb7cbf74aac4ce655eb101539e195bdf2282"
+    }
+  ]
+}

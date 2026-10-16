@@ -1,0 +1,462 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.public.config.ts",
+      "score-follow-browser.spec.ts",
+      "playhead-browser.spec.ts",
+      "score-reaction-browser.spec.ts"
+    ],
+    "configFile": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/playwright.public.config.ts",
+    "rootDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/tmp/bongo-philharmonic-public-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "public-browser.spec.ts",
+          "faq-browser.spec.ts",
+          "performance-backgrounds.spec.ts",
+          "playhead-browser.spec.ts",
+          "score-reaction-browser.spec.ts",
+          "score-follow-browser.spec.ts"
+        ],
+        "timeout": 45000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/tmp/bongo-philharmonic-public-browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+        "snapshotDir": "/private/var/folders/w6/592shmyj7sbgwmrqvbhb1kw80000gn/T/philharmonic-follow-release-rjv_31cv/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "public-browser.spec.ts",
+          "faq-browser.spec.ts",
+          "performance-backgrounds.spec.ts",
+          "playhead-browser.spec.ts",
+          "score-reaction-browser.spec.ts",
+          "score-follow-browser.spec.ts"
+        ],
+        "timeout": 45000,
+        "use": {
+          "baseURL": "http://127.0.0.1:5717/BongoPhilharmonic/",
+          "viewport": {
+            "width": 1440,
+            "height": 1000
+          },
+          "launchOptions": {
+            "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "args": [
+              "--enable-unsafe-swiftshader"
+            ]
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/public-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview:public",
+      "url": "http://127.0.0.1:5717/BongoPhilharmonic/",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "playhead-browser.spec.ts",
+      "file": "playhead-browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Mario uses native hop distances and lands on notes without sideways jumps",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8436,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:43:31.989Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2892c2fcf82ee940e1ef-96ca8900065a367d867d",
+          "file": "playhead-browser.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "score-follow-browser.spec.ts",
+      "file": "score-follow-browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Composer follows to the real song ending at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7491,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:43:41.904Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-ed8101d9dbdcc39fcaa9",
+          "file": "score-follow-browser.spec.ts",
+          "line": 14,
+          "column": 3
+        },
+        {
+          "title": "Composer follows to the real song ending at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7658,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:43:49.404Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-22ad5239192ebad068dc",
+          "file": "score-follow-browser.spec.ts",
+          "line": 14,
+          "column": 3
+        },
+        {
+          "title": "Performance follows to the real song ending at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7649,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:43:57.088Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-4b0262166e0b5cf15f66",
+          "file": "score-follow-browser.spec.ts",
+          "line": 14,
+          "column": 3
+        },
+        {
+          "title": "Performance follows to the real song ending at 390px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7523,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:44:04.750Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-6cfd1b355d3ba2b08436",
+          "file": "score-follow-browser.spec.ts",
+          "line": 14,
+          "column": 3
+        },
+        {
+          "title": "Composer follows a loop wrap and freezes on pause",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6819,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:44:12.293Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-902492e69fefcc12d049",
+          "file": "score-follow-browser.spec.ts",
+          "line": 64,
+          "column": 3
+        },
+        {
+          "title": "Performance follows a loop wrap and freezes on pause",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6817,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:44:19.133Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "700692459d63918880ad-6a1ba8e6b7b7a19391a8",
+          "file": "score-follow-browser.spec.ts",
+          "line": 64,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "title": "score-reaction-browser.spec.ts",
+      "file": "score-reaction-browser.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "bongo score notes dip together with native timing and transparent editing targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6832,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:44:25.989Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e1aa486556f70e221-3d51fd79e1fb51ce5521",
+          "file": "score-reaction-browser.spec.ts",
+          "line": 5,
+          "column": 3
+        },
+        {
+          "title": "mario score notes dip together with native timing and transparent editing targets",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 45000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6494,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T16:44:32.834Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "976e1aa486556f70e221-3adf21054226212b7c81",
+          "file": "score-reaction-browser.spec.ts",
+          "line": 5,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-16T16:43:30.092Z",
+    "duration": 69740.803,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

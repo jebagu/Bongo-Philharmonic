@@ -1,0 +1,30 @@
+{
+  "id": "appgdep_6ad248b04c948191828d64fb109cd417",
+  "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+  "title": "Bongo Philharmonic",
+  "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_acef72dce72c819188962d1ad4bcd19a",
+  "type": "publish",
+  "status": "succeeded",
+  "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+  "has_mcp": false,
+  "screenshot_asset_pointer": null,
+  "provider_deployment_id": "site---6ad23b8ada4081918bf45b0ad02007c9",
+  "failure_message": null,
+  "env_set_revision": 0,
+  "updated_at": "2026-10-16T15:54:40.635098+00:00",
+  "version_number": 7,
+  "source_commit": "dc7529dfad2cecb85ccefdb6645cb89af57d40d9",
+  "library_commit": "439ab177b04a37780d7a19cc1390d4493761f4d4",
+  "library_entries": 32,
+  "full_length_arrangements": 7,
+  "original_mario_paint_songs": 3,
+  "public_payload_files": 311,
+  "public_payload_bytes": 11571502,
+  "verification": {
+    "hosted_checks_passed": 15,
+    "details": "Fourteen hosted checks passed in the main run; the playhead check passed after correcting its animation sampling and asserting its observed resting position. All 32 source scores matched; all seven new arrangements played from middle and ending sections; cold first-press playback, original assets, files, FAQ and mobile views passed.",
+    "workspace_unit_tests": 99,
+    "resource_files_verified": 497
+  },
+  "publication_note": "The shared publishing checkout deployed the library commit with the concurrent cold-start audio fix in version 7. This existing successful deployment was retained."
+}

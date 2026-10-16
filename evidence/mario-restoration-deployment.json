@@ -1,0 +1,17 @@
+{
+  "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+  "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_ac3a26e192c881918555fd13f8e9f727",
+  "version_number": 2,
+  "deployment_id": "appgdep_6ad241fc2f448191a49ed053ef4efc3a",
+  "source_commit": "7f47ed0f6e684e4b6ba5e54167b6da18a911e9ae",
+  "status": "succeeded",
+  "access_mode": "public",
+  "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+  "updated_at": "2026-10-16T15:26:09.422193+00:00",
+  "scope": "All fifteen original Mario instruments: selector, portraits, models, 195 prepared notes, score import and restore. Excludes concurrent FAQ edits.",
+  "checks": {
+    "releaseSnapshotUnitTests": 94,
+    "localBrowserTests": 4,
+    "anonymousHostedBrowserTests": 4
+  }
+}

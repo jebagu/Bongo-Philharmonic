@@ -1,0 +1,51 @@
+{
+  "source": {
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "checkout_path": "/Users/jeremyguillory/Documents/ChatGPT/bongo-philharmonic/sites/bongo-philharmonic",
+    "commit_sha": "3a34aabca8e0ff14cf2c78536f08a243b2e62f98",
+    "archive": "/Users/jeremyguillory/Documents/ChatGPT/bongo-philharmonic/evidence/ui-layout-update-2026-10-16/public-release.tar.gz"
+  },
+  "version": {
+    "id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_1c383aaed8e081919849d62cd08ed0a8",
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "version_number": 11,
+    "source": {
+      "commit_sha": "3a34aabca8e0ff14cf2c78536f08a243b2e62f98"
+    },
+    "archive_storage": {
+      "archive_format": "tar",
+      "sediment_file_id": "file_00000000f7308210bb54e3b3126acdba",
+      "content_hash": "sha256:222a1fc23ae7ff8df18890be45037d73ddf5ca0bed7ad60de6fa7a47df96c878",
+      "size_bytes": 11888640,
+      "file_count": 312
+    },
+    "screenshot_url": null,
+    "deployment_id": null
+  },
+  "deployment": {
+    "id": "appgdep_6ad254ffaba88191b8166471e15b19ad",
+    "project_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9",
+    "title": "Bongo Philharmonic",
+    "version_id": "appgprj_6ad23b8ada4081918bf45b0ad02007c9~appgver_1c383aaed8e081919849d62cd08ed0a8",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://bongo-philharmonic.jebagu.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ad23b8ada4081918bf45b0ad02007c9",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-16T16:47:22.324668+00:00"
+  },
+  "checks": {
+    "publicBuild": {
+      "files": 311,
+      "bytes": 11630246,
+      "verified": true
+    },
+    "unitTests": 101,
+    "localLayoutChecks": 3,
+    "hostedLayoutChecks": 3
+  },
+  "url": "https://bongo-philharmonic.jebagu.chatgpt.site/"
+}

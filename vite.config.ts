@@ -13,7 +13,6 @@ export default defineConfig({
       ['asset-packs/mario-paint/voxels', 'asset-packs/mario-paint/voxels'],
       ['asset-packs/mario-paint/audio/notes', 'asset-packs/mario-paint/audio/notes'],
       ['asset-packs/mario-paint/manifest.json', 'asset-packs/mario-paint/manifest.json'],
-      ['assets/landmarks', 'assets/landmarks'],
     ]) {
       const destination = resolve('dist', to);
       mkdirSync(resolve(destination, '..'), { recursive: true });

@@ -11,5 +11,10 @@
       "path": "docs/templates/instrument-set/manifest.example.json",
       "sha256": "2b28a6640411dc4f02e48f6181cb07a086dab10e9a2ad9989e40866ef3d6bce0"
     }
-  ]
+  ],
+  "resourceBaseline": {
+    "version": "1.0.0",
+    "record": "docs/resource-versions/1.0.0.json",
+    "current": "docs/resource-versions/current.json"
+  }
 }

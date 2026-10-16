@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-16",
+  "localUrl": "http://127.0.0.1:5417/BongoPlanet/composer/",
+  "published": true,
+  "build": {
+    "development": "passed",
+    "public": "passed",
+    "publicPayloadFiles": 311,
+    "publicPayloadBytes": 11631862
+  },
+  "unitTests": {
+    "passed": 101
+  },
+  "resources": {
+    "version": "1.0.0",
+    "filesVerified": 497
+  },
+  "browser": {
+    "fullRun": {
+      "passed": 32,
+      "failed": 1,
+      "failure": "Duplicate-bandmate selection regression; corrected afterwards."
+    },
+    "finalCorrectionRun": {
+      "passed": 6,
+      "failed": 0
+    },
+    "nativeAnimationRun": {
+      "passed": 3,
+      "failed": 0
+    },
+    "widths": [
+      1440,
+      390
+    ],
+    "screenshots": [
+      "composer-toolbar-1440.png",
+      "composer-toolbar-390.png"
+    ],
+    "publicBuildRun": {
+      "passed": 2,
+      "failed": 0
+    },
+    "hostedRun": {
+      "passed": 2,
+      "failed": 0,
+      "widths": [
+        1440,
+        390
+      ],
+      "report": "composer-toolbar-live-browser.json"
+    }
+  },
+  "publicVersion": 12,
+  "publicUrl": "https://bongo-philharmonic.jebagu.chatgpt.site",
+  "deploymentId": "appgdep_6ad274fb64b481918918253b6a01b5db"
+}

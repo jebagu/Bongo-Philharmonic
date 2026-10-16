@@ -5,7 +5,9 @@
       "/Users/jeremyguillory/Documents/ChatGPT/bongo-philharmonic/node_modules/.bin/playwright",
       "test",
       "--config",
-      "playwright.public.config.ts"
+      "playwright.public.config.ts",
+      "--grep",
+      "public Composer restores"
     ],
     "configFile": "/Users/jeremyguillory/Documents/ChatGPT/bongo-philharmonic/playwright.public.config.ts",
     "rootDir": "/Users/jeremyguillory/Documents/ChatGPT/bongo-philharmonic/tests",
@@ -35,7 +37,10 @@
         "testDir": "/Users/jeremyguillory/Documents/ChatGPT/bongo-philharmonic/tests",
         "testIgnore": [],
         "testMatch": [
-          "public-browser.spec.ts"
+          "public-browser.spec.ts",
+          "faq-browser.spec.ts",
+          "performance-backgrounds.spec.ts",
+          "playhead-browser.spec.ts"
         ],
         "timeout": 45000
       }
@@ -54,7 +59,12 @@
         "testDir": "/Users/jeremyguillory/Documents/ChatGPT/bongo-philharmonic/tests",
         "snapshotDir": "/Users/jeremyguillory/Documents/ChatGPT/bongo-philharmonic/tests",
         "testIgnore": [],
-        "testMatch": "public-browser.spec.ts",
+        "testMatch": [
+          "public-browser.spec.ts",
+          "faq-browser.spec.ts",
+          "performance-backgrounds.spec.ts",
+          "playhead-browser.spec.ts"
+        ],
         "timeout": 45000,
         "use": {
           "baseURL": "https://bongo-philharmonic.jebagu.chatgpt.site/",
@@ -107,7 +117,7 @@
       "line": 0,
       "specs": [
         {
-          "title": "public release loads its own ten portraits and Bongo library without missing assets",
+          "title": "public Composer restores the original Mario Paint playhead with either sound set",
           "ok": true,
           "tags": [],
           "tests": [
@@ -122,12 +132,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 4029,
+                  "duration": 8930,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-10-16T15:09:34.627Z",
+                  "startTime": "2026-10-16T15:59:48.549Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -135,77 +145,9 @@
               "status": "expected"
             }
           ],
-          "id": "8358f2d479dcf02dc537-aa9c0a64cc09bc608a49",
+          "id": "8358f2d479dcf02dc537-0092466044b5e76d32f0",
           "file": "public-browser.spec.ts",
-          "line": 7,
-          "column": 1
-        },
-        {
-          "title": "public release preserves chords and files and rejects a local-only sound set atomically",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1019,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T15:09:39.723Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "8358f2d479dcf02dc537-320c8e6a1b553bc1663c",
-          "file": "public-browser.spec.ts",
-          "line": 27,
-          "column": 1
-        },
-        {
-          "title": "public Performance fits a 390px screen and keeps score pictures available",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 45000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1185,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-10-16T15:09:40.754Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "8358f2d479dcf02dc537-f18cc9f4f9bd73c1605f",
-          "file": "public-browser.spec.ts",
-          "line": 41,
+          "line": 58,
           "column": 1
         }
       ]
@@ -213,9 +155,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-10-16T15:09:34.010Z",
-    "duration": 8314.425000000001,
-    "expected": 3,
+    "startTime": "2026-10-16T15:59:47.247Z",
+    "duration": 11284.951,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

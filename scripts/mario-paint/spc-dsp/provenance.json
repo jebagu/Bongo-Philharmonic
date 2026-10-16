@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/libgme/game-music-emu",
+  "commit": "f68963b1de0633149b05732113d3c3113c6f63a1",
+  "files": {
+    "Snes_Spc.cpp": "71734188f7946773bd76238418b1e56ce2577500f4e31b3ab1202b6b99b9eaae",
+    "Snes_Spc.h": "b136d48be0039fad00937bbcb20a603cb95d8ea410bb4d9900061e40f46ccbf5",
+    "Spc_Cpu.cpp": "c14d396e7f4c579047b7cc307b916fcb670f2d36980b185ab5b29616e2258bcc",
+    "Spc_Cpu.h": "2f76eacf55f7e3fe684ac051b2b76454c5bd23e9188ffb2009deb30f718e6e40",
+    "Spc_Dsp.cpp": "f42be04184870f10be655be786c26f254c49dbdaa4604a6b75132abf934e5da2",
+    "Spc_Dsp.h": "529937d6bfe6a3dba62fdc7f16cd9edf8117d98f56959f276e16216bdbef040a",
+    "blargg_common.h": "53a779dc5d0fb233cf9eaab9db6840e6b838b4e1094e76ceef2a91970f8a3491",
+    "blargg_config.h": "19f316b379d98f27f36deb86f83279309aa3a324e8bf5dccb41a2ea3076628bf",
+    "blargg_endian.h": "d36fe696104a048579b791fe90ea4a33bb8a0fb5232665dd977ee5a4dca0f4fa",
+    "blargg_source.h": "de05c7a00b69e55810195e355e6ef164a0bef326b8cdf4a6c995dc8905b764f2"
+  },
+  "renderer": "Game_Music_Emu fast SPC DSP; original SPC700 driver from supplied ROM; dry isolation; not a full-console recording"
+}
