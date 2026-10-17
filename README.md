@@ -1,8 +1,36 @@
 # Bongo Philharmonic
 
-Play the public Site: **[Bongo Philharmonic](https://bongo-philharmonic.jebagu.chatgpt.site)**. The public release includes both the Bongo instrument set and all fifteen original Mario Paint instruments. Asset provenance and rights notices are preserved.
-
 Place a band, compose its music, and watch it perform. **Bongo Philharmonic** is a separate tool from **Bongo Planet**, the original spark game.
+
+**[Play the live app →](https://bongo-philharmonic.jebagu.chatgpt.site/)**
+
+The live app includes ten Bongo instruments, all fifteen original Mario Paint instruments, and a library of 32 compositions. Asset provenance and rights notices are preserved.
+
+![Performance view: a band on the sphere against a firefly background, with its score and playback controls below.](docs/screenshots/performance.png)
+
+## Screenshots
+
+Captured from the live app on 17 October 2026.
+
+### Placement — build your band
+
+Choose instruments and place up to sixteen performers on the sphere.
+
+![Placement view: the instrument palette and selected instrument controls beside a populated sphere.](docs/screenshots/placement.png)
+
+### Composer — draw the music
+
+Write with instrument pictures at 150% default zoom. The fixed toolbar keeps note editing, grid and zoom controls in place.
+
+![Composer view: an Avril 14th piano arrangement drawn with instrument pictures, with the permanent toolbar above.](docs/screenshots/composer.png)
+
+### Library — start with a complete score
+
+Browse full-length arrangements, Favorites and the three original Mario Paint demo scores.
+
+![Library view: full-length compositions with descriptions, instrument pictures, durations and sound-set filters.](docs/screenshots/library.png)
+
+## Run locally
 
 Permanent local URL: **http://127.0.0.1:5417/BongoPlanet/composer/**. Run `npm ci` and `npm run dev` from this project's folder. This app has its own source, Git history, dependencies and local server. See [application boundaries](docs/Applications.md).
 
@@ -56,4 +84,4 @@ The independent Bongo Planet / Philharmonic resource baseline is **1.0.0**: 11 g
 
 ## Source checkpoint
 
-The `v. 1` checkpoint is backed up in the private [Bongo-Philharmonic GitHub repository](https://github.com/jebagu/Bongo-Philharmonic). This source backup is separate from the public Site and the Bongo Planet repository. Generated builds, dependencies, deployment bundles and browser saves stay local.
+The `v. 1` checkpoint is available in the public [Bongo-Philharmonic GitHub repository](https://github.com/jebagu/Bongo-Philharmonic). This source backup is separate from the public Site and the Bongo Planet repository. Generated builds, dependencies, deployment bundles and browser saves stay local.
